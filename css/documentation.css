@@ -1,0 +1,149 @@
+#left-menu{
+    background-color: black;
+    width: 320px;
+    max-width: 320px;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    overflow-x: auto;
+}
+
+
+/*
+ *  STYLE 1
+ */
+
+ #left-menu::-webkit-scrollbar-track
+ {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+     border-radius: 10px;
+     background-color: #313131;
+ }
+ 
+ #left-menu::-webkit-scrollbar
+ {
+     width: 12px;
+     background-color: #313131;
+ }
+ 
+ #left-menu::-webkit-scrollbar-thumb
+ {
+     border-radius: 10px;
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+     background-color: #555;
+ }
+
+#right-menu{
+    background-color: white;
+    position: absolute;
+    margin-left: 320px;
+    top: 0px;
+    right: 0px;
+    width: calc(100% - 320px);
+}
+
+.breadcrumb{
+    background-color: black;
+    color: white;
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.list-item > ul{
+    display: none;
+}
+
+.list-item:focus ul{
+    display: block;
+}
+
+.list-item:active ul{
+    display: block;
+}
+
+/*
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+*/
+
+.tree-nav{    
+    background-color: black;
+}
+.tree-nav__item {
+    display: block;
+    white-space: nowrap;
+    color: #ccc;
+    position: relative;
+}
+
+.tree-nav__item.is-expandable::before {
+    border-left: 1px solid #333;
+    content: "";
+    height: 100%;
+    left: 0.8rem;
+    position: absolute;
+    top: 2.4rem;
+    height: calc(100% - 1.7rem);
+}
+
+.tree-nav__item .tree-nav__item {
+    margin-left: 1.7rem;
+}
+
+.tree-nav__item.is-expandable[open]>.tree-nav__item-title::before {
+    font-family: "ionicons";
+    transform: rotate(90deg);
+}
+
+.tree-nav__item.is-expandable>.tree-nav__item-title {
+    padding-left: 1.8rem;
+}
+
+.tree-nav__item.is-expandable>.tree-nav__item-title::before {
+    position: absolute;
+    will-change: transform;
+    transition: transform 300ms ease;
+    font-family: "ionicons";
+    color: #fff;
+    font-size: 1.1rem;
+    content: "\f125";
+    left: 0;
+    display: inline-block;
+    width: 1.6rem;
+    text-align: center;
+}
+
+.tree-nav__item-title {
+    cursor: pointer;
+    display: block;
+    outline: 0;
+    color: #fff;
+    line-height: 2rem;
+}
+
+.tree-nav__item-title .icon {
+    display: inline;
+    padding-left: 1.6rem;
+    margin-right: 0.8rem;
+    color: #666;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+.tree-nav__item-title .icon::before {
+    top: 0;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 1.6rem;
+    text-align: center;
+}
+
+.tree-nav__item-title::-webkit-details-marker {
+    display: none;
+}
+
+.tree-nam__subitem{
+    text-decoration: none;
+    color: grey;
+}

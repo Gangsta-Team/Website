@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scarface The World Is Yours:  Documentation</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/gangster.css">
+        <link rel="stylesheet" href="css/documentation.css">
+        <link rel="stylesheet" href="css/smart-grid.css">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="h-100 w-100 d-flex">
+            <div class="text-white h-100 scrollbar" id="left-menu">
+                <a class="d-flex justify-content-start align-items-center font-stwiy m-4 text-decoration-none" href="gangster.html">
+                    <img class="logo mr-3" src="img/icon.png">
+                    <div class="d-flex justify-content-start align-items-center flex-column">
+                        <h1 class="m-0 text-white">SCARFACE</h1>
+                        <span class="text-red">THE WORLD IS YOURS</span>
+                    </div>
+                </a>
+            
+                <nav class="tree-nav font-regular ml-2">
+                    <details class="tree-nav__item is-expandable">
+                        <summary class="tree-nav__item-title">General</summary>
+                        <details class="tree-nav__item is-expandable" id="menu-characters">
+                            
+                        </details>
+                        <details class="tree-nav__item is-expandable" id="menu-vehicles">
+                            
+                        </details>
+                        <details class="tree-nav__item is-expandable" id="menu-boats">
+                            
+                        </details>
+                        <!--details class="tree-nav__item is-expandable">
+                            <summary class="tree-nav__item-title" data-page="boats">Boats</summary>
+                            <div class="tree-nav__item">
+                                <a class="tree-nav__item-title text-grey">ATTACK BOAT</a>
+                                <a class="tree-nav__item-title text-grey">ATTACK GUN BOAT</a>
+                                <a class="tree-nav__item-title text-grey">CIGARETTE BOAT</a>
+                                <a class="tree-nav__item-title text-grey">CIGARETTE GUN BOAT</a>
+                                <a class="tree-nav__item-title text-grey">COAST GUARD BOAT</a>
+                                <a class="tree-nav__item-title text-grey">COLOMBIAN ATTACK BOAT</a>
+                                <a class="tree-nav__item-title text-grey">COLOMBIAN CIGARETTE BOAT</a>
+                                <a class="tree-nav__item-title text-grey">DEA BOAT</a>
+                                <a class="tree-nav__item-title text-grey">DIAZ CIGARETTE BOAT</a>
+                                <a class="tree-nav__item-title text-grey">EXOTIC PICKLE FORK BOAT</a>
+                                <a class="tree-nav__item-title text-grey">FAN BOAT</a>
+                                <a class="tree-nav__item-title text-grey">GASPAR CIGARETTE BOAT</a>
+                                <a class="tree-nav__item-title text-grey">GENERIC ATTACK BOAT</a>
+                                <a class="tree-nav__item-title text-grey">ISLAND BOAT</a>
+                                <a class="tree-nav__item-title text-grey">JET BOAT</a>
+                                <a class="tree-nav__item-title text-grey">LARGE SAILBOAT (RIG)</a>
+                                <a class="tree-nav__item-title text-grey">LARGE SAILBOAT (UNRIG)</a>
+                                <a class="tree-nav__item-title text-grey">NACHO CIGARETTE BOAT</a>
+                                <a class="tree-nav__item-title text-grey">NAVY HYDRO BOAT</a>
+                                <a class="tree-nav__item-title text-grey">PICKLE FORK BOAT</a>
+                                <a class="tree-nav__item-title text-grey">POLICE BOAT</a>
+                                <a class="tree-nav__item-title text-grey">POWER BOAT</a>
+                                <a class="tree-nav__item-title text-grey">PT BOAT</a>
+                                <a class="tree-nav__item-title text-grey">RACING BOAT</a>
+                                <a class="tree-nav__item-title text-grey">SPORT FISHING BOAT (EXOTIC CATALOG)</a>
+                                <a class="tree-nav__item-title text-grey">TONY CIGARETTE BOAT</a>
+                                <a class="tree-nav__item-title text-grey">TRICK CRAFT</a>
+                                <a class="tree-nav__item-title text-grey">YACHT (EXOTIC CATALOG)</a>
+                            </div>
+                        </details>
+                        <details class="tree-nav__item is-expandable">
+                            <summary class="tree-nav__item-title" data-page="planes">Planes</summary>
+                            <div class="tree-nav__item">
+                                <a class="tree-nav__item-title text-grey">AMPHIBIAN PLANE</a>
+                                <a class="tree-nav__item-title text-grey">DEA TWIN EAGLE</a>
+                                <a class="tree-nav__item-title text-grey">EXOTIC TWIN EAGLE</a>
+                            </div>
+                        </details>
+                        <details class="tree-nav__item is-expandable">
+                            <summary class="tree-nav__item-title" data-page="helicopters">Helicopters</summary>
+                            <div class="tree-nav__item">
+                                <a class="tree-nav__item-title text-grey">ARMY HELI</a>
+                                <a class="tree-nav__item-title text-grey">ATTACK HELI</a>
+                                <a class="tree-nav__item-title text-grey">HUEY CG</a>
+                                <a class="tree-nav__item-title text-grey">MOUNTED ARMY HELI</a>
+                                <a class="tree-nav__item-title text-grey">POLICE HELI</a>
+                            </div>
+                        </details-->
+                    </details>
+                </nav>
+            </div>
+            <div class="main h-100 w-100" id="right-menu">
+                <div id="list-vehicles"></div>
+            </div>
+        </div>
+    </body>
+    <script src="js/documentation.js"></script>
+    <script src="js/characters.js"></script>
+    <script src="js/vehicles.js"></script>
+    <script type="text/x-tmpl" id="tmpl-characters">
+        <summary class="tree-nav__item-title" data-page="characters">Characters</summary>
+        <div class="tree-nav__item">
+            <a class="tree-nav__item-title text-grey"></a>
+            {% for (var i=0; i<o.characters.length; i++) { %}
+                <a class="tree-nav__item-title text-grey">{%=o.characters[i].name%}</a>
+            {% } %}
+        </div>
+    </script>
+    <script type="text/x-tmpl" id="tmpl-vehicles">
+        <summary class="tree-nav__item-title" data-page="vehicles">Vehicles</summary>
+        <div class="tree-nav__item">
+            <a class="tree-nav__item-title text-grey"></a>
+            {% for (var i=0; i<o.vehicles.length; i++) { %}
+                <a class="tree-nav__item-title tree-nam__subitem" href="#{%=o.vehicles[i].name%}" text-grey">
+                    {%=o.vehicles[i].name%}
+                </a>
+            {% } %}
+        </div>
+    </script>
+    <script type="text/x-tmpl" id="tmpl-vehicles-right-menu">
+        <h2>Vehicles</h2>
+        <ul>
+            {% for (var i=0; i<o.vehicles.length; i++) { %}
+                <li>
+                    <a name="{%=o.vehicles[i].name%}">
+                        <img src="{%=o.vehicles[i].miniature%}">
+                        {%=o.vehicles[i].name%}
+                    </a>
+                </li>
+            {% } %}
+            </ul>
+    </script>
+    <script type="text/x-tmpl" id="tmpl-boats">
+        <summary class="tree-nav__item-title" data-page="boats">Boats</summary>
+        <div class="tree-nav__item">
+            <a class="tree-nav__item-title text-grey"></a>
+            {% for (var i=0; i<o.boats.length; i++) { %}
+                <a class="tree-nav__item-title text-grey">
+                    {%=o.boats[i].name%}
+                </a>
+            {% } %}
+        </div>
+    </script>
+    <script src="js/tmpl.min.js"></script>
+</html>

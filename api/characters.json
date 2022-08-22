@@ -1,0 +1,808 @@
+{
+    "characters" :[
+        {
+            "name": "BOYD"
+        },
+        {
+            "name": "NEAL"
+        },
+        {
+            "name": "ADAM"
+        },
+        {
+            "name": "ALEX SMITH"
+        },
+        {
+            "name": "DAVID PAREDES"
+        },
+        {
+            "name": "GORD L"
+        },
+        {
+            "name": "JACK"
+        },
+        {
+            "name": "KELLY K."
+        },
+        {
+            "name": "NATHAN"
+        },
+        {
+            "name": "PIXIE D"
+        },
+        {
+            "name": "ROCKY T."
+        },
+        {
+            "name": "ROSALIND"
+        },
+        {
+            "name": "SMOOTH"
+        },
+        {
+            "name": "YOLANDA SUMMERSET"
+        },
+        {
+            "name": "BONNIE"
+        },
+        {
+            "name": "SHEFFIELD"
+        },
+        {
+            "name": "BRIGGS"
+        },
+        {
+            "name": "WESCOTT"
+        },
+        {
+            "name": "MR. SMITH"
+        },
+        {
+            "name": "OCTAVIO"
+        },
+        {
+            "name": "STACEY"
+        },
+        {
+            "name": "LIMEY"
+        },
+        {
+            "name": "EDGAR MARTINEZ"
+        },
+        {
+            "name": "HEAVY P"
+        },
+        {
+            "name": "JOHN JOHNSON"
+        },
+        {
+            "name": "CLARK"
+        },
+        {
+            "name": "THE CAPTAIN"
+        },
+        {
+            "name": "ALONSO"
+        },
+        {
+            "name": "BO WHITEHEAD"
+        },
+        {
+            "name": "STEPHEN LEE"
+        },
+        {
+            "name": "CARLA"
+        },
+        {
+            "name": "CASSANDRA"
+        },
+        {
+            "name": "DOUGLAS"
+        },
+        {
+            "name": "HARRY"
+        },
+        {
+            "name": "COCO"
+        },
+        {
+            "name": "KRISTIN"
+        },
+        {
+            "name": "PRECILLA"
+        },
+        {
+            "name": "SONYA"
+        },
+        {
+            "name": "TANYA"
+        },
+        {
+            "name": "LUIS"
+        },
+        {
+            "name": "PENELOPE"
+        },
+        {
+            "name": "GINA"
+        },
+        {
+            "name": "CARLOS"
+        },
+        {
+            "name": "JOSE"
+        },
+        {
+            "name": "NICK"
+        },
+        {
+            "name": "PEDRO"
+        },
+        {
+            "name": "TINO"
+        },
+        {
+            "name": "ALFONSO DIAZ"
+        },
+        {
+            "name": "EDGAR DIAZ"
+        },
+        {
+            "name": "THE BOSS"
+        },
+        {
+            "name": "ANDRE"
+        },
+        {
+            "name": "CARTER"
+        },
+        {
+            "name": "HILLARY"
+        },
+        {
+            "name": "LAWRENCE"
+        },
+        {
+            "name": "MARCUS"
+        },
+        {
+            "name": "MARIAN"
+        },
+        {
+            "name": "NINA"
+        },
+        {
+            "name": "RUDY"
+        },
+        {
+            "name": "STEVE PRATT"
+        },
+        {
+            "name": "WANDA"
+        },
+        {
+            "name": "WILLIAM"
+        },
+        {
+            "name": "XAVIER"
+        },
+        {
+            "name": "MACKINTOSH"
+        },
+        {
+            "name": "TYLER"
+        },
+        {
+            "name": "LEROY"
+        },
+        {
+            "name": "RANDY"
+        },
+        {
+            "name": "BARNEY"
+        },
+        {
+            "name": "CHUCK"
+        },
+        {
+            "name": "JONAS"
+        },
+        {
+            "name": "MARIBELLE"
+        },
+        {
+            "name": "HERVÉ"
+        },
+        {
+            "name": "ARNOLD"
+        },
+        {
+            "name": "BABY FACE"
+        },
+        {
+            "name": "BOB"
+        },
+        {
+            "name": "BRET CAGNEY"
+        },
+        {
+            "name": "BUNNY"
+        },
+        {
+            "name": "CARLOS DELGADO"
+        },
+        {
+            "name": "DELROY"
+        },
+        {
+            "name": "DONOVAN"
+        },
+        {
+            "name": "EUGENE"
+        },
+        {
+            "name": "FRANKLIN"
+        },
+        {
+            "name": "FREDDY Y."
+        },
+        {
+            "name": "GEORGE"
+        },
+        {
+            "name": "GREGORIO"
+        },
+        {
+            "name": "IBRAHIM"
+        },
+        {
+            "name": "JEROME"
+        },
+        {
+            "name": "JORGE"
+        },
+        {
+            "name": "JOSE"
+        },
+        {
+            "name": "JUAN"
+        },
+        {
+            "name": "JULIO"
+        },
+        {
+            "name": "KOOL K"
+        },
+        {
+            "name": "LELAND"
+        },
+        {
+            "name": "LENNOX"
+        },
+        {
+            "name": "LI’L ZE"
+        },
+        {
+            "name": "PADDY"
+        },
+        {
+            "name": "PECKER"
+        },
+        {
+            "name": "PEDRO"
+        },
+        {
+            "name": "PEPE"
+        },
+        {
+            "name": "PERCY"
+        },
+        {
+            "name": "PRESCOT"
+        },
+        {
+            "name": "ROCKWELL"
+        },
+        {
+            "name": "RUPERT"
+        },
+        {
+            "name": "RYANA"
+        },
+        {
+            "name": "TINY T."
+        },
+        {
+            "name": "TITO"
+        },
+        {
+            "name": "VINCE"
+        },
+        {
+            "name": "WILTON"
+        },
+        {
+            "name": "DEAN"
+        },
+        {
+            "name": "ALEJANDRO SOSA"
+        },
+        {
+            "name": "ARTURO"
+        },
+        {
+            "name": "EDUARDO"
+        },
+        {
+            "name": "GABRIEL"
+        },
+        {
+            "name": "GASPAR GOMEZ"
+        },
+        {
+            "name": "GONZALO"
+        },
+        {
+            "name": "HERNÁN"
+        },
+        {
+            "name": "MANNY"
+        },
+        {
+            "name": "MARIANO"
+        },
+        {
+            "name": "RAZA"
+        },
+        {
+            "name": "SIMÓN"
+        },
+        {
+            "name": "TAMAYO"
+        },
+        {
+            "name": "PABLO"
+        },
+        {
+            "name": "TRAVIS"
+        },
+        {
+            "name": "RICARDO"
+        },
+        {
+            "name": "GORDO"
+        },
+        {
+            "name": "KENT"
+        },
+        {
+            "name": "LANDON"
+        },
+        {
+            "name": "MARIA"
+        },
+        {
+            "name": "MARLON"
+        },
+        {
+            "name": "RYAN BURMEISTER"
+        },
+        {
+            "name": "SANCHO RABAL"
+        },
+        {
+            "name": "TORSTEN"
+        },
+        {
+            "name": "WESLEY"
+        },
+        {
+            "name": "MAURICE"
+        },
+        {
+            "name": "GRACE"
+        },
+        {
+            "name": "JERRY"
+        },
+        {
+            "name": "MADGE"
+        },
+        {
+            "name": "NAOMI"
+        },
+        {
+            "name": "RENÉE"
+        },
+        {
+            "name": "SILVA"
+        },
+        {
+            "name": "TORK"
+        },
+        {
+            "name": "ARNALDO"
+        },
+        {
+            "name": "CAROLINA CORDOVA"
+        },
+        {
+            "name": "DOLORES ALVAREZ"
+        },
+        {
+            "name": "JULIA HUERTA"
+        },
+        {
+            "name": "LUIS CRUZ"
+        },
+        {
+            "name": "MANUEL LOPEZ"
+        },
+        {
+            "name": "MARCOS"
+        },
+        {
+            "name": "VICTOR MONTOYA"
+        },
+        {
+            "name": "EUNICH"
+        },
+        {
+            "name": "AGENT SANDERSON"
+        },
+        {
+            "name": "BILL T. TAGWORTHY"
+        },
+        {
+            "name": "FREDRICK"
+        },
+        {
+            "name": "MR. STEINWORTH"
+        },
+        {
+            "name": "LEO JR."
+        },
+        {
+            "name": "PEARL"
+        },
+        {
+            "name": "QUINTIN OSALIS"
+        },
+        {
+            "name": "BRAD"
+        },
+        {
+            "name": "MR. LEE"
+        },
+        {
+            "name": "SUSAN"
+        },
+        {
+            "name": "NEVE"
+        },
+        {
+            "name": "ISABELLE"
+        },
+        {
+            "name": "VERONICA"
+        },
+        {
+            "name": "NORMAN"
+        },
+        {
+            "name": "NATALIA"
+        },
+        {
+            "name": "EVERETT"
+        },
+        {
+            "name": "CLARENCE"
+        },
+        {
+            "name": "TUPPER"
+        },
+        {
+            "name": "FELIX"
+        },
+        {
+            "name": "THE SANDMAN"
+        },
+        {
+            "name": "CYD HAGMAN"
+        },
+        {
+            "name": "DANNY PRITCHET"
+        },
+        {
+            "name": "JOHNATHAN"
+        },
+        {
+            "name": "JOSEPH TEASEL"
+        },
+        {
+            "name": "MICHAEL"
+        },
+        {
+            "name": "WILL"
+        },
+        {
+            "name": "ANDY"
+        },
+        {
+            "name": "BRENDA"
+        },
+        {
+            "name": "CIERAN"
+        },
+        {
+            "name": "KATIE"
+        },
+        {
+            "name": "PAUL"
+        },
+        {
+            "name": "TABATHA"
+        },
+        {
+            "name": "ELLIS"
+        },
+        {
+            "name": "K. W."
+        },
+        {
+            "name": "MERCEDES"
+        },
+        {
+            "name": "SKY"
+        },
+        {
+            "name": "TEMPTATION"
+        },
+        {
+            "name": "BENJAMIN"
+        },
+        {
+            "name": "CHRISTO"
+        },
+        {
+            "name": "KEVIN"
+        },
+        {
+            "name": "OLLIE"
+        },
+        {
+            "name": "TINO ORLANDO"
+        },
+        {
+            "name": "ZIG"
+        },
+        {
+            "name": "LEE HOUSTON"
+        },
+        {
+            "name": "BRENTON"
+        },
+        {
+            "name": "DOOGIE"
+        },
+        {
+            "name": "NAT"
+        },
+        {
+            "name": "THE TICK"
+        },
+        {
+            "name": "NACHO CONTRERAS"
+        },
+        {
+            "name": "BETTY"
+        },
+        {
+            "name": "LIZ"
+        },
+        {
+            "name": "OSCAR"
+        },
+        {
+            "name": "SCOOT WILSON"
+        },
+        {
+            "name": "DON"
+        },
+        {
+            "name": "MARIA"
+        },
+        {
+            "name": "NANCY PADILLA"
+        },
+        {
+            "name": "RITA"
+        },
+        {
+            "name": "DARREN DEANER"
+        },
+        {
+            "name": "DERRICK"
+        },
+        {
+            "name": "MARTHA"
+        },
+        {
+            "name": "SUMMER"
+        },
+        {
+            "name": "YVONNE SUMMERHILL"
+        },
+        {
+            "name": "LUCHO HERNANDEZ"
+        },
+        {
+            "name": "BURT CAMPANA"
+        },
+        {
+            "name": "QUINT"
+        },
+        {
+            "name": "JAY"
+        },
+        {
+            "name": "AGENT GREEN"
+        },
+        {
+            "name": "AGENT WESLEY"
+        },
+        {
+            "name": "SKULL"
+        },
+        {
+            "name": "GRANT"
+        },
+        {
+            "name": "LEISURE SHIRT LARRY"
+        },
+        {
+            "name": "KATHY B"
+        },
+        {
+            "name": "MRS. COCO"
+        },
+        {
+            "name": "TINA DEL RAY"
+        },
+        {
+            "name": "BETH"
+        },
+        {
+            "name": "JOSE MARIE CAMPOS"
+        },
+        {
+            "name": "KITTY"
+        },
+        {
+            "name": "REGINALD"
+        },
+        {
+            "name": "TOM"
+        },
+        {
+            "name": "WILMA"
+        },
+        {
+            "name": "FAT BOSS"
+        },
+        {
+            "name": "JILL"
+        },
+        {
+            "name": "APOLLO"
+        },
+        {
+            "name": "ARIES"
+        },
+        {
+            "name": "ATTICUS"
+        },
+        {
+            "name": "LANDIS"
+        },
+        {
+            "name": "STRIDER"
+        },
+        {
+            "name": "TY"
+        },
+        {
+            "name": "BRENT STEIN"
+        },
+        {
+            "name": "LIONEL"
+        },
+        {
+            "name": "MARIELLA BURANI"
+        },
+        {
+            "name": "JIMMY BOCA"
+        },
+        {
+            "name": "BEAN"
+        },
+        {
+            "name": "MOSS"
+        },
+        {
+            "name": "TANK"
+        },
+        {
+            "name": "TREVOR D"
+        },
+        {
+            "name": "WASHINGTON"
+        },
+        {
+            "name": "SIMON TRENT"
+        },
+        {
+            "name": "JOSE CAMPOS"
+        },
+        {
+            "name": "ORLANDO"
+        },
+        {
+            "name": "ANGEL"
+        },
+        {
+            "name": "CARL"
+        },
+        {
+            "name": "DON"
+        },
+        {
+            "name": "ERNIE"
+        },
+        {
+            "name": "JULIAN"
+        },
+        {
+            "name": "BOB"
+        },
+        {
+            "name": "CLIFTON"
+        },
+        {
+            "name": "COOTER"
+        },
+        {
+            "name": "DELMONT"
+        },
+        {
+            "name": "JED"
+        },
+        {
+            "name": "JEFFICA HARKLEY"
+        },
+        {
+            "name": "JESSICA"
+        },
+        {
+            "name": "ANA YAMADA"
+        },
+        {
+            "name": "COLOSSUS"
+        },
+        {
+            "name": "LOGAN"
+        },
+        {
+            "name": "TINKER RILEY"
+        },
+        {
+            "name": "VENUS"
+        },
+        {
+            "name": "VERA"
+        },
+        {
+            "name": "BIG ARM TONY"
+        }
+    ]
+}

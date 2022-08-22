@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scarface The World Is Yours:  Documentation</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/gangster.css">
+        <link rel="stylesheet" href="css/documentation.css">
+        <link rel="stylesheet" href="css/smart-grid.css">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="w-100 h-100 twelve">
+            <span class="breadcrumb">Scarface The World Is Yours:  Documentation / General / Vehicles</span>
+            <div id="vehicle-list"></div>
+            <script id="#vehicles">
+                
+                function LoadAPI(url, cb){
+                    var xmlhttp = new XMLHttpRequest();
+
+                    xmlhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            var data = JSON.parse(this.responseText);
+                            cb(data);
+                        }
+                    };
+                    xmlhttp.open("GET", url, true);
+                    xmlhttp.send();
+                }
+
+                function LoadMain(){
+                    var url = "/documents/api/vehicles.json";
+                    var vehicle_root = $("#vehicle-list");
+                    LoadAPI(url, 
+                        function(arr) {
+                            var vehicles = arr.vehicles;
+                            for(var i = 0; i < vehicles.length; i++) {
+                                console.log(vehicles[i])
+                                vehicle_root.append($('<div class="w-100">'+
+                                    '<p>' + vehicles[i].name + '</p>' +
+                                    '<p>' + vehicles[i].overall + '</p>' +
+                                    '<p>' + vehicles[i].top_speed + '</p>' +
+                                    '<p>' + vehicles[i].acceleration + '</p>' +
+                                    '<p>' + vehicles[i].handpng + '</p>' +
+                                    '<p>' + vehicles[i].braking + '</p>' +
+                                    '<p>' + vehicles[i].mass + '</p>' +
+                                    '<p>' + vehicles[i].armor + '</p>' +
+                                    '<p>' + vehicles[i].type + '</p>' +
+                                    '</div>'));
+                            }
+                        }   
+                    );
+                };
+                LoadMain();
+            </script>
+        </div>
+    </body>
+</html>
