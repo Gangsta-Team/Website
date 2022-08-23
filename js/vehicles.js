@@ -13,7 +13,7 @@ window['vehicles'] = {
     ],
     content: null,
     load(cb){
-        LoadData("/documents/api/vehicles.json", function(data){
+        LoadData("api/vehicles.json", function(data){
             window.vehicles.loaded = true;
             window.vehicles.content = data;
             window.APIDataLoaded();

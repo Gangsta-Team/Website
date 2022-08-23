@@ -13,7 +13,7 @@ window['characters'] = {
     ],
     content: null,
     load(cb){
-        LoadData("/documents/api/characters.json", function(data){
+        LoadData("api/characters.json", function(data){
             window.characters.loaded = true;
             window.characters.content = data;
             window.APIDataLoaded();

@@ -5,13 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Scarface The World Is Yours:  Documentation</title>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
         <link rel="stylesheet" href="css/gangster.css">
         <link rel="stylesheet" href="css/documentation.css">
         <link rel="stylesheet" href="css/smart-grid.css">
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <div class="h-100 w-100 d-flex">
@@ -26,11 +34,11 @@
             
                 <nav class="tree-nav font-regular ml-2">
                     <details class="tree-nav__item is-expandable">
-                        <summary class="tree-nav__item-title">General</summary>
-                        <details class="tree-nav__item is-expandable" id="menu-characters">
+                        <summary class="tree-nav__item-title" data-page="general">General</summary>
+                        <details class="tree-nav__item is-expandable menu-characters">
                             
                         </details>
-                        <details class="tree-nav__item is-expandable" id="menu-vehicles">
+                        <details class="tree-nav__item is-expandable menu-vehicles">
                             
                         </details>
                         <!--details class="tree-nav__item is-expandable" id="menu-boats">
@@ -90,20 +98,21 @@
                     </details>
                 </nav>
             </div>
-            <div class="main h-100 w-100" id="right-menu">
-                <div id="list-vehicles" class="twelve"></div>
+            <div class="main h-100 w-100 font-regular" id="general">
+                
             </div>
         </div>
     </body>
     <script src="js/documentation.js"></script>
+    <script src="js/general.js"></script>
     <script src="js/characters.js"></script>
     <script src="js/vehicles.js"></script>
     <script type="text/x-tmpl" id="tmpl-characters">
         <summary class="tree-nav__item-title" data-page="characters">Characters</summary>
         <div class="tree-nav__item">
             <a class="tree-nav__item-title text-grey"></a>
-            {% for (var i=0; i<o.characters.length; i++) { %}
-                <a class="tree-nav__item-title text-grey">{%=o.characters[i].name%}</a>
+            {% for (var i=0; i<o.content.characters.length; i++) { %}
+                <a class="tree-nav__item-title tree-nam__subitem" data-page="characters">{%=o.content.characters[i].name%}</a>
             {% } %}
         </div>
     </script>
@@ -111,33 +120,71 @@
         <summary class="tree-nav__item-title" data-page="vehicles">Vehicles</summary>
         <div class="tree-nav__item">
             <a class="tree-nav__item-title text-grey"></a>
-            {% for (var i=0; i<o.vehicles.length; i++) { %}
-                <a class="tree-nav__item-title tree-nam__subitem" href="#{%=o.vehicles[i].name+'_'+i%}" text-grey">
-                    {%=o.vehicles[i].name%}
+            {% for (var i=0; i<o.content.vehicles.length; i++) { %}
+                <a class="tree-nav__item-title tree-nam__subitem"  data-page="vehicles" href="{%=o.content.vehicles[i].name.replace(" ","_")+'_'+i%}" text-grey">
+                    {%=o.content.vehicles[i].name%}
                 </a>
             {% } %}
         </div>
     </script>
-    <script type="text/x-tmpl" id="tmpl-vehicles-right-menu">
-        <h2 class="m-0 p-3">Vehicles</h2>
-        {% for (var i=0; i<o.vehicles.length; i++) { %}
+    <script type="text/x-tmpl" id="tmpl-general-right-menu">
+        <div class="twelve">
+            <h2 class="m-0 p-3">{%=o.title%}</h2>
+            <div class="breadcrumb d-flex">
+                {% for (var i=0; i<o.breadcrumb.length; i++) { %}
+                    <a class="tree-nav__item-title text-grey"> > {%=o.breadcrumb[i].name%}</a>
+                {% } %}
+            </div>
+            <div class="twelve p-3">
+                General information
+            </div>
+        </div>
+    </script>
+    <script type="text/x-tmpl" id="tmpl-characters-right-menu">
+        <h2 class="m-0 p-3">{%=o.title%}</h2>
+        <div class="breadcrumb d-flex">
+            {% for (var i=0; i<o.breadcrumb.length; i++) { %}
+                <a class="tree-nav__item-title text-grey"> > {%=o.breadcrumb[i].name%}</a>
+            {% } %}
+        </div>
+        {% for (var i=0; i<o.content.characters.length; i++) { %}
             <div class="twelve d-flex p-3 mb-3">
                 <div class="three">
-                    <img class="vehicle-img" src="{%=o.vehicles[i].miniature%}">
+                    <img class="character-img" src="{%=o.content.characters[i].miniature%}">
                 </div>
                 <div class="nine ml-3">
-                    <span class="font-bold vehicle-name" name="{%=o.vehicles[i].name+'_'+i%}">
-                        {%=o.vehicles[i].name%}
+                    <span class="font-bold character-name" name="{%=o.content.characters[i].name.replace(" ","_")+'_'+i%}">
+                        {%=o.content.characters[i].name%}
+                    </span>
+                </div>
+            </div>
+        {% } %}
+    </script>
+    <script type="text/x-tmpl" id="tmpl-vehicles-right-menu">
+        <h2 class="m-0 p-3">{%=o.title%}</h2>
+        <div class="breadcrumb d-flex">
+            {% for (var i=0; i<o.breadcrumb.length; i++) { %}
+                <a class="tree-nav__item-title text-grey"> > {%=o.breadcrumb[i].name%}</a>
+            {% } %}
+        </div>
+        {% for (var i=0; i<o.content.vehicles.length; i++) { %}
+            <div class="twelve d-flex p-3 mb-3">
+                <div class="three">
+                    <img class="vehicle-img" src="{%=o.content.vehicles[i].miniature%}">
+                </div>
+                <div class="nine ml-3">
+                    <span class="font-bold vehicle-name" id="{%=o.content.vehicles[i].name.replace(" ","_")+'_'+i%}">
+                        {%=o.content.vehicles[i].name%}
                     </span>
                     <div class="d-flex justify-content-center align-items-start flex-column">
-                        <span><b>Overall:</b> {%=o.vehicles[i].overall%}</span>
-                        <span><b>Top Speed:</b> {%=o.vehicles[i].top_speed%}</span>
-                        <span><b>Acceleration:</b> {%=o.vehicles[i].acceleration%}</span>
-                        <span><b>Handling:</b> {%=o.vehicles[i].handling%}</span>
-                        <span><b>Braking:</b> {%=o.vehicles[i].braking%}</span>
-                        <span><b>Mass:</b>{%=o.vehicles[i].mass%}</span>
-                        <span><b>Armor:</b>{%=o.vehicles[i].armor%}</span>
-                        <span><b>Type:</b>{%=o.vehicles[i].type%}</span>
+                        <span><b>Overall:</b> {%=o.content.vehicles[i].overall%}</span>
+                        <span><b>Top Speed:</b> {%=o.content.vehicles[i].top_speed%}</span>
+                        <span><b>Acceleration:</b> {%=o.content.vehicles[i].acceleration%}</span>
+                        <span><b>Handling:</b> {%=o.content.vehicles[i].handling%}</span>
+                        <span><b>Braking:</b> {%=o.content.vehicles[i].braking%}</span>
+                        <span><b>Mass:</b>{%=o.content.vehicles[i].mass%}</span>
+                        <span><b>Armor:</b>{%=o.content.vehicles[i].armor%}</span>
+                        <span><b>Type:</b>{%=o.content.vehicles[i].type%}</span>
                     </div>
                 </div>
             </div>

@@ -33,7 +33,7 @@
      background-color: #555;
  }
 
-#right-menu{
+#general{
     background-color: white;
     position: absolute;
     margin-left: 320px;
@@ -81,13 +81,14 @@ KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
     white-space: nowrap;
     color: #ccc;
     position: relative;
+    user-select: none;
 }
 
 .tree-nav__item.is-expandable::before {
     border-left: 1px solid #333;
     content: "";
     height: 100%;
-    left: 0.8rem;
+    left: 1.0rem;
     position: absolute;
     top: 2.4rem;
     height: calc(100% - 1.7rem);
@@ -98,22 +99,18 @@ KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
 }
 
 .tree-nav__item.is-expandable[open]>.tree-nav__item-title::before {
-    font-family: "ionicons";
+    font: var(--fa-font-solid);
     transform: rotate(90deg);
 }
 
-.tree-nav__item.is-expandable>.tree-nav__item-title {
-    padding-left: 1.8rem;
-}
-
 .tree-nav__item.is-expandable>.tree-nav__item-title::before {
-    position: absolute;
+    position: relative;
     will-change: transform;
     transition: transform 300ms ease;
-    font-family: "ionicons";
+    font: var(--fa-font-solid);
     color: #fff;
     font-size: 1.1rem;
-    content: "\f125";
+    content: "\f105";
     left: 0;
     display: inline-block;
     width: 1.6rem;

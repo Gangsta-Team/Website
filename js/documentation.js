@@ -1,37 +1,38 @@
-window['APIDataLoaded'] = function(){
-    if(window.characters.loaded && window.vehicles.loaded){
-        document.getElementById('menu-characters').innerHTML = tmpl('tmpl-characters', window.characters.content)
-        document.getElementById('menu-vehicles').innerHTML = tmpl('tmpl-vehicles', window.vehicles.content)
+var current_section = null;
 
+window['APIDataLoaded'] = function(){
+    if(window.general.loaded && window.characters.loaded && window.vehicles.loaded){
+        document.getElementById('general').innerHTML = '<div id="list-general" class="twelve"></div>'; 
+        document.getElementById('list-general').innerHTML = tmpl('tmpl-general-right-menu', window.general)
+        document.querySelector('.menu-characters').innerHTML = tmpl('tmpl-characters', window.characters)
+        document.querySelector('.menu-vehicles').innerHTML = tmpl('tmpl-vehicles', window.vehicles)
         var summary_nodes = document.querySelectorAll("summary");
-        console.log(summary_nodes)
         for(var i = 0; i < summary_nodes.length; i++){
             summary_nodes[i].onclick = function(evt){
                 const styles = window.getComputedStyle(evt.target, '::before');
                 const content = styles.transform;
-                if(content === 'none'&& evt.target.getAttribute("data-page") != null){
-                    console.log(evt.target.getAttribute("data-page"))
-                    document.getElementById('list-vehicles').innerHTML = tmpl('tmpl-vehicles-right-menu', window.vehicles.content)
-
-                    /*
-                    $("#right-menu").load(evt.target.getAttribute("data-page")+".html");
-                    GetPage(evt.target.getAttribute("data-page") + ".html", function(response){
-                        var LoadScript = new Function($('script#'+evt.target.getAttribute("data-page"),response).text());
-                        LoadScript();
-                        LoadMain();
-                    });*/
+                if(/*content === 'none'&& */evt.target.getAttribute("data-page") != null){   
+                    current_section = evt.target.getAttribute("data-page");
+                    document.getElementById('general').innerHTML = '<div id="list-'+current_section+'" class="twelve"></div>';                    
+                    document.getElementById('list-'+current_section).innerHTML = tmpl('tmpl-'+current_section+'-right-menu', window[evt.target.getAttribute("data-page")])
                 }
+            }
+        }
+        var subitems = document.querySelectorAll(".tree-nam__subitem");
+        for(var i = 0; i < subitems.length; i++){
+            subitems[i].onclick = function(evt){
+                evt.preventDefault();
+                if(evt.target.getAttribute("data-page") != current_section){
+                    current_section = evt.target.getAttribute("data-page");
+                    document.getElementById('general').innerHTML = '<div id="list-'+current_section+'" class="twelve"></div>';                    
+                    document.getElementById('list-'+current_section).innerHTML = tmpl('tmpl-'+current_section+'-right-menu', window[evt.target.getAttribute("data-page")])
+                }
+                var anchor = document.getElementById(evt.target.getAttribute("href"));
+                anchor.scrollIntoView()
             }
         }
     }
 };
-
-
-function CreateElementFromHTML(str) {
-    var div = document.createElement('div');
-    div.innerHTML = str.trim();
-    return div;
-}
 
 window['LoadData'] = function(url, cb){
     var xmlhttp = new XMLHttpRequest();
@@ -46,20 +47,8 @@ window['LoadData'] = function(url, cb){
     xmlhttp.send();
 }
 
-function GetPage(url, cb){
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", url);
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState == 4) {
-            cb(xhr.responseText);
-        }
-    }
-    xhr.send();
-}
-
-var data_loaded = false;
-
 document.addEventListener("DOMContentLoaded", function(){
+    window.general.load();
     window.characters.load();
     window.vehicles.load();
 });
