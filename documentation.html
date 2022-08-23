@@ -33,9 +33,9 @@
                         <details class="tree-nav__item is-expandable" id="menu-vehicles">
                             
                         </details>
-                        <details class="tree-nav__item is-expandable" id="menu-boats">
+                        <!--details class="tree-nav__item is-expandable" id="menu-boats">
                             
-                        </details>
+                        </details-->
                         <!--details class="tree-nav__item is-expandable">
                             <summary class="tree-nav__item-title" data-page="boats">Boats</summary>
                             <div class="tree-nav__item">
@@ -91,7 +91,7 @@
                 </nav>
             </div>
             <div class="main h-100 w-100" id="right-menu">
-                <div id="list-vehicles"></div>
+                <div id="list-vehicles" class="twelve"></div>
             </div>
         </div>
     </body>
@@ -112,26 +112,38 @@
         <div class="tree-nav__item">
             <a class="tree-nav__item-title text-grey"></a>
             {% for (var i=0; i<o.vehicles.length; i++) { %}
-                <a class="tree-nav__item-title tree-nam__subitem" href="#{%=o.vehicles[i].name%}" text-grey">
+                <a class="tree-nav__item-title tree-nam__subitem" href="#{%=o.vehicles[i].name+'_'+i%}" text-grey">
                     {%=o.vehicles[i].name%}
                 </a>
             {% } %}
         </div>
     </script>
     <script type="text/x-tmpl" id="tmpl-vehicles-right-menu">
-        <h2>Vehicles</h2>
-        <ul>
-            {% for (var i=0; i<o.vehicles.length; i++) { %}
-                <li>
-                    <a name="{%=o.vehicles[i].name%}">
-                        <img src="{%=o.vehicles[i].miniature%}">
+        <h2 class="m-0 p-3">Vehicles</h2>
+        {% for (var i=0; i<o.vehicles.length; i++) { %}
+            <div class="twelve d-flex p-3 mb-3">
+                <div class="three">
+                    <img class="vehicle-img" src="{%=o.vehicles[i].miniature%}">
+                </div>
+                <div class="nine ml-3">
+                    <span class="font-bold vehicle-name" name="{%=o.vehicles[i].name+'_'+i%}">
                         {%=o.vehicles[i].name%}
-                    </a>
-                </li>
-            {% } %}
-            </ul>
+                    </span>
+                    <div class="d-flex justify-content-center align-items-start flex-column">
+                        <span><b>Overall:</b> {%=o.vehicles[i].overall%}</span>
+                        <span><b>Top Speed:</b> {%=o.vehicles[i].top_speed%}</span>
+                        <span><b>Acceleration:</b> {%=o.vehicles[i].acceleration%}</span>
+                        <span><b>Handling:</b> {%=o.vehicles[i].handling%}</span>
+                        <span><b>Braking:</b> {%=o.vehicles[i].braking%}</span>
+                        <span><b>Mass:</b>{%=o.vehicles[i].mass%}</span>
+                        <span><b>Armor:</b>{%=o.vehicles[i].armor%}</span>
+                        <span><b>Type:</b>{%=o.vehicles[i].type%}</span>
+                    </div>
+                </div>
+            </div>
+        {% } %}
     </script>
-    <script type="text/x-tmpl" id="tmpl-boats">
+    <!--script type="text/x-tmpl" id="tmpl-boats">
         <summary class="tree-nav__item-title" data-page="boats">Boats</summary>
         <div class="tree-nav__item">
             <a class="tree-nav__item-title text-grey"></a>
@@ -141,6 +153,6 @@
                 </a>
             {% } %}
         </div>
-    </script>
+    </script-->
     <script src="js/tmpl.min.js"></script>
 </html>
