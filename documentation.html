@@ -41,43 +41,11 @@
                         <details class="tree-nav__item is-expandable menu-vehicles">
                             
                         </details>
-                        <!--details class="tree-nav__item is-expandable" id="menu-boats">
+                        <details class="tree-nav__item is-expandable menu-boats">
                             
-                        </details-->
-                        <!--details class="tree-nav__item is-expandable">
-                            <summary class="tree-nav__item-title" data-page="boats">Boats</summary>
-                            <div class="tree-nav__item">
-                                <a class="tree-nav__item-title text-grey">ATTACK BOAT</a>
-                                <a class="tree-nav__item-title text-grey">ATTACK GUN BOAT</a>
-                                <a class="tree-nav__item-title text-grey">CIGARETTE BOAT</a>
-                                <a class="tree-nav__item-title text-grey">CIGARETTE GUN BOAT</a>
-                                <a class="tree-nav__item-title text-grey">COAST GUARD BOAT</a>
-                                <a class="tree-nav__item-title text-grey">COLOMBIAN ATTACK BOAT</a>
-                                <a class="tree-nav__item-title text-grey">COLOMBIAN CIGARETTE BOAT</a>
-                                <a class="tree-nav__item-title text-grey">DEA BOAT</a>
-                                <a class="tree-nav__item-title text-grey">DIAZ CIGARETTE BOAT</a>
-                                <a class="tree-nav__item-title text-grey">EXOTIC PICKLE FORK BOAT</a>
-                                <a class="tree-nav__item-title text-grey">FAN BOAT</a>
-                                <a class="tree-nav__item-title text-grey">GASPAR CIGARETTE BOAT</a>
-                                <a class="tree-nav__item-title text-grey">GENERIC ATTACK BOAT</a>
-                                <a class="tree-nav__item-title text-grey">ISLAND BOAT</a>
-                                <a class="tree-nav__item-title text-grey">JET BOAT</a>
-                                <a class="tree-nav__item-title text-grey">LARGE SAILBOAT (RIG)</a>
-                                <a class="tree-nav__item-title text-grey">LARGE SAILBOAT (UNRIG)</a>
-                                <a class="tree-nav__item-title text-grey">NACHO CIGARETTE BOAT</a>
-                                <a class="tree-nav__item-title text-grey">NAVY HYDRO BOAT</a>
-                                <a class="tree-nav__item-title text-grey">PICKLE FORK BOAT</a>
-                                <a class="tree-nav__item-title text-grey">POLICE BOAT</a>
-                                <a class="tree-nav__item-title text-grey">POWER BOAT</a>
-                                <a class="tree-nav__item-title text-grey">PT BOAT</a>
-                                <a class="tree-nav__item-title text-grey">RACING BOAT</a>
-                                <a class="tree-nav__item-title text-grey">SPORT FISHING BOAT (EXOTIC CATALOG)</a>
-                                <a class="tree-nav__item-title text-grey">TONY CIGARETTE BOAT</a>
-                                <a class="tree-nav__item-title text-grey">TRICK CRAFT</a>
-                                <a class="tree-nav__item-title text-grey">YACHT (EXOTIC CATALOG)</a>
-                            </div>
                         </details>
-                        <details class="tree-nav__item is-expandable">
+                       
+                        <!--details class="tree-nav__item is-expandable">
                             <summary class="tree-nav__item-title" data-page="planes">Planes</summary>
                             <div class="tree-nav__item">
                                 <a class="tree-nav__item-title text-grey">AMPHIBIAN PLANE</a>
@@ -107,6 +75,7 @@
     <script src="js/general.js"></script>
     <script src="js/characters.js"></script>
     <script src="js/vehicles.js"></script>
+    <script src="js/boats.js"></script>
     <script type="text/x-tmpl" id="tmpl-characters">
         <summary class="tree-nav__item-title" data-page="characters">Characters</summary>
         <div class="tree-nav__item">
@@ -123,6 +92,17 @@
             {% for (var i=0; i<o.content.vehicles.length; i++) { %}
                 <a class="tree-nav__item-title tree-nam__subitem"  data-page="vehicles" href="{%=o.content.vehicles[i].name.replace(" ","_")+'_'+i%}" text-grey">
                     {%=o.content.vehicles[i].name%}
+                </a>
+            {% } %}
+        </div>
+    </script>
+    <script type="text/x-tmpl" id="tmpl-boats">
+        <summary class="tree-nav__item-title" data-page="boats">Boats</summary>
+        <div class="tree-nav__item">
+            <a class="tree-nav__item-title text-grey"></a>
+            {% for (var i=0; i<o.content.boats.length; i++) { %}
+                <a class="tree-nav__item-title tree-nam__subitem"  data-page="boats" href="{%=o.content.boats[i].name.replace(" ","_")+'_'+i%}" text-grey">
+                    {%=o.content.boats[i].name%}
                 </a>
             {% } %}
         </div>
@@ -190,16 +170,35 @@
             </div>
         {% } %}
     </script>
-    <!--script type="text/x-tmpl" id="tmpl-boats">
-        <summary class="tree-nav__item-title" data-page="boats">Boats</summary>
-        <div class="tree-nav__item">
-            <a class="tree-nav__item-title text-grey"></a>
-            {% for (var i=0; i<o.boats.length; i++) { %}
-                <a class="tree-nav__item-title text-grey">
-                    {%=o.boats[i].name%}
-                </a>
+    <script type="text/x-tmpl" id="tmpl-boats-right-menu">
+        <h2 class="m-0 p-3">{%=o.title%}</h2>
+        <div class="breadcrumb d-flex">
+            {% for (var i=0; i<o.breadcrumb.length; i++) { %}
+                <a class="tree-nav__item-title text-grey"> > {%=o.breadcrumb[i].name%}</a>
             {% } %}
         </div>
-    </script-->
+        {% for (var i=0; i<o.content.boats.length; i++) { %}
+            <div class="twelve d-flex p-3 mb-3">
+                <div class="three">
+                    <img class="vehicle-img" src="{%=o.content.boats[i].miniature%}">
+                </div>
+                <div class="nine ml-3">
+                    <span class="font-bold vehicle-name" id="{%=o.content.boats[i].name.replace(" ","_")+'_'+i%}">
+                        {%=o.content.boats[i].name%}
+                    </span>
+                    <div class="d-flex justify-content-center align-items-start flex-column">
+                        <span><b>Overall:</b> {%=o.content.boats[i].overall%}</span>
+                        <span><b>Top Speed:</b> {%=o.content.boats[i].top_speed%}</span>
+                        <span><b>Acceleration:</b> {%=o.content.boats[i].acceleration%}</span>
+                        <span><b>Handling:</b> {%=o.content.boats[i].handling%}</span>
+                        <span><b>Braking:</b> {%=o.content.boats[i].braking%}</span>
+                        <span><b>Mass:</b>{%=o.content.boats[i].mass%}</span>
+                        <span><b>Armor:</b>{%=o.content.boats[i].armor%}</span>
+                        <span><b>Type:</b>{%=o.content.boats[i].type%}</span>
+                    </div>
+                </div>
+            </div>
+        {% } %}
+    </script>
     <script src="js/tmpl.min.js"></script>
 </html>

@@ -1,11 +1,12 @@
 var current_section = null;
 
 window['APIDataLoaded'] = function(){
-    if(window.general.loaded && window.characters.loaded && window.vehicles.loaded){
+    if(window.general.loaded && window.characters.loaded && window.vehicles.loaded && window.boats.loaded){
         document.getElementById('general').innerHTML = '<div id="list-general" class="twelve"></div>'; 
-        document.getElementById('list-general').innerHTML = tmpl('tmpl-general-right-menu', window.general)
-        document.querySelector('.menu-characters').innerHTML = tmpl('tmpl-characters', window.characters)
-        document.querySelector('.menu-vehicles').innerHTML = tmpl('tmpl-vehicles', window.vehicles)
+        document.getElementById('list-general').innerHTML = tmpl('tmpl-general-right-menu', window.general);
+        document.querySelector('.menu-characters').innerHTML = tmpl('tmpl-characters', window.characters);
+        document.querySelector('.menu-vehicles').innerHTML = tmpl('tmpl-vehicles', window.vehicles);
+        document.querySelector('.menu-boats').innerHTML = tmpl('tmpl-boats', window.boats);
         var summary_nodes = document.querySelectorAll("summary");
         for(var i = 0; i < summary_nodes.length; i++){
             summary_nodes[i].onclick = function(evt){
@@ -51,4 +52,5 @@ document.addEventListener("DOMContentLoaded", function(){
     window.general.load();
     window.characters.load();
     window.vehicles.load();
+    window.boats.load();
 });
