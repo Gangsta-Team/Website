@@ -1,0 +1,24 @@
+{
+    "helicopters" :[
+        {
+            "name": "ARMY HELI",
+            "miniature" : ""
+        },
+        {
+            "name": "ATTACK HELI",
+            "miniature" : ""
+        },
+        {
+            "name": "HUEY CG",
+            "miniature" : ""
+        },
+        {
+            "name": "MOUNTED ARMY HELI",
+            "miniature" : ""
+        },
+        {
+            "name": "POLICE HELI",
+            "miniature" : ""
+        }
+    ]
+}

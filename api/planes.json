@@ -1,0 +1,16 @@
+{
+    "planes" :[
+        {
+            "name": "AMPHIBIAN PLANE",
+            "miniature" : ""
+        },
+        {
+            "name": "DEA TWIN EAGLE",
+            "miniature" : ""
+        },
+        {
+            "name": "EXOTIC TWIN EAGLE",
+            "miniature" : ""
+        }
+    ]
+}
