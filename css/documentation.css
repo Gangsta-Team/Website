@@ -66,8 +66,12 @@
     border: 4px solid rgb(199 151 42);
     width: 240px;
 }
-.vehicle-name{
+.vehicle-name, .character-name{
     color: rgb(199 151 42);
+}
+.character-img{
+    border: 4px solid rgb(199 151 42);
+    width: 120px;
 }
 /*
 KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK

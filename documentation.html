@@ -81,7 +81,7 @@
         <div class="tree-nav__item">
             <a class="tree-nav__item-title text-grey"></a>
             {% for (var i=0; i<o.content.characters.length; i++) { %}
-                <a class="tree-nav__item-title tree-nam__subitem" data-page="characters">{%=o.content.characters[i].name%}</a>
+                <a class="tree-nav__item-title tree-nam__subitem" data-page="characters" href="{%=o.content.characters[i].name.replace(" ","_")+'_'+i%}" text-grey">{%=o.content.characters[i].name%}</a>
             {% } %}
         </div>
     </script>
@@ -133,7 +133,7 @@
                     <img class="character-img" src="{%=o.content.characters[i].miniature%}">
                 </div>
                 <div class="nine ml-3">
-                    <span class="font-bold character-name" name="{%=o.content.characters[i].name.replace(" ","_")+'_'+i%}">
+                    <span class="font-bold character-name" id="{%=o.content.characters[i].name.replace(" ","_")+'_'+i%}">
                         {%=o.content.characters[i].name%}
                     </span>
                 </div>
