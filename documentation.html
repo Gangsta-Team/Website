@@ -50,6 +50,9 @@
                         <details class="tree-nav__item is-expandable menu-helicopters">
                             
                         </details>
+                        <details class="tree-nav__item is-expandable menu-natives">
+                            
+                        </details>
                     </details>
                 </nav>
             </div>
@@ -65,6 +68,7 @@
     <script src="js/boats.js"></script>
     <script src="js/planes.js"></script>
     <script src="js/helicopters.js"></script>
+    <script src="js/natives.js"></script>
     <script type="text/x-tmpl" id="tmpl-characters">
         <summary class="tree-nav__item-title" data-page="characters">Characters</summary>
         <div class="tree-nav__item">
@@ -114,6 +118,17 @@
             {% for (var i=0; i<o.content.helicopters.length; i++) { %}
                 <a class="tree-nav__item-title tree-nam__subitem"  data-page="helicopters" href="{%=o.content.helicopters[i].name.replace(" ","_")+'_'+i%}" text-grey">
                     {%=o.content.helicopters[i].name%}
+                </a>
+            {% } %}
+        </div>
+    </script>
+    <script type="text/x-tmpl" id="tmpl-natives">
+        <summary class="tree-nav__item-title" data-page="natives">Natives</summary>
+        <div class="tree-nav__item">
+            <a class="tree-nav__item-title text-grey"></a>
+            {% for (var i=0; i<o.content.natives.length; i++) { %}
+                <a class="tree-nav__item-title tree-nam__subitem"  data-page="natives" href="{%=o.content.natives[i].addr.replace(" ","_")+'_'+i%}" text-grey">
+                    {%=o.content.natives[i].fn%}
                 </a>
             {% } %}
         </div>
@@ -247,6 +262,27 @@
                     <span class="font-bold vehicle-name" id="{%=o.content.helicopters[i].name.replace(" ","_")+'_'+i%}">
                         {%=o.content.helicopters[i].name%}
                     </span>
+                </div>
+            </div>
+        {% } %}
+    </script>
+    <script type="text/x-tmpl" id="tmpl-natives-right-menu">
+        <h2 class="m-0 p-3">{%=o.title%}</h2>
+        <div class="breadcrumb d-flex">
+            {% for (var i=0; i<o.breadcrumb.length; i++) { %}
+                <a class="tree-nav__item-title text-grey"> > {%=o.breadcrumb[i].name%}</a>
+            {% } %}
+        </div>
+        {% for (var i=0; i<o.content.natives.length; i++) { %}
+            <div class="twelve d-flex p-3 mb-3">
+                <div class="twelve ml-3">
+                    <span class="font-bold vehicle-name" id="{%=o.content.natives[i].addr.replace(" ","_")+'_'+i%}">
+                        {%=o.content.natives[i].fn%}
+                    </span>
+                    <div class="d-flex justify-content-center align-items-start flex-column">
+                        <span><b>Overall:</b> {%=o.content.natives[i].addr%}</span>
+                        <span><b>Top Speed:</b> {%=o.content.natives[i].fn%}</span>
+                    </div>
                 </div>
             </div>
         {% } %}

@@ -6,7 +6,8 @@ window['APIDataLoaded'] = function(){
         && window.vehicles.loaded 
         && window.boats.loaded 
         && window.planes.loaded 
-        && window.helicopters.loaded){
+        && window.helicopters.loaded 
+        && window.natives.loaded){
         document.getElementById('general').innerHTML = '<div id="list-general" class="twelve"></div>'; 
         document.getElementById('list-general').innerHTML = tmpl('tmpl-general-right-menu', window.general);
         document.querySelector('.menu-characters').innerHTML = tmpl('tmpl-characters', window.characters);
@@ -14,6 +15,7 @@ window['APIDataLoaded'] = function(){
         document.querySelector('.menu-boats').innerHTML = tmpl('tmpl-boats', window.boats);
         document.querySelector('.menu-planes').innerHTML = tmpl('tmpl-planes', window.planes);
         document.querySelector('.menu-helicopters').innerHTML = tmpl('tmpl-helicopters', window.helicopters);
+        document.querySelector('.menu-natives').innerHTML = tmpl('tmpl-natives', window.natives);
         var summary_nodes = document.querySelectorAll("summary");
         for(var i = 0; i < summary_nodes.length; i++){
             summary_nodes[i].onclick = function(evt){
@@ -62,4 +64,5 @@ document.addEventListener("DOMContentLoaded", function(){
     window.boats.load();
     window.planes.load();
     window.helicopters.load();
+    window.natives.load();
 });

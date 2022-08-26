@@ -155,3 +155,6 @@ KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
     text-decoration: none;
     color: grey;
 }
+.tree-nam__subitem:hover{
+    color: rgb(255, 255, 255);
+}
