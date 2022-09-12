@@ -4,8 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Scarface The World Is Yours:  Documentation</title>
-        
+        <title>Scarface The World Is Yours:  Documentation</title>        
         
         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -22,9 +21,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <div class="h-100 w-100 d-flex">
+        <div class="h-100 w-100 d-flex" id="main-content">
             <div class="text-white h-100 scrollbar" id="left-menu">
-                <a class="d-flex justify-content-start align-items-center font-stwiy m-4 text-decoration-none" href="gangster.html">
+                <a class="d-flex justify-content-start align-items-center font-stwiy m-4 text-decoration-none" href="index.html">
                     <img class="logo mr-3" src="img/icon.png">
                     <div class="d-flex justify-content-start align-items-center flex-column">
                         <h1 class="m-0 text-white">SCARFACE</h1>
@@ -33,26 +32,8 @@
                 </a>
             
                 <nav class="tree-nav font-regular ml-2">
-                    <details class="tree-nav__item is-expandable">
-                        <summary class="tree-nav__item-title" data-page="general">General</summary>
-                        <details class="tree-nav__item is-expandable menu-characters">
-                            
-                        </details>
-                        <details class="tree-nav__item is-expandable menu-vehicles">
-                            
-                        </details>
-                        <details class="tree-nav__item is-expandable menu-boats">
-                            
-                        </details>
-                        <details class="tree-nav__item is-expandable menu-planes">
-                            
-                        </details>
-                        <details class="tree-nav__item is-expandable menu-helicopters">
-                            
-                        </details>
-                        <details class="tree-nav__item is-expandable menu-natives">
-                            
-                        </details>
+                    <details class="tree-nav__item is-expandable" id="list-general">
+                
                     </details>
                 </nav>
             </div>
@@ -60,98 +41,52 @@
                 
             </div>
         </div>
+        <div class="w-100 h-100 position-absolute top-0 left-0 loader d-flex justify-content-center align-items-center">
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
     </body>
+    <script src="js/tmpl.min.js"></script>
     <script src="js/documentation.js"></script>
-    <script src="js/general.js"></script>
-    <script src="js/characters.js"></script>
-    <script src="js/vehicles.js"></script>
-    <script src="js/boats.js"></script>
-    <script src="js/planes.js"></script>
-    <script src="js/helicopters.js"></script>
-    <script src="js/natives.js"></script>
+    <script type="text/x-tmpl" id="tmpl-general-menu">
+        <summary class="tree-nav__item-title" data-apipage="general">General</summary>
+        {% for (var i=0; i<o.content.length; i++) { %}
+        <details class="tree-nav__item is-expandable">
+            <summary class="tree-nav__item-title" data-apipage="{%=o.content[i].toLowerCase()%}">{%=o.content[i]%}</summary>
+            <div class="tree-nav__item" id="menu-{%=o.content[i].toLowerCase()%}">
+                <a class="tree-nav__item-title text-grey"></a>
+            </div>
+        </details>
+        {% } %}
+    </script>
+    <script type="text/x-tmpl" id="list-menu">
+        {% for (var i=0; i<o.content[o.root].length; i++) { %}
+            <a class="tree-nav__item-title tree-nam__subitem" data-apipage="{%=o.root.toLowerCase()%}" href="{%=(o.root == 'natives') ? o.content[o.root][i].addr : o.content[o.root][i].name.replace(" ","_")+'_'+i%}" text-grey">{%=o.content[o.root][i].name%}</a>
+        {% } %}
+    </script>
+    
+    <script type="text/x-tmpl" id="tmpl-general">
+        <div id="section-general" class="section twelve">
+            <div class="twelve nested">
+                <h2 class="m-0 p-3 twelve">{%=o.title%}</h2>
+                <div class="breadcrumb twelve d-flex">
+                    {% for (var i=0; i<o.breadcrumb.length; i++) { %}
+                        <a class="tree-nav__item-title text-grey"> > {%=o.breadcrumb[i].name%}</a>
+                    {% } %}
+                </div>
+            </div>
+        </div>
+    </script>
     <script type="text/x-tmpl" id="tmpl-characters">
-        <summary class="tree-nav__item-title" data-page="characters">Characters</summary>
-        <div class="tree-nav__item">
-            <a class="tree-nav__item-title text-grey"></a>
-            {% for (var i=0; i<o.content.characters.length; i++) { %}
-                <a class="tree-nav__item-title tree-nam__subitem" data-page="characters" href="{%=o.content.characters[i].name.replace(" ","_")+'_'+i%}" text-grey">{%=o.content.characters[i].name%}</a>
-            {% } %}
-        </div>
-    </script>
-    <script type="text/x-tmpl" id="tmpl-vehicles">
-        <summary class="tree-nav__item-title" data-page="vehicles">Vehicles</summary>
-        <div class="tree-nav__item">
-            <a class="tree-nav__item-title text-grey"></a>
-            {% for (var i=0; i<o.content.vehicles.length; i++) { %}
-                <a class="tree-nav__item-title tree-nam__subitem"  data-page="vehicles" href="{%=o.content.vehicles[i].name.replace(" ","_")+'_'+i%}" text-grey">
-                    {%=o.content.vehicles[i].name%}
-                </a>
-            {% } %}
-        </div>
-    </script>
-    <script type="text/x-tmpl" id="tmpl-boats">
-        <summary class="tree-nav__item-title" data-page="boats">Boats</summary>
-        <div class="tree-nav__item">
-            <a class="tree-nav__item-title text-grey"></a>
-            {% for (var i=0; i<o.content.boats.length; i++) { %}
-                <a class="tree-nav__item-title tree-nam__subitem"  data-page="boats" href="{%=o.content.boats[i].name.replace(" ","_")+'_'+i%}" text-grey">
-                    {%=o.content.boats[i].name%}
-                </a>
-            {% } %}
-        </div>
-    </script>
-    <script type="text/x-tmpl" id="tmpl-planes">
-        <summary class="tree-nav__item-title" data-page="planes">Planes</summary>
-        <div class="tree-nav__item">
-            <a class="tree-nav__item-title text-grey"></a>
-            {% for (var i=0; i<o.content.planes.length; i++) { %}
-                <a class="tree-nav__item-title tree-nam__subitem"  data-page="planes" href="{%=o.content.planes[i].name.replace(" ","_")+'_'+i%}" text-grey">
-                    {%=o.content.planes[i].name%}
-                </a>
-            {% } %}
-        </div>
-    </script>
-    <script type="text/x-tmpl" id="tmpl-helicopters">
-        <summary class="tree-nav__item-title" data-page="helicopters">Helicopters</summary>
-        <div class="tree-nav__item">
-            <a class="tree-nav__item-title text-grey"></a>
-            {% for (var i=0; i<o.content.helicopters.length; i++) { %}
-                <a class="tree-nav__item-title tree-nam__subitem"  data-page="helicopters" href="{%=o.content.helicopters[i].name.replace(" ","_")+'_'+i%}" text-grey">
-                    {%=o.content.helicopters[i].name%}
-                </a>
-            {% } %}
-        </div>
-    </script>
-    <script type="text/x-tmpl" id="tmpl-natives">
-        <summary class="tree-nav__item-title" data-page="natives">Natives</summary>
-        <div class="tree-nav__item">
-            <a class="tree-nav__item-title text-grey"></a>
-            {% for (var i=0; i<o.content.natives.length; i++) { %}
-                <a class="tree-nav__item-title tree-nam__subitem"  data-page="natives" href="{%=o.content.natives[i].addr.replace(" ","_")+'_'+i%}" text-grey">
-                    {%=o.content.natives[i].fn%}
-                </a>
-            {% } %}
-        </div>
-    </script>
-    <script type="text/x-tmpl" id="tmpl-general-right-menu">
-        <div class="twelve">
-            <h2 class="m-0 p-3">{%=o.title%}</h2>
-            <div class="breadcrumb d-flex">
-                {% for (var i=0; i<o.breadcrumb.length; i++) { %}
-                    <a class="tree-nav__item-title text-grey"> > {%=o.breadcrumb[i].name%}</a>
-                {% } %}
+        <div class="twelve nested">
+            <h2 class="m-0 p-3 twelve">{%=o.title%}</h2>
+            <div class="breadcrumb twelve d-flex">
+                <a class="tree-nav__item-title text-grey"> Documentation > Characters</a>
             </div>
-            <div class="twelve p-3">
-                General information
-            </div>
-        </div>
-    </script>
-    <script type="text/x-tmpl" id="tmpl-characters-right-menu">
-        <h2 class="m-0 p-3">{%=o.title%}</h2>
-        <div class="breadcrumb d-flex">
-            {% for (var i=0; i<o.breadcrumb.length; i++) { %}
-                <a class="tree-nav__item-title text-grey"> > {%=o.breadcrumb[i].name%}</a>
-            {% } %}
         </div>
         {% for (var i=0; i<o.content.characters.length; i++) { %}
             <div class="twelve d-flex p-3 mb-3">
@@ -166,12 +101,12 @@
             </div>
         {% } %}
     </script>
-    <script type="text/x-tmpl" id="tmpl-vehicles-right-menu">
-        <h2 class="m-0 p-3">{%=o.title%}</h2>
-        <div class="breadcrumb d-flex">
-            {% for (var i=0; i<o.breadcrumb.length; i++) { %}
-                <a class="tree-nav__item-title text-grey"> > {%=o.breadcrumb[i].name%}</a>
-            {% } %}
+    <script type="text/x-tmpl" id="tmpl-vehicles">
+        <div class="twelve nested">
+            <h2 class="m-0 p-3 twelve">{%=o.title%}</h2>
+            <div class="breadcrumb twelve d-flex">
+                <a class="tree-nav__item-title text-grey"> Documentation > Vehicles</a>
+            </div>
         </div>
         {% for (var i=0; i<o.content.vehicles.length; i++) { %}
             <div class="twelve d-flex p-3 mb-3">
@@ -196,12 +131,12 @@
             </div>
         {% } %}
     </script>
-    <script type="text/x-tmpl" id="tmpl-boats-right-menu">
-        <h2 class="m-0 p-3">{%=o.title%}</h2>
-        <div class="breadcrumb d-flex">
-            {% for (var i=0; i<o.breadcrumb.length; i++) { %}
-                <a class="tree-nav__item-title text-grey"> > {%=o.breadcrumb[i].name%}</a>
-            {% } %}
+    <script type="text/x-tmpl" id="tmpl-boats">
+        <div class="twelve nested">
+            <h2 class="m-0 p-3 twelve">{%=o.title%}</h2>
+            <div class="breadcrumb twelve d-flex">
+                <a class="tree-nav__item-title text-grey"> Documentation > Boats</a>
+            </div>
         </div>
         {% for (var i=0; i<o.content.boats.length; i++) { %}
             <div class="twelve d-flex p-3 mb-3">
@@ -226,12 +161,12 @@
             </div>
         {% } %}
     </script>
-    <script type="text/x-tmpl" id="tmpl-planes-right-menu">
-        <h2 class="m-0 p-3">{%=o.title%}</h2>
-        <div class="breadcrumb d-flex">
-            {% for (var i=0; i<o.breadcrumb.length; i++) { %}
-                <a class="tree-nav__item-title text-grey"> > {%=o.breadcrumb[i].name%}</a>
-            {% } %}
+    <script type="text/x-tmpl" id="tmpl-planes">
+        <div class="twelve nested">
+            <h2 class="m-0 p-3 twelve">{%=o.title%}</h2>
+            <div class="breadcrumb twelve d-flex">
+                <a class="tree-nav__item-title text-grey"> Documentation > Planes</a>
+            </div>
         </div>
         {% for (var i=0; i<o.content.planes.length; i++) { %}
             <div class="twelve d-flex p-3 mb-3">
@@ -246,12 +181,12 @@
             </div>
         {% } %}
     </script>
-    <script type="text/x-tmpl" id="tmpl-helicopters-right-menu">
-        <h2 class="m-0 p-3">{%=o.title%}</h2>
-        <div class="breadcrumb d-flex">
-            {% for (var i=0; i<o.breadcrumb.length; i++) { %}
-                <a class="tree-nav__item-title text-grey"> > {%=o.breadcrumb[i].name%}</a>
-            {% } %}
+    <script type="text/x-tmpl" id="tmpl-helicopters">
+        <div class="twelve nested">
+            <h2 class="m-0 p-3 twelve">{%=o.title%}</h2>
+            <div class="breadcrumb twelve d-flex">
+                <a class="tree-nav__item-title text-grey"> Documentation > Helicopters</a>
+            </div>
         </div>
         {% for (var i=0; i<o.content.helicopters.length; i++) { %}
             <div class="twelve d-flex p-3 mb-3">
@@ -266,26 +201,26 @@
             </div>
         {% } %}
     </script>
-    <script type="text/x-tmpl" id="tmpl-natives-right-menu">
-        <h2 class="m-0 p-3">{%=o.title%}</h2>
-        <div class="breadcrumb d-flex">
-            {% for (var i=0; i<o.breadcrumb.length; i++) { %}
-                <a class="tree-nav__item-title text-grey"> > {%=o.breadcrumb[i].name%}</a>
-            {% } %}
+    <script type="text/x-tmpl" id="tmpl-natives">
+        <div class="twelve nested">
+            <h2 class="m-0 p-3 twelve">{%=o.title%}</h2>
+            <div class="breadcrumb twelve d-flex">
+                <a class="tree-nav__item-title text-grey"> Documentation > Natives</a>
+            </div>
         </div>
         {% for (var i=0; i<o.content.natives.length; i++) { %}
             <div class="twelve d-flex p-3 mb-3">
                 <div class="twelve ml-3">
-                    <span class="font-bold vehicle-name" id="{%=o.content.natives[i].addr.replace(" ","_")+'_'+i%}">
+                    <span class="font-bold vehicle-name" id="{%=o.content.natives[i].addr%}">
                         {%=o.content.natives[i].fn%}
                     </span>
                     <div class="d-flex justify-content-center align-items-start flex-column">
-                        <span><b>Overall:</b> {%=o.content.natives[i].addr%}</span>
-                        <span><b>Top Speed:</b> {%=o.content.natives[i].fn%}</span>
+                        {% if(o.content.natives[i].class) { %}<span><b>Class:</b> {%=o.content.natives[i].class%}</span>{% } %}
+                        <span><b>Name:</b> {%=o.content.natives[i].name%}</span>
+                        <span><b>Address:</b> {%=o.content.natives[i].addr%}</span>
                     </div>
                 </div>
             </div>
         {% } %}
     </script>
-    <script src="js/tmpl.min.js"></script>
 </html>

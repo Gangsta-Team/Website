@@ -1,2313 +1,2313 @@
 {
     "natives" :[
         {
-            "fn" : "SetMaxNPCTwoHandedWeaponUpperBodyTwistAngles",
+            "name" : "SetMaxNPCTwoHandedWeaponUpperBodyTwistAngles",
             "addr" : "0x0040B270"
         },
         {
-            "fn" : "SetMaxNPCOneHandedWeaponUpperBodyTwistAngles",
+            "name" : "SetMaxNPCOneHandedWeaponUpperBodyTwistAngles",
             "addr" : "0x0040B2C0"
         },
         {
-            "fn" : "LOSSetBehaviourTypeGroup",
+            "name" : "LOSSetBehaviourTypeGroup",
             "addr" : "0x0041F6A0"
         },
         {
-            "fn" : "CCB_ClearBumped",
+            "name" : "CCB_ClearBumped",
             "addr" : "0x00427210"
         },
         {
             "class" : "ActionMap",
-            "fn" : "BindKey",
+            "name" : "BindKey",
             "addr" : "0x0042F490"
         },
         {
             "class" : "ActionMap",
-            "fn" : "BindBlockingKey",
+            "name" : "BindBlockingKey",
             "addr" : "0x0042F4E0"
         },
         {
             "class" : "ActionMap",
-            "fn" : "BindKeysWithTimer",
+            "name" : "BindKeysWithTimer",
             "addr" : "0x0042F530"
         },
         {
             "class" : "ActionMap",
-            "fn" : "BindFunction",
+            "name" : "BindFunction",
             "addr" : "0x0042F590"
         },
         {
             "class" : "ActionMap",
-            "fn" : "BindCommand",
+            "name" : "BindCommand",
             "addr" : "0x0042F5C0"
         },
         {
             "class" : "ActionMap",
-            "fn" : "BindCommandNoOverride",
+            "name" : "BindCommandNoOverride",
             "addr" : "0x0042F610"
         },
         {
             "class" : "ActionMap",
-            "fn" : "Push",
+            "name" : "Push",
             "addr" : "0x0042F660"
         },
         {
             "class" : "ActionMap",
-            "fn" : "Pop",
+            "name" : "Pop",
             "addr" : "0x0042F670"
         },
         {
-            "fn" : "SetAnalogDeadZone",
+            "name" : "SetAnalogDeadZone",
             "addr" : "0x0042F7A0"
         },
         {
-            "fn" : "ApplyEventInputChanges",
+            "name" : "ApplyEventInputChanges",
             "addr" : "0x0042FE00"
         },
         {
-            "fn" : "ClearPhysicalOverride",
+            "name" : "ClearPhysicalOverride",
             "addr" : "0x0042F800"
         },
         {
-            "fn" : "SetMouseSensitivityLevel",
+            "name" : "SetMouseSensitivityLevel",
             "addr" : "0x0042F880"
         },
         {
-            "fn" : "SetIsLeftHand",
+            "name" : "SetIsLeftHand",
             "addr" : "0x00430230"
         },
         {
-            "fn" : "DBPostFloat",
+            "name" : "DBPostFloat",
             "addr" : "0x004338E0"
         },
         {
-            "fn" : "DBPostInt",
+            "name" : "DBPostInt",
             "addr" : "0x00433950"
         },
         {
-            "fn" : "DBSetTotalSkilledPoints",
+            "name" : "DBSetTotalSkilledPoints",
             "addr" : "0x00433C40"
         },
         {
-            "fn" : "DBSetTotalMissionPoints",
+            "name" : "DBSetTotalMissionPoints",
             "addr" : "0x00433C60"
         },
         {
-            "fn" : "DBSetTotalExoticsPoints",
+            "name" : "DBSetTotalExoticsPoints",
             "addr" : "0x00433C80"
         },
         {
-            "fn" : "DBSetReputationLevel",
+            "name" : "DBSetReputationLevel",
             "addr" : "0x00433CD0"
         },
         {
-            "fn" : "GameShutdown",
+            "name" : "GameShutdown",
             "addr" : "0x00436710"
         },
         {
-            "fn" : "Set_gPauseGame",
+            "name" : "Set_gPauseGame",
             "addr" : "0x00436730"
         },
         {
-            "fn" : "ToggleSlowMotion",
+            "name" : "ToggleSlowMotion",
             "addr" : "0x004377B0"
         },
         {
-            "fn" : "PushTimeScale",
+            "name" : "PushTimeScale",
             "addr" : "0x00437800"
         },
         {
-            "fn" : "PopTimeScale",
+            "name" : "PopTimeScale",
             "addr" : "0x00437820"
         },
         {
-            "fn" : "FreezeGame",
+            "name" : "FreezeGame",
             "addr" : "0x00437830"
         },
         {
-            "fn" : "ToggleFreezeGame",
+            "name" : "ToggleFreezeGame",
             "addr" : "0x00437850"
         },
         {
-            "fn" : "UnFreezeForOneFrame",
+            "name" : "UnFreezeForOneFrame",
             "addr" : "0x00437870"
         },
         {
-            "fn" : "SetSlowMotionUpdate",
+            "name" : "SetSlowMotionUpdate",
             "addr" : "0x00437880"
         },
         {
-            "fn" : "CreateScroobyProject",
+            "name" : "CreateScroobyProject",
             "addr" : "0x00439B40"
         },
         {
-            "fn" : "SetLoaderAllocator",
+            "name" : "SetLoaderAllocator",
             "addr" : "0x00439B90"
         },
         {
-            "fn" : "SetFontInventory",
+            "name" : "SetFontInventory",
             "addr" : "0x00439BA0"
         },
         {
-            "fn" : "AllocateMemoryForPMGTextbibles",
+            "name" : "AllocateMemoryForPMGTextbibles",
             "addr" : "0x00439BE0"
         },
         {
-            "fn" : "AddTextbibleEntryToLoad",
+            "name" : "AddTextbibleEntryToLoad",
             "addr" : "0x00439C90"
         },
         {
-            "fn" : "RemoveTextbibleSpecialStringData",
+            "name" : "RemoveTextbibleSpecialStringData",
             "addr" : "0x00439D10"
         },
         {
             "class" : "FEBoxObject",
-            "fn" : "SetTriPosition",
+            "name" : "SetTriPosition",
             "addr" : "0x00439EA0"
         },
         {
             "class" : "FEBoxObject",
-            "fn" : "SetPosition",
+            "name" : "SetPosition",
             "addr" : "0x00439ED0"
         },
         {
             "class" : "FESpriteObject",
-            "fn" : "SetCurrentItem",
+            "name" : "SetCurrentItem",
             "addr" : "0x00439F10"
         },
         {
             "class" : "FETextObject",
-            "fn" : "SetText",
+            "name" : "SetText",
             "addr" : "0x00439F30"
         },
         {
             "class" : "FETextObject",
-            "fn" : "ClearTextItems",
+            "name" : "ClearTextItems",
             "addr" : "0x00439F70"
         },
         {
-            "fn" : "DestroyScroobyProject",
+            "name" : "DestroyScroobyProject",
             "addr" : "0x00439F80"
         },
         {
             "class" : "Graph",
-            "fn" : "AddKey",
+            "name" : "AddKey",
             "addr" : "0x0043BFA0"
         },
         {
             "class" : "Graph",
-            "fn" : "SetMaxNumKeys",
+            "name" : "SetMaxNumKeys",
             "addr" : "0x0043BFD0"
         },
         {
-            "fn" : "CancelNIS",
+            "name" : "CancelNIS",
             "addr" : "0x004415E0"
         },
         {
-            "fn" : "PlayNIS",
+            "name" : "PlayNIS",
             "addr" : "0x004416D0"
         },
         {
-            "fn" : "DelayNISStart",
+            "name" : "DelayNISStart",
             "addr" : "0x004415F0"
         },
         {
-            "fn" : "CallAnyNISActivate",
+            "name" : "CallAnyNISActivate",
             "addr" : "0x00441640"
         },
         {
-            "fn" : "CallAnyNISChangeCounter",
+            "name" : "CallAnyNISChangeCounter",
             "addr" : "0x00441670"
         },
         {
-            "fn" : "SetNISEffectOverride",
+            "name" : "SetNISEffectOverride",
             "addr" : "0x004416B0"
         },
         {
             "class" : "GameGroup",
-            "fn" : "Recurse",
+            "name" : "Recurse",
             "addr" : "0x00445E20"
         },
         {
             "class" : "GameObject",
-            "fn" : "SetPosition",
+            "name" : "SetPosition",
             "addr" : "0x00446E90"
         },
         {
             "class" : "GameObject",
-            "fn" : "SetDirection",
+            "name" : "SetDirection",
             "addr" : "0x00446370"
         },
         {
             "class" : "GameSet",
-            "fn" : "Clear",
+            "name" : "Clear",
             "addr" : "0x00446600"
         },
         {
             "class" : "GameSet",
-            "fn" : "SetVisible",
+            "name" : "SetVisible",
             "addr" : "0x00446610"
         },
         {
             "class" : "GameSimObject",
-            "fn" : "SetInvincible",
+            "name" : "SetInvincible",
             "addr" : "0x004469A0"
         },
         {
             "class" : "PositionObject",
-            "fn" : "SetPosition",
+            "name" : "SetPosition",
             "addr" : "0x00446E90"
         },
         {
             "class" : "ScriptObject",
-            "fn" : "Delete",
+            "name" : "Delete",
             "addr" : "0x004473F0"
         },
         {
             "class" : "ScriptObject",
-            "fn" : "ApplyChanges",
+            "name" : "ApplyChanges",
             "addr" : "0x00447400"
         },
         {
             "class" : "ScriptObject",
-            "fn" : "RelinkNamespaces",
+            "name" : "RelinkNamespaces",
             "addr" : "0x00447440"
         },
         {
             "class" : "ScriptObject",
-            "fn" : "ExportAttribute",
+            "name" : "ExportAttribute",
             "addr" : "0x00447470"
         },
         {
             "class" : "ScriptObject",
-            "fn" : "SetSubZone",
+            "name" : "SetSubZone",
             "addr" : "0x004474C0"
         },
         {
             "class" : "ScriptObject",
-            "fn" : "Recurse",
+            "name" : "Recurse",
             "addr" : "0x004474E0"
         },
         {
             "class" : "ScriptObject",
-            "fn" : "SetDataField",
+            "name" : "SetDataField",
             "addr" : "0x00447760"
         },
         {
-            "fn" : "OptionManager_ParseCommandLineInput",
+            "name" : "OptionManager_ParseCommandLineInput",
             "addr" : "0x00448470"
         },
         {
-            "fn" : "OverlayToggleMenu",
+            "name" : "OverlayToggleMenu",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "OverlayPrevItem",
+            "name" : "OverlayPrevItem",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "OverlayNextItem",
+            "name" : "OverlayNextItem",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "OverlayPrevParentedItem",
+            "name" : "OverlayPrevParentedItem",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "OverlayNextParentedItem",
+            "name" : "OverlayNextParentedItem",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "OverlayToggleCurrentItem",
+            "name" : "OverlayToggleCurrentItem",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "OverlayActivateItem",
+            "name" : "OverlayActivateItem",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "OverlaySetCurrentItem",
+            "name" : "OverlaySetCurrentItem",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "OverlayDeactivateItem",
+            "name" : "OverlayDeactivateItem",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "OverlayDeactivateAll",
+            "name" : "OverlayDeactivateAll",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "OverlaySetParentItem",
+            "name" : "OverlaySetParentItem",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "OverlaySetItemPersistent",
+            "name" : "OverlaySetItemPersistent",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "OverlaySetTitle",
+            "name" : "OverlaySetTitle",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "RoadGraph_ShowHintsWithPath",
+            "name" : "RoadGraph_ShowHintsWithPath",
             "addr" : "0x004569D0"
         },
         {
-            "fn" : "RoadGraph_ShowHintsToDestination",
+            "name" : "RoadGraph_ShowHintsToDestination",
             "addr" : "0x004568B0"
         },
         {
-            "fn" : "RoadGraph_StopHints",
+            "name" : "RoadGraph_StopHints",
             "addr" : "0x00456950"
         },
         {
-            "fn" : "RoadGraph_ShowRaceHUD",
+            "name" : "RoadGraph_ShowRaceHUD",
             "addr" : "0x00456960"
         },
         {
-            "fn" : "RoadGraph_SetArrivedAtDestinationCallback",
+            "name" : "RoadGraph_SetArrivedAtDestinationCallback",
             "addr" : "0x00456990"
         },
         {
-            "fn" : "RoadGraph_SetLapCompletedCallback",
+            "name" : "RoadGraph_SetLapCompletedCallback",
             "addr" : "0x004569B0"
         },
         {
-            "fn" : "ChangeResolution",
+            "name" : "ChangeResolution",
             "addr" : "0x00457310"
         },
         {
-            "fn" : "SaveResolutionChangeToRegistry",
+            "name" : "SaveResolutionChangeToRegistry",
             "addr" : "0x00457350"
         },
         {
-            "fn" : "ChangeMSAA",
+            "name" : "ChangeMSAA",
             "addr" : "0x004573A0"
         },
         {
-            "fn" : "ChangeBrightness",
+            "name" : "ChangeBrightness",
             "addr" : "0x004573F0"
         },
         {
-            "fn" : "EnableSFX",
+            "name" : "EnableSFX",
             "addr" : "0x004575A0"
         },
         {
-            "fn" : "SetAnisValue",
+            "name" : "SetAnisValue",
             "addr" : "0x004574C0"
         },
         {
-            "fn" : "SetTrilinear",
+            "name" : "SetTrilinear",
             "addr" : "0x00457510"
         },
         {
-            "fn" : "SetDrawDistance",
+            "name" : "SetDrawDistance",
             "addr" : "0x00457560"
         },
         {
-            "fn" : "WorldFadeIn_Enable",
+            "name" : "WorldFadeIn_Enable",
             "addr" : "0x004575E0"
         },
         {
-            "fn" : "DisplayExteriors_Enable",
+            "name" : "DisplayExteriors_Enable",
             "addr" : "0x004576C0"
         },
         {
-            "fn" : "DisplayInteriors_Enable",
+            "name" : "DisplayInteriors_Enable",
             "addr" : "0x004576E0"
         },
         {
-            "fn" : "TimeOfDay_Enable",
+            "name" : "TimeOfDay_Enable",
             "addr" : "0x00457700"
         },
         {
-            "fn" : "Widescreen_Enable",
+            "name" : "Widescreen_Enable",
             "addr" : "0x00457720"
         },
         {
-            "fn" : "HDTV_Enable",
+            "name" : "HDTV_Enable",
             "addr" : "0x00457750"
         },
         {
-            "fn" : "TriggerAmbientEffect",
+            "name" : "TriggerAmbientEffect",
             "addr" : "0x00457780"
         },
         {
-            "fn" : "SRC_SetNumLayers",
+            "name" : "SRC_SetNumLayers",
             "addr" : "0x00469770"
         },
         {
-            "fn" : "SRC_SetOffset",
+            "name" : "SRC_SetOffset",
             "addr" : "0x00469790"
         },
         {
-            "fn" : "SRC_SetLayerVisible",
+            "name" : "SRC_SetLayerVisible",
             "addr" : "0x004697F0"
         },
         {
-            "fn" : "SRC_SetLayerScale",
+            "name" : "SRC_SetLayerScale",
             "addr" : "0x00469840"
         },
         {
-            "fn" : "LoadResource",
+            "name" : "LoadResource",
             "addr" : "0x0047B680"
         },
         {
-            "fn" : "LoadScriptResource",
+            "name" : "LoadScriptResource",
             "addr" : "0x0047B700"
         },
         {
-            "fn" : "ResourceListSetLoadCompleteCallback",
+            "name" : "ResourceListSetLoadCompleteCallback",
             "addr" : "0x0047B7E0"
         },
         {
-            "fn" : "ResourceListAddResource",
+            "name" : "ResourceListAddResource",
             "addr" : "0x0047B930"
         },
         {
-            "fn" : "ResourceListLoad",
+            "name" : "ResourceListLoad",
             "addr" : "0x0047B950"
         },
         {
-            "fn" : "ResourceListRemove",
+            "name" : "ResourceListRemove",
             "addr" : "0x0047B970"
         },
         {
-            "fn" : "CreateInventory",
+            "name" : "CreateInventory",
             "addr" : "0x0047B990"
         },
         {
-            "fn" : "DestroyInventory",
+            "name" : "DestroyInventory",
             "addr" : "0x0047B9C0"
         },
         {
-            "fn" : "SetMaximumProcessingTime",
+            "name" : "SetMaximumProcessingTime",
             "addr" : "0x0047B9D0"
         },
         {
-            "fn" : "EnableStartGameLoad",
+            "name" : "EnableStartGameLoad",
             "addr" : "0x0047B9F0"
         },
         {
-            "fn" : "LoadDZoneInCode",
+            "name" : "LoadDZoneInCode",
             "addr" : "0x0047BA10"
         },
         {
-            "fn" : "LoadAZoneInCode",
+            "name" : "LoadAZoneInCode",
             "addr" : "0x0047BA30"
         },
         {
-            "fn" : "UnloadDZoneInCode",
+            "name" : "UnloadDZoneInCode",
             "addr" : "0x0047BA50"
         },
         {
-            "fn" : "UnloadAZoneInCode",
+            "name" : "UnloadAZoneInCode",
             "addr" : "0x0047BA60"
         },
         {
-            "fn" : "ShowLoadingList",
+            "name" : "ShowLoadingList",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "ResetLastDriveError",
+            "name" : "ResetLastDriveError",
             "addr" : "0x0047BAE0"
         },
         {
             "class" : "SaveGameController",
-            "fn" : "SaveGame",
+            "name" : "SaveGame",
             "addr" : "0x00487B70"
         },
         {
             "class" : "SaveGameController",
-            "fn" : "LoadGame",
+            "name" : "LoadGame",
             "addr" : "0x00487BE0"
         },
         {
             "class" : "SaveGameController",
-            "fn" : "EnforceReleaseAssert",
+            "name" : "EnforceReleaseAssert",
             "addr" : "0x00487C50"
         },
         {
             "class" : "SaveGameController",
-            "fn" : "ResetRegisteredHandlers",
+            "name" : "ResetRegisteredHandlers",
             "addr" : "0x00487C90"
         },
         {
             "class" : "SaveGameController",
-            "fn" : "SetMissionStatus",
+            "name" : "SetMissionStatus",
             "addr" : "0x00487CC0"
         },
         {
             "class" : "SaveGameController",
-            "fn" : "ActivateQueue",
+            "name" : "ActivateQueue",
             "addr" : "0x00487CE0"
         },
         {
-            "fn" : "RemoveCodeBlock",
+            "name" : "RemoveCodeBlock",
             "addr" : "0x00489E80"
         },
         {
-            "fn" : "Echo",
+            "name" : "Echo",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "SlowEcho",
+            "name" : "SlowEcho",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "WarningMsg",
+            "name" : "WarningMsg",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "DebugMsg",
+            "name" : "DebugMsg",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "AssertMsg",
+            "name" : "AssertMsg",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "DelayedEval",
+            "name" : "DelayedEval",
             "addr" : "0x00489FE0"
         },
         {
-            "fn" : "Cancel",
+            "name" : "Cancel",
             "addr" : "0x0048A1F0"
         },
         {
-            "fn" : "StartMissionStringTable",
+            "name" : "StartMissionStringTable",
             "addr" : "0x0048A230"
         },
         {
-            "fn" : "StopMissionStringTable",
+            "name" : "StopMissionStringTable",
             "addr" : "0x0048A240"
         },
         {
-            "fn" : "ClearMissionStringTable",
+            "name" : "ClearMissionStringTable",
             "addr" : "0x0048A250"
         },
         {
-            "fn" : "StartScriptSection",
+            "name" : "StartScriptSection",
             "addr" : "0x0048A260"
         },
         {
-            "fn" : "StopScriptSection",
+            "name" : "StopScriptSection",
             "addr" : "0x0048A270"
         },
         {
-            "fn" : "EndScriptSection",
+            "name" : "EndScriptSection",
             "addr" : "0x0048A280"
         },
         {
-            "fn" : "SetNewObjectParentGroup",
+            "name" : "SetNewObjectParentGroup",
             "addr" : "0x00492F80"
         },
         {
-            "fn" : "deleteVariables",
+            "name" : "deleteVariables",
             "addr" : "0x00492EC0"
         },
         {
-            "fn" : "trace",
+            "name" : "trace",
             "addr" : "0x00493CC0"
         },
         {
-            "fn" : "setLogMode",
+            "name" : "setLogMode",
             "addr" : "0x00493D00"
         },
         {
-            "fn" : "setEchoFileLoads",
+            "name" : "setEchoFileLoads",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "backtrace",
+            "name" : "backtrace",
             "addr" : "0x004949E0"
         },
         {
-            "fn" : "DumpNamespaces",
+            "name" : "DumpNamespaces",
             "addr" : "0x004947D0"
         },
         {
-            "fn" : "CompositionPlayerInitialize",
+            "name" : "CompositionPlayerInitialize",
             "addr" : "0x0049A080"
         },
         {
-            "fn" : "SoundManagerSetReverb",
+            "name" : "SoundManagerSetReverb",
             "addr" : "0x0049A4A0"
         },
         {
-            "fn" : "SoundManagerSetOutputMode",
+            "name" : "SoundManagerSetOutputMode",
             "addr" : "0x0049A090"
         },
         {
-            "fn" : "FeHudRequestMenuSound",
+            "name" : "FeHudRequestMenuSound",
             "addr" : "0x0049A140"
         },
         {
-            "fn" : "FeHudRequestHudSound",
+            "name" : "FeHudRequestHudSound",
             "addr" : "0x0049A150"
         },
         {
-            "fn" : "SoundSetFaderValue",
+            "name" : "SoundSetFaderValue",
             "addr" : "0x0049A160"
         },
         {
-            "fn" : "SoundFadeinMix",
+            "name" : "SoundFadeinMix",
             "addr" : "0x0049A210"
         },
         {
-            "fn" : "SoundFadeoutMix",
+            "name" : "SoundFadeoutMix",
             "addr" : "0x0049A2B0"
         },
         {
-            "fn" : "SoundSetPOIConversationCompleteStatus",
+            "name" : "SoundSetPOIConversationCompleteStatus",
             "addr" : "0x0049A3A0"
         },
         {
-            "fn" : "SoundDisableMusic",
+            "name" : "SoundDisableMusic",
             "addr" : "0x0049A430"
         },
         {
-            "fn" : "SoundDisableAmbience",
+            "name" : "SoundDisableAmbience",
             "addr" : "0x0049A450"
         },
         {
-            "fn" : "SoundDisableClips",
+            "name" : "SoundDisableClips",
             "addr" : "0x0049A470"
         },
         {
-            "fn" : "SPM_TargetVolumeClear",
+            "name" : "SPM_TargetVolumeClear",
             "addr" : "0x004B1DC0"
         },
         {
-            "fn" : "PushStreamerObjectOfInterest",
+            "name" : "PushStreamerObjectOfInterest",
             "addr" : "0x004B4190"
         },
         {
-            "fn" : "PopStreamerObjectOfInterest",
+            "name" : "PopStreamerObjectOfInterest",
             "addr" : "0x004B41B0"
         },
         {
-            "fn" : "Slot_Create",
+            "name" : "Slot_Create",
             "addr" : "0x004B41E0"
         },
         {
-            "fn" : "Slot_Destroy",
+            "name" : "Slot_Destroy",
             "addr" : "0x004B4240"
         },
         {
-            "fn" : "CancelAllStreaming",
+            "name" : "CancelAllStreaming",
             "addr" : "0x004B4250"
         },
         {
-            "fn" : "BindTriggeredSlots",
+            "name" : "BindTriggeredSlots",
             "addr" : "0x004B4260"
         },
         {
-            "fn" : "AddMemoryHack",
+            "name" : "AddMemoryHack",
             "addr" : "0x004B42E0"
         },
         {
-            "fn" : "RemoveMemoryHack",
+            "name" : "RemoveMemoryHack",
             "addr" : "0x004B4310"
         },
         {
-            "fn" : "PrintFreeMemory",
+            "name" : "PrintFreeMemory",
             "addr" : "0x005E1BB0"
         },
         {
-            "fn" : "SubtitleManager_QueingFMVSubtitles",
+            "name" : "SubtitleManager_QueingFMVSubtitles",
             "addr" : "0x004BBC20"
         },
         {
-            "fn" : "SubtitleManager_LocalisedDialogueEvent",
+            "name" : "SubtitleManager_LocalisedDialogueEvent",
             "addr" : "0x004BBC50"
         },
         {
-            "fn" : "SubtitleManager_TriggerDialogueEvent",
+            "name" : "SubtitleManager_TriggerDialogueEvent",
             "addr" : "0x004BBD30"
         },
         {
-            "fn" : "SubtitleManager_SetIsSubtitleEnabled",
+            "name" : "SubtitleManager_SetIsSubtitleEnabled",
             "addr" : "0x004BBD80"
         },
         {
-            "fn" : "SubtitleManager_ClearDialogueEvents",
+            "name" : "SubtitleManager_ClearDialogueEvents",
             "addr" : "0x004BBDB0"
         },
         {
-            "fn" : "ShowLoadingScreen",
+            "name" : "ShowLoadingScreen",
             "addr" : "0x004F1E20"
         },
         {
-            "fn" : "Blackout",
+            "name" : "Blackout",
             "addr" : "0x004F4020"
         },
         {
-            "fn" : "RestartOpeningSequence",
+            "name" : "RestartOpeningSequence",
             "addr" : "0x004F40B0"
         },
         {
-            "fn" : "OpeningSequenceTutorialComplete",
+            "name" : "OpeningSequenceTutorialComplete",
             "addr" : "0x004F40D0"
         },
         {
-            "fn" : "OpeningSequenceMissionLoadComplete",
+            "name" : "OpeningSequenceMissionLoadComplete",
             "addr" : "0x004F1E60"
         },
         {
-            "fn" : "PM_RegisterLoadingData",
+            "name" : "PM_RegisterLoadingData",
             "addr" : "0x004F4130"
         },
         {
-            "fn" : "PM_RegisterDestructData",
+            "name" : "PM_RegisterDestructData",
             "addr" : "0x004F41A0"
         },
         {
-            "fn" : "PM_RequestState",
+            "name" : "PM_RequestState",
             "addr" : "0x004F1E90"
         },
         {
-            "fn" : "LockMemoryForPEG",
+            "name" : "LockMemoryForPEG",
             "addr" : "0x004F26A0"
         },
         {
-            "fn" : "LockMemoryForMiniNIS",
+            "name" : "LockMemoryForMiniNIS",
             "addr" : "0x004F26E0"
         },
         {
-            "fn" : "UnlockScriptEventMemory",
+            "name" : "UnlockScriptEventMemory",
             "addr" : "0x004F1EC0"
         },
         {
-            "fn" : "CVM_SetProceduralSpawnerEnabled",
+            "name" : "CVM_SetProceduralSpawnerEnabled",
             "addr" : "0x004F4B90"
         },
         {
-            "fn" : "CVM_KillAll",
+            "name" : "CVM_KillAll",
             "addr" : "0x004F4BB0"
         },
         {
-            "fn" : "CVM_KillAllTraffic",
+            "name" : "CVM_KillAllTraffic",
             "addr" : "0x004F4BD0"
         },
         {
-            "fn" : "CVM_KillAllGangMembersAndVehicles",
+            "name" : "CVM_KillAllGangMembersAndVehicles",
             "addr" : "0x004F4BE0"
         },
         {
-            "fn" : "CVM_SetPirateBoatsEnabled",
+            "name" : "CVM_SetPirateBoatsEnabled",
             "addr" : "0x004F4C20"
         },
         {
-            "fn" : "CVM_SetPirateHelicoptersEnabled",
+            "name" : "CVM_SetPirateHelicoptersEnabled",
             "addr" : "0x004F4C40"
         },
         {
-            "fn" : "CVM_SetPiratesEnabled",
+            "name" : "CVM_SetPiratesEnabled",
             "addr" : "0x004F4C60"
         },
         {
-            "fn" : "CVM_BlackoutWaitForSet",
+            "name" : "CVM_BlackoutWaitForSet",
             "addr" : "0x004F4C90"
         },
         {
-            "fn" : "CVM_KillAllGangMembers",
+            "name" : "CVM_KillAllGangMembers",
             "addr" : "0x004F4CC0"
         },
         {
-            "fn" : "CVM_KillAllAmbientCharacters",
+            "name" : "CVM_KillAllAmbientCharacters",
             "addr" : "0x004F4CD0"
         },
         {
-            "fn" : "CVM_KillAllGangMembersInRange",
+            "name" : "CVM_KillAllGangMembersInRange",
             "addr" : "0x004F4CE0"
         },
         {
-            "fn" : "CVM_KillAllDealers",
+            "name" : "CVM_KillAllDealers",
             "addr" : "0x004F4D30"
         },
         {
-            "fn" : "CVM_SetMainCharacterPackage",
+            "name" : "CVM_SetMainCharacterPackage",
             "addr" : "0x004F4D40"
         },
         {
-            "fn" : "CVM_SetWaitingForLoad",
+            "name" : "CVM_SetWaitingForLoad",
             "addr" : "0x004F4DE0"
         },
         {
-            "fn" : "CVM_SetAmbientSpawnObjectsEnabled",
+            "name" : "CVM_SetAmbientSpawnObjectsEnabled",
             "addr" : "0x004F4E10"
         },
         {
-            "fn" : "CVM_SetNISModeCharacterDeleteNotSuspend",
+            "name" : "CVM_SetNISModeCharacterDeleteNotSuspend",
             "addr" : "0x004F4E40"
         },
         {
-            "fn" : "TonyEnteredDeathVolume",
+            "name" : "TonyEnteredDeathVolume",
             "addr" : "0x004F4E60"
         },
         {
-            "fn" : "SetFastTuningMode",
+            "name" : "SetFastTuningMode",
             "addr" : "0x004F5490"
         },
         {
-            "fn" : "PauseGame",
+            "name" : "PauseGame",
             "addr" : "0x004F5570"
         },
         {
-            "fn" : "UnpauseGame",
+            "name" : "UnpauseGame",
             "addr" : "0x004F5760"
         },
         {
-            "fn" : "SetTonyTeleportCallback",
+            "name" : "SetTonyTeleportCallback",
             "addr" : "0x004F5830"
         },
         {
-            "fn" : "TonyTeleport",
+            "name" : "TonyTeleport",
             "addr" : "0x004F5850"
         },
         {
-            "fn" : "TonyTeleportWithoutFadeIn",
+            "name" : "TonyTeleportWithoutFadeIn",
             "addr" : "0x004F5970"
         },
         {
-            "fn" : "ForceWorldReload",
+            "name" : "ForceWorldReload",
             "addr" : "0x004F5AD0"
         },
         {
-            "fn" : "TutorialAddSequence",
+            "name" : "TutorialAddSequence",
             "addr" : "0x004F5AE0"
         },
         {
-            "fn" : "HenchmanManager_SetFollowTony",
+            "name" : "HenchmanManager_SetFollowTony",
             "addr" : "0x0051E3B0"
         },
         {
-            "fn" : "AISenseEventNotifyAll",
+            "name" : "AISenseEventNotifyAll",
             "addr" : "0x00522BF0"
         },
         {
-            "fn" : "SetAIAttacksEnabled",
+            "name" : "SetAIAttacksEnabled",
             "addr" : "0x00522A60"
         },
         {
             "class" : "AIStimulusTable",
-            "fn" : "AddEvent",
+            "name" : "AddEvent",
             "addr" : "0x00522A80"
         },
         {
             "class" : "AIStimulusTable",
-            "fn" : "DefineDefaultOverrideTables",
+            "name" : "DefineDefaultOverrideTables",
             "addr" : "0x00522B10"
         },
         {
             "class" : "AIStimulusTable",
-            "fn" : "DetectsStimulus",
+            "name" : "DetectsStimulus",
             "addr" : "0x00522B30"
         },
         {
             "class" : "AIStimulusTable",
-            "fn" : "AddBasicEvent",
+            "name" : "AddBasicEvent",
             "addr" : "0x00522B50"
         },
         {
             "class" : "AIStimulusTable",
-            "fn" : "AddBasicEventWithReactData",
+            "name" : "AddBasicEventWithReactData",
             "addr" : "0x00522B80"
         },
         {
-            "fn" : "NME_SetDefinedTunablesCount",
+            "name" : "NME_SetDefinedTunablesCount",
             "addr" : "0x005281B0"
         },
         {
-            "fn" : "NME_AddDefinedTunables",
+            "name" : "NME_AddDefinedTunables",
             "addr" : "0x005281E0"
         },
         {
-            "fn" : "NME_SetAIDef",
+            "name" : "NME_SetAIDef",
             "addr" : "0x00528200"
         },
         {
-            "fn" : "NME_SetTunables",
+            "name" : "NME_SetTunables",
             "addr" : "0x00528270"
         },
         {
-            "fn" : "NME_SetWeaponTunables",
+            "name" : "NME_SetWeaponTunables",
             "addr" : "0x005282A0"
         },
         {
-            "fn" : "NME_SetWeaponPickerWeights",
+            "name" : "NME_SetWeaponPickerWeights",
             "addr" : "0x00528230"
         },
         {
-            "fn" : "NME_CreateInitialWeapon",
+            "name" : "NME_CreateInitialWeapon",
             "addr" : "0x005282E0"
         },
         {
-            "fn" : "TSM_NewTargetSet",
+            "name" : "TSM_NewTargetSet",
             "addr" : "0x00528310"
         },
         {
-            "fn" : "TSM_AddTargetSetFilter",
+            "name" : "TSM_AddTargetSetFilter",
             "addr" : "0x00528340"
         },
         {
-            "fn" : "TSM_Cleanup",
+            "name" : "TSM_Cleanup",
             "addr" : "0x00528410"
         },
         {
             "class" : "CameraManager",
-            "fn" : "Request_NISCameraMode",
+            "name" : "Request_NISCameraMode",
             "addr" : "0x0056A360"
         },
         {
             "class" : "CameraManager",
-            "fn" : "SetCameraShake",
+            "name" : "SetCameraShake",
             "addr" : "0x0056A490"
         },
         {
             "class" : "CameraManager",
-            "fn" : "Request_ObjectControl",
+            "name" : "Request_ObjectControl",
             "addr" : "0x0056A580"
         },
         {
             "class" : "CameraManager",
-            "fn" : "SetFinishedCallback",
+            "name" : "SetFinishedCallback",
             "addr" : "0x0056A550"
         },
         {
             "class" : "CameraObject",
-            "fn" : "SetFOVDegrees",
+            "name" : "SetFOVDegrees",
             "addr" : "0x0056A750"
         },
         {
             "class" : "CameraObject",
-            "fn" : "SetFacingDirection",
+            "name" : "SetFacingDirection",
             "addr" : "0x0056A780"
         },
         {
             "class" : "CameraObject",
-            "fn" : "SetActionMap",
+            "name" : "SetActionMap",
             "addr" : "0x0056A800"
         },
         {
             "class" : "CameraObject",
-            "fn" : "SetCameraTransition",
+            "name" : "SetCameraTransition",
             "addr" : "0x0056A7B0"
         },
         {
             "class" : "GenericCharacterCamera",
-            "fn" : "ReleaseTarget",
+            "name" : "ReleaseTarget",
             "addr" : "0x0056A940"
         },
         {
             "class" : "GenericCharacterCamera",
-            "fn" : "RecenterCamera",
+            "name" : "RecenterCamera",
             "addr" : "0x0056A950"
         },
         {
             "class" : "NISCamera",
-            "fn" : "Clear",
+            "name" : "Clear",
             "addr" : "0x0056B2C0"
         },
         {
             "class" : "NISCamera",
-            "fn" : "Extend",
+            "name" : "Extend",
             "addr" : "0x0056B2D0"
         },
         {
             "class" : "NISCamera",
-            "fn" : "SetCameraPosition",
+            "name" : "SetCameraPosition",
             "addr" : "0x0056B2E0"
         },
         {
             "class" : "NISCamera",
-            "fn" : "SetTargetPosition",
+            "name" : "SetTargetPosition",
             "addr" : "0x0056B310"
         },
         {
             "class" : "NISCamera",
-            "fn" : "SetCameraObject",
+            "name" : "SetCameraObject",
             "addr" : "0x0056B340"
         },
         {
             "class" : "NISCamera",
-            "fn" : "SetTargetObject",
+            "name" : "SetTargetObject",
             "addr" : "0x0056B3B0"
         },
         {
             "class" : "NISCamera",
-            "fn" : "AttachCameraToObject",
+            "name" : "AttachCameraToObject",
             "addr" : "0x0056B420"
         },
         {
             "class" : "NISCamera",
-            "fn" : "FrameTwoPositions",
+            "name" : "FrameTwoPositions",
             "addr" : "0x0056B490"
         },
         {
             "class" : "NISCamera",
-            "fn" : "SetOrbit",
+            "name" : "SetOrbit",
             "addr" : "0x0056B4E0"
         },
         {
             "class" : "NISCamera",
-            "fn" : "SetCameraAnimation",
+            "name" : "SetCameraAnimation",
             "addr" : "0x0056B520"
         },
         {
             "class" : "NISCamera",
-            "fn" : "SetAnimationParams",
+            "name" : "SetAnimationParams",
             "addr" : "0x0056B540"
         },
         {
             "class" : "NISCamera",
-            "fn" : "SetCameraFOV",
+            "name" : "SetCameraFOV",
             "addr" : "0x0056B5C0"
         },
         {
             "class" : "NISCamera",
-            "fn" : "SelectCamera2",
+            "name" : "SelectCamera2",
             "addr" : "0x0056B5F0"
         },
         {
             "class" : "NISCamera",
-            "fn" : "SetBlend",
+            "name" : "SetBlend",
             "addr" : "0x0056B600"
         },
         {
             "class" : "NISCamera",
-            "fn" : "SetCollision",
+            "name" : "SetCollision",
             "addr" : "0x0056B630"
         },
         {
             "class" : "NISCamera",
-            "fn" : "Start",
+            "name" : "Start",
             "addr" : "0x0056B660"
         },
         {
-            "fn" : "SetPlayerGameObject",
+            "name" : "SetPlayerGameObject",
             "addr" : "0x0056FDA0"
         },
         {
-            "fn" : "SetCharacterContextsEnabled",
+            "name" : "SetCharacterContextsEnabled",
             "addr" : "0x0056F970"
         },
         {
-            "fn" : "SetFitnessHenchmen",
+            "name" : "SetFitnessHenchmen",
             "addr" : "0x0057C6A0"
         },
         {
             "class" : "DanceState",
-            "fn" : "EnterDanceVolume",
+            "name" : "EnterDanceVolume",
             "addr" : "0x00586ED0"
         },
         {
-            "fn" : "LaunchTonyTauntFromScript",
+            "name" : "LaunchTonyTauntFromScript",
             "addr" : "0x00586F70"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "ClearLastVehicle",
+            "name" : "ClearLastVehicle",
             "addr" : "0x005871D0"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "BeKickedOutOfCar",
+            "name" : "BeKickedOutOfCar",
             "addr" : "0x005871E0"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "RequestVocalAfterTargetFinished",
+            "name" : "RequestVocalAfterTargetFinished",
             "addr" : "0x00587F80"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "SetVisible",
+            "name" : "SetVisible",
             "addr" : "0x00587360"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "EnterVehicleLowLevel",
+            "name" : "EnterVehicleLowLevel",
             "addr" : "0x005873C0"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "StartRailShooter",
+            "name" : "StartRailShooter",
             "addr" : "0x00588060"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "EndRailShooter",
+            "name" : "EndRailShooter",
             "addr" : "0x00587410"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "SetWalkingOnLandContext",
+            "name" : "SetWalkingOnLandContext",
             "addr" : "0x00587420"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "ExitVehicle",
+            "name" : "ExitVehicle",
             "addr" : "0x00587430"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "MaxAmmoCode",
+            "name" : "MaxAmmoCode",
             "addr" : "0x00587440"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "InfiniteAmmo",
+            "name" : "InfiniteAmmo",
             "addr" : "0x00587450"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "DetachObject",
+            "name" : "DetachObject",
             "addr" : "0x005874D0"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "SetActionMap",
+            "name" : "SetActionMap",
             "addr" : "0x005881D0"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "SwitchToWeaponType",
+            "name" : "SwitchToWeaponType",
             "addr" : "0x00588220"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "AddWeaponTemplateToInventory",
+            "name" : "AddWeaponTemplateToInventory",
             "addr" : "0x00587570"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "RemoveWeaponFromInventory",
+            "name" : "RemoveWeaponFromInventory",
             "addr" : "0x005875D0"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "OnDyingFinished",
+            "name" : "OnDyingFinished",
             "addr" : "0x00587600"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "SetDisabled",
+            "name" : "SetDisabled",
             "addr" : "0x00587660"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "SetImmuneToExecution",
+            "name" : "SetImmuneToExecution",
             "addr" : "0x00587680"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "ApplyDamage",
+            "name" : "ApplyDamage",
             "addr" : "0x005882E0"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "FireWeapon",
+            "name" : "FireWeapon",
             "addr" : "0x005876E0"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "SetKnockedDown",
+            "name" : "SetKnockedDown",
             "addr" : "0x00587720"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "SetCanCounterMeleeAttack",
+            "name" : "SetCanCounterMeleeAttack",
             "addr" : "0x00587750"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "ApplyDamageToGrappleCharacter",
+            "name" : "ApplyDamageToGrappleCharacter",
             "addr" : "0x00588370"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "HealthChanged",
+            "name" : "HealthChanged",
             "addr" : "0x00587780"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "FadeAndDelete",
+            "name" : "FadeAndDelete",
             "addr" : "0x00587940"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "UseTargetSet",
+            "name" : "UseTargetSet",
             "addr" : "0x00587970"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "PlayCarjackCopRadio",
+            "name" : "PlayCarjackCopRadio",
             "addr" : "0x005879B0"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "OnAlertStatusChanged",
+            "name" : "OnAlertStatusChanged",
             "addr" : "0x005E1BB0"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "SetAmbientCollision",
+            "name" : "SetAmbientCollision",
             "addr" : "0x005879E0"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "SetCharacterVisible",
+            "name" : "SetCharacterVisible",
             "addr" : "0x00587A00"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "SetSpawnUsage",
+            "name" : "SetSpawnUsage",
             "addr" : "0x00587A30"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "SetIsShoveable",
+            "name" : "SetIsShoveable",
             "addr" : "0x00587A60"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "SetOverrideCullDistance",
+            "name" : "SetOverrideCullDistance",
             "addr" : "0x00587A80"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "SetTimeOfDayParameters",
+            "name" : "SetTimeOfDayParameters",
             "addr" : "0x00587AC0"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "SyncWeaponToInventory",
+            "name" : "SyncWeaponToInventory",
             "addr" : "0x00588500"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "SyncInventoryToAllWeapons",
+            "name" : "SyncInventoryToAllWeapons",
             "addr" : "0x00587AF0"
         },
         {
             "class" : "CharacterObject",
-            "fn" : "SyncAllWeaponsToInventory",
+            "name" : "SyncAllWeaponsToInventory",
             "addr" : "0x00587B00"
         },
         {
             "class" : "ScriptCharacter",
-            "fn" : "SetNeedsMissionManagerHooks",
+            "name" : "SetNeedsMissionManagerHooks",
             "addr" : "0x005895C0"
         },
         {
             "class" : "InventoryBox",
-            "fn" : "PRIVATE_INV_ADD",
+            "name" : "PRIVATE_INV_ADD",
             "addr" : "0x0058A4A0"
         },
         {
             "class" : "BlackjackHUD",
-            "fn" : "Input",
+            "name" : "Input",
             "addr" : "0x005BF5B0"
         },
         {
             "class" : "ExoticsHUD2",
-            "fn" : "RefreshCashAndDetails",
+            "name" : "RefreshCashAndDetails",
             "addr" : "0x005BF6B0"
         },
         {
             "class" : "ExoticsHUD2",
-            "fn" : "ShowRepGained",
+            "name" : "ShowRepGained",
             "addr" : "0x005BF6C0"
         },
         {
             "class" : "ExoticsHUD2",
-            "fn" : "Move",
+            "name" : "Move",
             "addr" : "0x005BF700"
         },
         {
             "class" : "ExoticsHUD2",
-            "fn" : "Action",
+            "name" : "Action",
             "addr" : "0x005BF730"
         },
         {
             "class" : "FightBettingHUD",
-            "fn" : "Input",
+            "name" : "Input",
             "addr" : "0x005BF8B0"
         },
         {
             "class" : "FightBettingHUD",
-            "fn" : "Winner",
+            "name" : "Winner",
             "addr" : "0x005BF8D0"
         },
         {
             "class" : "FightBettingHUD",
-            "fn" : "SetFightType",
+            "name" : "SetFightType",
             "addr" : "0x005BF8F0"
         },
         {
             "class" : "GameOverHUD",
-            "fn" : "Input",
+            "name" : "Input",
             "addr" : "0x005BF9F0"
         },
         {
             "class" : "StreetWeaponHUD",
-            "fn" : "Input",
+            "name" : "Input",
             "addr" : "0x005BFAF0"
         },
         {
             "class" : "SatPhoneWeaponHUD",
-            "fn" : "Input",
+            "name" : "Input",
             "addr" : "0x005BFAF0"
         },
         {
             "class" : "LockerWeaponHUD",
-            "fn" : "Input",
+            "name" : "Input",
             "addr" : "0x005BFAF0"
         },
         {
             "class" : "LaunderCashHUD",
-            "fn" : "Confirm",
+            "name" : "Confirm",
             "addr" : "0x005C0020"
         },
         {
-            "fn" : "HUD_Create",
+            "name" : "HUD_Create",
             "addr" : "0x005C0110"
         },
         {
-            "fn" : "HUD_Destroy",
+            "name" : "HUD_Destroy",
             "addr" : "0x005C0120"
         },
         {
-            "fn" : "HUD_CreatePermanent",
+            "name" : "HUD_CreatePermanent",
             "addr" : "0x005C0130"
         },
         {
-            "fn" : "HUD_DestroyPermanent",
+            "name" : "HUD_DestroyPermanent",
             "addr" : "0x005C0140"
         },
         {
-            "fn" : "HUD_Hide",
+            "name" : "HUD_Hide",
             "addr" : "0x005C0160"
         },
         {
-            "fn" : "HUD_Show",
+            "name" : "HUD_Show",
             "addr" : "0x005C0230"
         },
         {
-            "fn" : "HUD_Reset",
+            "name" : "HUD_Reset",
             "addr" : "0x005C0290"
         },
         {
-            "fn" : "HUDSetElementEnabled",
+            "name" : "HUDSetElementEnabled",
             "addr" : "0x005C02A0"
         },
         {
-            "fn" : "HUD_ToggleHUD",
+            "name" : "HUD_ToggleHUD",
             "addr" : "0x005C0300"
         },
         {
-            "fn" : "HUD_SetCurrentModalVisibility",
+            "name" : "HUD_SetCurrentModalVisibility",
             "addr" : "0x005C0330"
         },
         {
-            "fn" : "HUD_ClearRestoreData",
+            "name" : "HUD_ClearRestoreData",
             "addr" : "0x005C0380"
         },
         {
-            "fn" : "HUD_SetGlobalSafeToActivate",
+            "name" : "HUD_SetGlobalSafeToActivate",
             "addr" : "0x005C0390"
         },
         {
-            "fn" : "HUD_SetNextToActivate",
+            "name" : "HUD_SetNextToActivate",
             "addr" : "0x005C03C0"
         },
         {
             "class" : "IntimidationHUD",
-            "fn" : "StartWindUp",
+            "name" : "StartWindUp",
             "addr" : "0x005C03E0"
         },
         {
             "class" : "IntimidationHUD",
-            "fn" : "RequestStopWindUp",
+            "name" : "RequestStopWindUp",
             "addr" : "0x005C03F0"
         },
         {
             "class" : "IntimidationHUD",
-            "fn" : "CreateMeter",
+            "name" : "CreateMeter",
             "addr" : "0x005C0400"
         },
         {
             "class" : "IntimidationHUD",
-            "fn" : "SetIntimidatedNPC",
+            "name" : "SetIntimidatedNPC",
             "addr" : "0x005C0460"
         },
         {
-            "fn" : "SetIntimidationSequenceParams",
+            "name" : "SetIntimidationSequenceParams",
             "addr" : "0x005C0480"
         },
         {
             "class" : "MissionFailHUD",
-            "fn" : "Input",
+            "name" : "Input",
             "addr" : "0x005C06F0"
         },
         {
             "class" : "MissionHUD",
-            "fn" : "ActivateStartLayer",
+            "name" : "ActivateStartLayer",
             "addr" : "0x005C07F0"
         },
         {
             "class" : "MissionHUD",
-            "fn" : "FadeIn",
+            "name" : "FadeIn",
             "addr" : "0x005C0820"
         },
         {
-            "fn" : "SetMissionHUDParams",
+            "name" : "SetMissionHUDParams",
             "addr" : "0x005C0830"
         },
         {
             "class" : "PimpYourMansionHUD",
-            "fn" : "Input",
+            "name" : "Input",
             "addr" : "0x005C0980"
         },
         {
             "class" : "PokerHUD",
-            "fn" : "Input",
+            "name" : "Input",
             "addr" : "0x005C0A80"
         },
         {
             "class" : "SlotMachineHUD",
-            "fn" : "Input",
+            "name" : "Input",
             "addr" : "0x005C0B80"
         },
         {
             "class" : "TeleportHUD",
-            "fn" : "SetBlendDestination",
+            "name" : "SetBlendDestination",
             "addr" : "0x005C0C90"
         },
         {
             "class" : "TeleportHUD",
-            "fn" : "PushSelection",
+            "name" : "PushSelection",
             "addr" : "0x005C0D60"
         },
         {
-            "fn" : "ResetLookTutorial",
+            "name" : "ResetLookTutorial",
             "addr" : "0x005C44C0"
         },
         {
-            "fn" : "AdvanceTutorialState",
+            "name" : "AdvanceTutorialState",
             "addr" : "0x005C44E0"
         },
         {
             "class" : "BusinessHUD",
-            "fn" : "Move",
+            "name" : "Move",
             "addr" : "0x005D0E80"
         },
         {
             "class" : "BusinessHUD",
-            "fn" : "Action",
+            "name" : "Action",
             "addr" : "0x005D0EB0"
         },
         {
             "class" : "BusinessDetailHUD",
-            "fn" : "Action",
+            "name" : "Action",
             "addr" : "0x005D0EF0"
         },
         {
             "class" : "DrugWarsHUD",
-            "fn" : "Action",
+            "name" : "Action",
             "addr" : "0x005D11D0"
         },
         {
             "class" : "EmpireHUD",
-            "fn" : "Action",
+            "name" : "Action",
             "addr" : "0x005D1300"
         },
         {
             "class" : "LookTutorialHUD",
-            "fn" : "Pressed",
+            "name" : "Pressed",
             "addr" : "0x005D15E0"
         },
         {
-            "fn" : "FlashGangHeatMeter",
+            "name" : "FlashGangHeatMeter",
             "addr" : "0x005D16E0"
         },
         {
-            "fn" : "DisplayNPCHealth",
+            "name" : "DisplayNPCHealth",
             "addr" : "0x005D1730"
         },
         {
-            "fn" : "DisplayObjectDistance",
+            "name" : "DisplayObjectDistance",
             "addr" : "0x005D1900"
         },
         {
-            "fn" : "DisplayFakeNPCHealth",
+            "name" : "DisplayFakeNPCHealth",
             "addr" : "0x005D1B10"
         },
         {
             "class" : "MissionCompleteHUD",
-            "fn" : "Select",
+            "name" : "Select",
             "addr" : "0x005D2600"
         },
         {
             "class" : "RepGainHUD",
-            "fn" : "Confirm",
+            "name" : "Confirm",
             "addr" : "0x005D26F0"
         },
         {
-            "fn" : "SetScreenFXTransitionParams",
+            "name" : "SetScreenFXTransitionParams",
             "addr" : "0x005D2810"
         },
         {
             "class" : "HUDTapePlayer",
-            "fn" : "HandleButtonPress",
+            "name" : "HandleButtonPress",
             "addr" : "0x005D2970"
         },
         {
             "class" : "HUDTapePlayer",
-            "fn" : "PlayMix",
+            "name" : "PlayMix",
             "addr" : "0x005D2990"
         },
         {
             "class" : "HUDTapePlayer",
-            "fn" : "Stop",
+            "name" : "Stop",
             "addr" : "0x005D29B0"
         },
         {
-            "fn" : "HUDTapePlayer_SetSongAt",
+            "name" : "HUDTapePlayer_SetSongAt",
             "addr" : "0x005D2A50"
         },
         {
-            "fn" : "HUDTapePlayer_UnlockSong",
+            "name" : "HUDTapePlayer_UnlockSong",
             "addr" : "0x005D2AC0"
         },
         {
-            "fn" : "HUDTapePlayer_SetShuffle",
+            "name" : "HUDTapePlayer_SetShuffle",
             "addr" : "0x005D2AE0"
         },
         {
-            "fn" : "SetMissionCounterParams",
+            "name" : "SetMissionCounterParams",
             "addr" : "0x005D2DD0"
         },
         {
             "class" : "VehicleSelectionHUD",
-            "fn" : "Action",
+            "name" : "Action",
             "addr" : "0x005D3280"
         },
         {
             "class" : "InvSelectionHUD",
-            "fn" : "StartInventorySelect",
+            "name" : "StartInventorySelect",
             "addr" : "0x005D33A0"
         },
         {
             "class" : "InvSelectionHUD",
-            "fn" : "StopInventorySelect",
+            "name" : "StopInventorySelect",
             "addr" : "0x005D33B0"
         },
         {
             "class" : "InvSelectionHUD",
-            "fn" : "SetToggleWait",
+            "name" : "SetToggleWait",
             "addr" : "0x005D3410"
         },
         {
             "class" : "InvSelectionHUD",
-            "fn" : "IncrementSelection",
+            "name" : "IncrementSelection",
             "addr" : "0x005D3430"
         },
         {
             "class" : "InvSelectionHUD",
-            "fn" : "DecrementSelection",
+            "name" : "DecrementSelection",
             "addr" : "0x005D3440"
         },
         {
             "class" : "InvSelectionHUD",
-            "fn" : "SetSelectionCallback",
+            "name" : "SetSelectionCallback",
             "addr" : "0x005D3450"
         },
         {
             "class" : "InvSelectionHUD",
-            "fn" : "SetMissionText",
+            "name" : "SetMissionText",
             "addr" : "0x005D3480"
         },
         {
             "class" : "MapHUD2",
-            "fn" : "ResetActionMap",
+            "name" : "ResetActionMap",
             "addr" : "0x005D3670"
         },
         {
             "class" : "MapHUD2",
-            "fn" : "SetEventPosting",
+            "name" : "SetEventPosting",
             "addr" : "0x005D3680"
         },
         {
             "class" : "MapHUD2",
-            "fn" : "SetConstraintVecs",
+            "name" : "SetConstraintVecs",
             "addr" : "0x005D36D0"
         },
         {
             "class" : "MapHUD2",
-            "fn" : "TranslateToFocalPoint",
+            "name" : "TranslateToFocalPoint",
             "addr" : "0x005D3790"
         },
         {
-            "fn" : "LoadInteriorHUDMap",
+            "name" : "LoadInteriorHUDMap",
             "addr" : "0x005D37B0"
         },
         {
-            "fn" : "UpdateMapPostSerialize",
+            "name" : "UpdateMapPostSerialize",
             "addr" : "0x005D37E0"
         },
         {
-            "fn" : "SetMapBlendDestination",
+            "name" : "SetMapBlendDestination",
             "addr" : "0x005D3800"
         },
         {
-            "fn" : "SetMapLegendShown",
+            "name" : "SetMapLegendShown",
             "addr" : "0x005D38B0"
         },
         {
-            "fn" : "HideMapModalMini",
+            "name" : "HideMapModalMini",
             "addr" : "0x005D38E0"
         },
         {
             "class" : "ViceCopHUD",
-            "fn" : "Action",
+            "name" : "Action",
             "addr" : "0x005D3D00"
         },
         {
             "class" : "HUDCallout2",
-            "fn" : "ActivateCallout",
+            "name" : "ActivateCallout",
             "addr" : "0x005D9490"
         },
         {
             "class" : "HUDCallout2",
-            "fn" : "TerminateCallouts",
+            "name" : "TerminateCallouts",
             "addr" : "0x005D94C0"
         },
         {
             "class" : "HUDSubtitle",
-            "fn" : "ActivateSubTitle",
+            "name" : "ActivateSubTitle",
             "addr" : "0x005D94F0"
         },
         {
             "class" : "HUDSubtitle",
-            "fn" : "DeactivateSubTitles",
+            "name" : "DeactivateSubTitles",
             "addr" : "0x005D9540"
         },
         {
-            "fn" : "ContextualActionDialog_Exit",
+            "name" : "ContextualActionDialog_Exit",
             "addr" : "0x005D97C0"
         },
         {
-            "fn" : "ContextualActionDialog_InputPressed",
+            "name" : "ContextualActionDialog_InputPressed",
             "addr" : "0x005D97E0"
         },
         {
-            "fn" : "ContextualActionDialog_InputReleased",
+            "name" : "ContextualActionDialog_InputReleased",
             "addr" : "0x005D9810"
         },
         {
             "class" : "SystemDialogBox",
-            "fn" : "CloseSystemDialog",
+            "name" : "CloseSystemDialog",
             "addr" : "0x005D9920"
         },
         {
             "class" : "SystemDialogBox",
-            "fn" : "SetScriptCallbacks",
+            "name" : "SetScriptCallbacks",
             "addr" : "0x005D9950"
         },
         {
             "class" : "LoadPackage",
-            "fn" : "ReloadPackage",
+            "name" : "ReloadPackage",
             "addr" : "0x005DE230"
         },
         {
             "class" : "LoadPackage",
-            "fn" : "UnloadComplete",
+            "name" : "UnloadComplete",
             "addr" : "0x005DE220"
         },
         {
             "class" : "LoadPackage",
-            "fn" : "Load",
+            "name" : "Load",
             "addr" : "0x005DE230"
         },
         {
             "class" : "LoadPackage",
-            "fn" : "Unload",
+            "name" : "Unload",
             "addr" : "0x005DE240"
         },
         {
             "class" : "LoadPackage",
-            "fn" : "Reload",
+            "name" : "Reload",
             "addr" : "0x005DE250"
         },
         {
-            "fn" : "MM_SetMissionDelivererCount",
+            "name" : "MM_SetMissionDelivererCount",
             "addr" : "0x005DF600"
         },
         {
-            "fn" : "MM_SetMissionCount",
+            "name" : "MM_SetMissionCount",
             "addr" : "0x005DF630"
         },
         {
-            "fn" : "MM_AddMissionDeliverer",
+            "name" : "MM_AddMissionDeliverer",
             "addr" : "0x005DF660"
         },
         {
-            "fn" : "MM_AddMissionName",
+            "name" : "MM_AddMissionName",
             "addr" : "0x005DF680"
         },
         {
-            "fn" : "GNM_UpdateAllNests",
+            "name" : "GNM_UpdateAllNests",
             "addr" : "0x005DF740"
         },
         {
-            "fn" : "GNM_UpdateAllNestsInTurf",
+            "name" : "GNM_UpdateAllNestsInTurf",
             "addr" : "0x005DF750"
         },
         {
-            "fn" : "GNM_UpdateNest",
+            "name" : "GNM_UpdateNest",
             "addr" : "0x005DF890"
         },
         {
-            "fn" : "GNM_UpdateNestHealth",
+            "name" : "GNM_UpdateNestHealth",
             "addr" : "0x005DF8C0"
         },
         {
-            "fn" : "GNM_SetNestState",
+            "name" : "GNM_SetNestState",
             "addr" : "0x005DF920"
         },
         {
-            "fn" : "GNM_SetNestHealth",
+            "name" : "GNM_SetNestHealth",
             "addr" : "0x005DF990"
         },
         {
             "class" : "MissionStage",
-            "fn" : "ActivateObjectGroup",
+            "name" : "ActivateObjectGroup",
             "addr" : "0x005DFA50"
         },
         {
             "class" : "MissionStage",
-            "fn" : "DeactivateObjectGroup",
+            "name" : "DeactivateObjectGroup",
             "addr" : "0x005DFA70"
         },
         {
             "class" : "OceanObject",
-            "fn" : "SetTuningTemplate",
+            "name" : "SetTuningTemplate",
             "addr" : "0x005E1370"
         },
         {
             "class" : "OceanObject",
-            "fn" : "SetLOD",
+            "name" : "SetLOD",
             "addr" : "0x005E1170"
         },
         {
             "class" : "PauseMenuPage",
-            "fn" : "Move",
+            "name" : "Move",
             "addr" : "0x005E6310"
         },
         {
             "class" : "PauseMenuPage",
-            "fn" : "Action",
+            "name" : "Action",
             "addr" : "0x005E6370"
         },
         {
             "class" : "PauseMenuPage",
-            "fn" : "RefreshMenu",
+            "name" : "RefreshMenu",
             "addr" : "0x005E63C0"
         },
         {
             "class" : "PauseMenuPageOptions",
-            "fn" : "SetProgressiveRequest",
+            "name" : "SetProgressiveRequest",
             "addr" : "0x005E63F0"
         },
         {
             "class" : "PauseMenuPageControllerConfig",
-            "fn" : "Input",
+            "name" : "Input",
             "addr" : "0x005E6420"
         },
         {
             "class" : "PoiMarkerObject",
-            "fn" : "SetStatePropState",
+            "name" : "SetStatePropState",
             "addr" : "0x005E7CF0"
         },
         {
             "class" : "EffectsObject",
-            "fn" : "ClearAll",
+            "name" : "ClearAll",
             "addr" : "0x005EB330"
         },
         {
             "class" : "InstanceObject",
-            "fn" : "SetStateByIndex",
+            "name" : "SetStateByIndex",
             "addr" : "0x005EB420"
         },
         {
             "class" : "ParticleEffectObject",
-            "fn" : "Start",
+            "name" : "Start",
             "addr" : "0x005EB7B0"
         },
         {
             "class" : "ParticleEffectObject",
-            "fn" : "Stop",
+            "name" : "Stop",
             "addr" : "0x005EB7C0"
         },
         {
             "class" : "RainObject",
-            "fn" : "EnableRain",
+            "name" : "EnableRain",
             "addr" : "0x005EB8C0"
         },
         {
             "class" : "TODObject",
-            "fn" : "EnableRain",
+            "name" : "EnableRain",
             "addr" : "0x005EC1E0"
         },
         {
             "class" : "TODObject",
-            "fn" : "EnableTODUpdate",
+            "name" : "EnableTODUpdate",
             "addr" : "0x005EC210"
         },
         {
             "class" : "TODObject",
-            "fn" : "SetTime",
+            "name" : "SetTime",
             "addr" : "0x005EC240"
         },
         {
-            "fn" : "TraceFireInitialize",
+            "name" : "TraceFireInitialize",
             "addr" : "0x005EC450"
         },
         {
-            "fn" : "TraceFireTerminate",
+            "name" : "TraceFireTerminate",
             "addr" : "0x005EC460"
         },
         {
-            "fn" : "SoundSetTimeOfDayParams",
+            "name" : "SoundSetTimeOfDayParams",
             "addr" : "0x005EFB20"
         },
         {
             "class" : "TapePlayer",
-            "fn" : "Play",
+            "name" : "Play",
             "addr" : "0x005F0700"
         },
         {
             "class" : "TapePlayer",
-            "fn" : "Pause",
+            "name" : "Pause",
             "addr" : "0x005F0710"
         },
         {
             "class" : "TapePlayer",
-            "fn" : "SetCurrentPlaylist",
+            "name" : "SetCurrentPlaylist",
             "addr" : "0x005F0860"
         },
         {
             "class" : "TapePlayer",
-            "fn" : "SetCanPlayLocked",
+            "name" : "SetCanPlayLocked",
             "addr" : "0x005F0720"
         },
         {
             "class" : "TapePlayer",
-            "fn" : "SetCurrentTrack",
+            "name" : "SetCurrentTrack",
             "addr" : "0x005F08A0"
         },
         {
             "class" : "TapePlayer",
-            "fn" : "SetIsRandom",
+            "name" : "SetIsRandom",
             "addr" : "0x005F0760"
         },
         {
-            "fn" : "SpawnPickup",
+            "name" : "SpawnPickup",
             "addr" : "0x005FEC50"
         },
         {
-            "fn" : "ClearPickups",
+            "name" : "ClearPickups",
             "addr" : "0x005FEC40"
         },
         {
-            "fn" : "PushTrafficConfig",
+            "name" : "PushTrafficConfig",
             "addr" : "0x005FF180"
         },
         {
-            "fn" : "PopTrafficConfig",
+            "name" : "PopTrafficConfig",
             "addr" : "0x005FF200"
         },
         {
             "class" : "StatePropAttachmentObject",
-            "fn" : "Attach",
+            "name" : "Attach",
             "addr" : "0x00608A90"
         },
         {
             "class" : "StatePropObject",
-            "fn" : "SetStateIndex",
+            "name" : "SetStateIndex",
             "addr" : "0x006087E0"
         },
         {
             "class" : "StatePropObject",
-            "fn" : "SetState",
+            "name" : "SetState",
             "addr" : "0x00608820"
         },
         {
             "class" : "StatePropObject",
-            "fn" : "AddHealth",
+            "name" : "AddHealth",
             "addr" : "0x00608840"
         },
         {
             "class" : "StatePropObject",
-            "fn" : "ApplyDamage",
+            "name" : "ApplyDamage",
             "addr" : "0x00608870"
         },
         {
             "class" : "StatePropObject",
-            "fn" : "ResetHealth",
+            "name" : "ResetHealth",
             "addr" : "0x006088A0"
         },
         {
             "class" : "StatePropObject",
-            "fn" : "RequestStateSound",
+            "name" : "RequestStateSound",
             "addr" : "0x006088B0"
         },
         {
             "class" : "StatePropObject",
-            "fn" : "DestroyPropObject",
+            "name" : "DestroyPropObject",
             "addr" : "0x005E63C0"
         },
         {
             "class" : "StatePropObject",
-            "fn" : "EnableCollision",
+            "name" : "EnableCollision",
             "addr" : "0x00608900"
         },
         {
             "class" : "StatePropObject",
-            "fn" : "CarriedByPlayer",
+            "name" : "CarriedByPlayer",
             "addr" : "0x00608930"
         },
         {
             "class" : "StatePropObject",
-            "fn" : "CarriedObjectSetRotationSpeed",
+            "name" : "CarriedObjectSetRotationSpeed",
             "addr" : "0x00608960"
         },
         {
             "class" : "StatePropObject",
-            "fn" : "CarriedObjectSetOffset",
+            "name" : "CarriedObjectSetOffset",
             "addr" : "0x00608990"
         },
         {
             "class" : "StatePropObject",
-            "fn" : "RegisterForStateCallbacks",
+            "name" : "RegisterForStateCallbacks",
             "addr" : "0x006089D0"
         },
         {
             "class" : "StatePropObject",
-            "fn" : "SetIsHighestPriorityForCuller",
+            "name" : "SetIsHighestPriorityForCuller",
             "addr" : "0x00608A10"
         },
         {
             "class" : "StatePropObject",
-            "fn" : "PlayPickupSound",
+            "name" : "PlayPickupSound",
             "addr" : "0x00608A50"
         },
         {
             "class" : "StatePropObject",
-            "fn" : "SetPriorityScale",
+            "name" : "SetPriorityScale",
             "addr" : "0x006094E0"
         },
         {
             "class" : "StatePropObject",
-            "fn" : "SetRemoveInNIS",
+            "name" : "SetRemoveInNIS",
             "addr" : "0x00608A60"
         },
         {
             "class" : "WeaponPickup",
-            "fn" : "Pickup",
+            "name" : "Pickup",
             "addr" : "0x00609240"
         },
         {
             "class" : "WeaponStateProp",
-            "fn" : "SetTotalAmmoCount",
+            "name" : "SetTotalAmmoCount",
             "addr" : "0x00609430"
         },
         {
             "class" : "WeaponStateProp",
-            "fn" : "SetAlternateTotalAmmoCount",
+            "name" : "SetAlternateTotalAmmoCount",
             "addr" : "0x00609460"
         },
         {
             "class" : "WeaponStateProp",
-            "fn" : "SetClipAmmoCount",
+            "name" : "SetClipAmmoCount",
             "addr" : "0x00609490"
         },
         {
             "class" : "WeaponStateProp",
-            "fn" : "SetAlternateClipAmmoCount",
+            "name" : "SetAlternateClipAmmoCount",
             "addr" : "0x006094C0"
         },
         {
             "class" : "WeaponStateProp",
-            "fn" : "SetPriorityScale",
+            "name" : "SetPriorityScale",
             "addr" : "0x006094E0"
         },
         {
-            "fn" : "SetProjectileDamageEnabled",
+            "name" : "SetProjectileDamageEnabled",
             "addr" : "0x00609510"
         },
         {
             "class" : "ExplosionTemplate",
-            "fn" : "StartExplosion",
+            "name" : "StartExplosion",
             "addr" : "0x00617D90"
         },
         {
             "class" : "ExplosionTemplate",
-            "fn" : "StartScaledExplosion",
+            "name" : "StartScaledExplosion",
             "addr" : "0x00617DE0"
         },
         {
             "class" : "ExplosionTemplate",
-            "fn" : "StartScaledExplosionAt",
+            "name" : "StartScaledExplosionAt",
             "addr" : "0x00617E40"
         },
         {
             "class" : "BoatPhysicsTemplate",
-            "fn" : "DoBuoyancyVibration",
+            "name" : "DoBuoyancyVibration",
             "addr" : "0x0061F420"
         },
         {
             "class" : "VehicleControllerTemplate",
-            "fn" : "DoVibration",
+            "name" : "DoVibration",
             "addr" : "0x00625730"
         },
         {
             "class" : "WheeledVehicleObject",
-            "fn" : "SetWheelDestroyed",
+            "name" : "SetWheelDestroyed",
             "addr" : "0x00634E20"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "SetNPCsCanSteal",
+            "name" : "SetNPCsCanSteal",
             "addr" : "0x00635270"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "SetDamageScale",
+            "name" : "SetDamageScale",
             "addr" : "0x006352A0"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "Explode",
+            "name" : "Explode",
             "addr" : "0x006354E0"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "OnZeroHealthScript",
+            "name" : "OnZeroHealthScript",
             "addr" : "0x00635500"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "SetZoneDamageScaler",
+            "name" : "SetZoneDamageScaler",
             "addr" : "0x00635520"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "FadeAndDelete",
+            "name" : "FadeAndDelete",
             "addr" : "0x006352F0"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "DetachObject",
+            "name" : "DetachObject",
             "addr" : "0x006356E0"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "SetFunctional",
+            "name" : "SetFunctional",
             "addr" : "0x00635750"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "Reset",
+            "name" : "Reset",
             "addr" : "0x00635780"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "RotateLeftDoor",
+            "name" : "RotateLeftDoor",
             "addr" : "0x00635370"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "RotateRightDoor",
+            "name" : "RotateRightDoor",
             "addr" : "0x00635390"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "RotateRearLeftDoor",
+            "name" : "RotateRearLeftDoor",
             "addr" : "0x006353B0"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "RotateRearRightDoor",
+            "name" : "RotateRearRightDoor",
             "addr" : "0x006353D0"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "AddHealth",
+            "name" : "AddHealth",
             "addr" : "0x00635810"
         },
         {
             "class" : "vehicleObject",
-            "fn" : "SetHealthCallbackThresholdPercent",
+            "name" : "SetHealthCallbackThresholdPercent",
             "addr" : "0x00635840"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "ApplyDamage",
+            "name" : "ApplyDamage",
             "addr" : "0x00635870"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "ResetHealth",
+            "name" : "ResetHealth",
             "addr" : "0x006358B0"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "SetSirenEnabled",
+            "name" : "SetSirenEnabled",
             "addr" : "0x006353F0"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "SetHornEnabled",
+            "name" : "SetHornEnabled",
             "addr" : "0x00635430"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "SetPilotable",
+            "name" : "SetPilotable",
             "addr" : "0x00635930"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "SetLocked",
+            "name" : "SetLocked",
             "addr" : "0x00635990"
         },
         {
             "class" : "VehicleObject",
-            "fn" : "SetHealthOnZone",
+            "name" : "SetHealthOnZone",
             "addr" : "0x00635460"
         },
         {
-            "fn" : "MGM_OnMissionStageStarted",
+            "name" : "MGM_OnMissionStageStarted",
             "addr" : "0x00642080"
         },
         {
-            "fn" : "MGM_OnMissionStageEnd",
+            "name" : "MGM_OnMissionStageEnd",
             "addr" : "0x00642090"
         },
         {
-            "fn" : "MGM_OnMissionFailed",
+            "name" : "MGM_OnMissionFailed",
             "addr" : "0x006420A0"
         },
         {
-            "fn" : "MGM_OnMissionDone",
+            "name" : "MGM_OnMissionDone",
             "addr" : "0x006420B0"
         },
         {
-            "fn" : "MGM_TriggerSet",
+            "name" : "MGM_TriggerSet",
             "addr" : "0x006420F0"
         },
         {
-            "fn" : "MGM_SendMessage",
+            "name" : "MGM_SendMessage",
             "addr" : "0x006421B0"
         },
         {
-            "fn" : "MGM_VisibilitySetEnabled",
+            "name" : "MGM_VisibilitySetEnabled",
             "addr" : "0x006421E0"
         },
         {
-            "fn" : "MGM_VisibilitySetScaleDuringMission",
+            "name" : "MGM_VisibilitySetScaleDuringMission",
             "addr" : "0x00642210"
         },
         {
-            "fn" : "MGM_SetVisibilityPoints",
+            "name" : "MGM_SetVisibilityPoints",
             "addr" : "0x00642240"
         },
         {
-            "fn" : "MGM_VisibilityReset",
+            "name" : "MGM_VisibilityReset",
             "addr" : "0x00642280"
         },
         {
-            "fn" : "MGM_KillAllCops",
+            "name" : "MGM_KillAllCops",
             "addr" : "0x006422B0"
         },
         {
-            "fn" : "MGM_VisibilityMasterEnable",
+            "name" : "MGM_VisibilityMasterEnable",
             "addr" : "0x006422E0"
         },
         {
-            "fn" : "MGM_VisibilitySetTimeToEscapeCops",
+            "name" : "MGM_VisibilitySetTimeToEscapeCops",
             "addr" : "0x00642300"
         },
         {
-            "fn" : "MGM_VisibilitySetEscapeRadiusScale",
+            "name" : "MGM_VisibilitySetEscapeRadiusScale",
             "addr" : "0x00642320"
         },
         {
-            "fn" : "MGM_VisibilityResetTimers",
+            "name" : "MGM_VisibilityResetTimers",
             "addr" : "0x00642340"
         },
         {
-            "fn" : "MGM_VisibilityScaleModifierSetDistance",
+            "name" : "MGM_VisibilityScaleModifierSetDistance",
             "addr" : "0x006423F0"
         },
         {
-            "fn" : "MGM_VisibilityScaleModifierSetCopValue",
+            "name" : "MGM_VisibilityScaleModifierSetCopValue",
             "addr" : "0x00642410"
         },
         {
-            "fn" : "MGM_VisibilityScaleModifierSetCivilianValue",
+            "name" : "MGM_VisibilityScaleModifierSetCivilianValue",
             "addr" : "0x00642430"
         },
         {
-            "fn" : "MGM_SetAllowCopSpawningDuringMission",
+            "name" : "MGM_SetAllowCopSpawningDuringMission",
             "addr" : "0x00642460"
         },
         {
-            "fn" : "MGM_SetGangNestSaveGameString",
+            "name" : "MGM_SetGangNestSaveGameString",
             "addr" : "0x00642480"
         },
         {
-            "fn" : "MGM_SetMissionFailOnRedVisibility",
+            "name" : "MGM_SetMissionFailOnRedVisibility",
             "addr" : "0x00642500"
         },
         {
-            "fn" : "MGM_SetGangNestDestroyed",
+            "name" : "MGM_SetGangNestDestroyed",
             "addr" : "0x00642520"
         },
         {
-            "fn" : "MGM_SetDontEscapeCops",
+            "name" : "MGM_SetDontEscapeCops",
             "addr" : "0x00642550"
         },
         {
-            "fn" : "MGM_EscapeCopsNow",
+            "name" : "MGM_EscapeCopsNow",
             "addr" : "0x00642570"
         },
         {
-            "fn" : "MGM_SetMetaGameStuffEnabled",
+            "name" : "MGM_SetMetaGameStuffEnabled",
             "addr" : "0x00642580"
         },
         {
-            "fn" : "MGM_SetIgnoreNPCModifier",
+            "name" : "MGM_SetIgnoreNPCModifier",
             "addr" : "0x006425C0"
         },
         {
-            "fn" : "EnableCollisionDebugDrawables",
+            "name" : "EnableCollisionDebugDrawables",
             "addr" : "0x00643240"
         },
         {
-            "fn" : "SetGroundCollisionSurfaceVisible",
+            "name" : "SetGroundCollisionSurfaceVisible",
             "addr" : "0x00643260"
         },
         {
-            "fn" : "SetGroundCollisionWireframeVisible",
+            "name" : "SetGroundCollisionWireframeVisible",
             "addr" : "0x006432A0"
         },
         {
-            "fn" : "SetGroundVisible",
+            "name" : "SetGroundVisible",
             "addr" : "0x006432E0"
         }
     ]

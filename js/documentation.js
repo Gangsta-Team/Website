@@ -1,68 +1,172 @@
-var current_section = null;
 
-window['APIDataLoaded'] = function(){
-    if(window.general.loaded 
-        && window.characters.loaded 
-        && window.vehicles.loaded 
-        && window.boats.loaded 
-        && window.planes.loaded 
-        && window.helicopters.loaded 
-        && window.natives.loaded){
-        document.getElementById('general').innerHTML = '<div id="list-general" class="twelve"></div>'; 
-        document.getElementById('list-general').innerHTML = tmpl('tmpl-general-right-menu', window.general);
-        document.querySelector('.menu-characters').innerHTML = tmpl('tmpl-characters', window.characters);
-        document.querySelector('.menu-vehicles').innerHTML = tmpl('tmpl-vehicles', window.vehicles);
-        document.querySelector('.menu-boats').innerHTML = tmpl('tmpl-boats', window.boats);
-        document.querySelector('.menu-planes').innerHTML = tmpl('tmpl-planes', window.planes);
-        document.querySelector('.menu-helicopters').innerHTML = tmpl('tmpl-helicopters', window.helicopters);
-        document.querySelector('.menu-natives').innerHTML = tmpl('tmpl-natives', window.natives);
-        var summary_nodes = document.querySelectorAll("summary");
-        for(var i = 0; i < summary_nodes.length; i++){
-            summary_nodes[i].onclick = function(evt){
-                const styles = window.getComputedStyle(evt.target, '::before');
-                const content = styles.transform;
-                if(/*content === 'none'&& */evt.target.getAttribute("data-page") != null){   
-                    current_section = evt.target.getAttribute("data-page");
-                    document.getElementById('general').innerHTML = '<div id="list-'+current_section+'" class="twelve"></div>';                    
-                    document.getElementById('list-'+current_section).innerHTML = tmpl('tmpl-'+current_section+'-right-menu', window[evt.target.getAttribute("data-page")])
-                }
-            }
+// ######################################################
+// Variables.
+// ######################################################
+
+// Save the current opened section.
+var current_section = "general";
+var root_element = null;
+var loader = null;
+var main_content = null;
+var general = null;
+
+// Default prototype.
+var prototype = {
+    loaded: false,
+    root: null,
+    title: 'Scarface The World Is Yours',
+    breadcrumb: [
+        {
+            name: 'Documentation',
+            href: 'documentation.html'
         }
-        var subitems = document.querySelectorAll(".tree-nam__subitem");
-        for(var i = 0; i < subitems.length; i++){
-            subitems[i].onclick = function(evt){
-                evt.preventDefault();
-                if(evt.target.getAttribute("data-page") != current_section){
-                    current_section = evt.target.getAttribute("data-page");
-                    document.getElementById('general').innerHTML = '<div id="list-'+current_section+'" class="twelve"></div>';                    
-                    document.getElementById('list-'+current_section).innerHTML = tmpl('tmpl-'+current_section+'-right-menu', window[evt.target.getAttribute("data-page")])
-                }
-                var anchor = document.getElementById(evt.target.getAttribute("href"));
-                anchor.scrollIntoView()
-            }
+    ],
+    content: null,
+    load(ref, cb){
+        if(this.loaded==true) return;
+        LoadData(ref, function(){
+            cb(ref);
+        })
+    }
+}
+
+general = Object.assign({}, prototype);
+general.root = "general";
+general.breadcrumb.push({
+    name: 'General',
+    href: 'general.html'
+});
+general.content = [
+    "Characters",
+    "Vehicles",
+    "Planes",
+    "Helicopters",
+    "Boats",
+    "Natives",
+];
+window.api = [];
+window.api['general'] = general;
+
+// ######################################################
+// Functions.
+// ######################################################
+
+function FormatID(str){
+    return str.replace(/\s/g, '_').toUpperCase();
+}
+
+function ObjectLength( object ) {
+    var length = 0;
+    for( var key in object ) {
+        if( object.hasOwnProperty(key) ) {
+            ++length;
         }
     }
+    return length;
 };
 
-window['LoadData'] = function(url, cb){
+function LoadPrototypes(){
+    var assets = window.api.general.content.length;
+    general.template_section = tmpl("tmpl-general", window.api['general']);
+    document.getElementById("general").innerHTML = general.template_section;
+    window.api["general"].element = document.getElementById("section-general");
+    for(var i = 0; i < window.api.general.content.length; i++){
+        var model = window.api.general.content[i].toLowerCase();
+        window[model] = Object.assign({}, prototype);
+        window[model].root = model;
+        window[model].breadcrumb.push({
+            name: model,
+            href: model+'.html'
+        });
+        window.api[window[model].root] = window[model];
+        window.api[window[model].root].load(window[model], function(target){
+            target.template_list = tmpl("list-menu", target);
+            target.template_section = tmpl("tmpl-"+target.root, target);
+            assets--;
+            if(assets == 0) LoadTemplates();
+        });
+    }
+}
+
+function LoadData(root, cb){
     var xmlhttp = new XMLHttpRequest();
 
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             var data = JSON.parse(this.responseText);
-            cb(data);
+            root.content = data;
+            cb();
         }
     };
-    xmlhttp.open("GET", url, true);
+    xmlhttp.open("GET", "/api/"+root.root+".json", true);
     xmlhttp.send();
 }
 
+function LoadTemplates(){
+    // Load left menu.
+    document.getElementById('list-general').innerHTML = tmpl('tmpl-general-menu', window.api['general']);
+    
+    // Load sections. 
+    for( var key in window.api ) {
+        if( window.api.hasOwnProperty(key) ) {
+            console.log(window.api[key])
+            if(key != 'general') {
+                // Load left menu items.
+                document.getElementById('menu-'+key).innerHTML = window.api[key].template_list;
+
+                var model_region = document.createElement("div");
+                model_region.id = "section-"+key;
+                model_region.classList.add("d-none");
+                model_region.classList.add("section");
+                model_region.classList.add("w-100");
+                model_region.classList.add("twelve");
+                model_region.innerHTML = window.api[key].template_section;
+                root_element.appendChild(model_region);
+                window.api[key].element = model_region;
+            }
+        }
+    }
+
+    // Register event listeners.
+    // Left menu items.
+    var summary_nodes = document.querySelectorAll("summary");
+    for(var i = 0; i < summary_nodes.length; i++){
+        summary_nodes[i].onclick = function(evt){
+            var apipage = evt.target.getAttribute("data-apipage");
+            console.log(apipage)
+            var sections = document.getElementsByClassName("section");
+            for(var i = 0; i < sections.length; i++)
+                sections[i].classList.add("d-none");
+            window.api[apipage].element.classList.remove("d-none");
+            current_section = apipage;
+        }
+    }
+
+    // Left menu sub-items.
+    var subitems = document.querySelectorAll(".tree-nam__subitem");
+    for(var i = 0; i < subitems.length; i++){
+        subitems[i].onclick = function(evt){
+            evt.preventDefault();
+            var anchor = document.getElementById(evt.target.getAttribute("href"));
+            if(anchor)
+                anchor.scrollIntoView()
+        }
+    }
+
+    // Hide the loader.
+    loader.style.display = "none";
+    // Show the main content.
+    main_content.style.display = "flex";
+}
+
+// Create the event listener for know when the DOM content is loaded.
 document.addEventListener("DOMContentLoaded", function(){
-    window.general.load();
-    window.characters.load();
-    window.vehicles.load();
-    window.boats.load();
-    window.planes.load();
-    window.helicopters.load();
-    window.natives.load();
+    // Get the root element.
+    root_element = document.getElementById("general");
+    // Get the main content element.
+    main_content = document.getElementById("main-content");
+    // Get the loader element.
+    loader = document.querySelector(".loader");
+    // Load each prototype.
+    LoadPrototypes();
 });
