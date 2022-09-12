@@ -1,0 +1,5676 @@
+{
+    "classFunctions": {
+        "AIStimulusTable": {
+            "AddBasicEvent": {
+                "className": "AIStimulusTable",
+                "maxArguments": 4,
+                "methodName": "AddBasicEvent",
+                "minArguments": 4,
+                "return": 3
+            },
+            "AddBasicEventWithReactData": {
+                "className": "AIStimulusTable",
+                "maxArguments": 5,
+                "methodName": "AddBasicEventWithReactData",
+                "minArguments": 5,
+                "return": 3
+            },
+            "AddEvent": {
+                "className": "AIStimulusTable",
+                "maxArguments": 10,
+                "methodName": "AddEvent",
+                "minArguments": 8,
+                "return": 3
+            },
+            "DefineDefaultOverrideTables": {
+                "className": "AIStimulusTable",
+                "maxArguments": 3,
+                "methodName": "DefineDefaultOverrideTables",
+                "minArguments": 3,
+                "return": 3
+            },
+            "DetectsStimulus": {
+                "className": "AIStimulusTable",
+                "maxArguments": 3,
+                "methodName": "DetectsStimulus",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "ActionMap": {
+            "BindBlockingKey": {
+                "className": "ActionMap",
+                "maxArguments": 6,
+                "methodName": "BindBlockingKey",
+                "minArguments": 5,
+                "return": 3
+            },
+            "BindCommand": {
+                "className": "ActionMap",
+                "maxArguments": 6,
+                "methodName": "BindCommand",
+                "minArguments": 5,
+                "return": 3
+            },
+            "BindCommandNoOverride": {
+                "className": "ActionMap",
+                "maxArguments": 6,
+                "methodName": "BindCommandNoOverride",
+                "minArguments": 5,
+                "return": 3
+            },
+            "BindFunction": {
+                "className": "ActionMap",
+                "maxArguments": 5,
+                "methodName": "BindFunction",
+                "minArguments": 5,
+                "return": 3
+            },
+            "BindKey": {
+                "className": "ActionMap",
+                "maxArguments": 6,
+                "methodName": "BindKey",
+                "minArguments": 5,
+                "return": 3
+            },
+            "BindKeysWithTimer": {
+                "className": "ActionMap",
+                "maxArguments": 6,
+                "methodName": "BindKeysWithTimer",
+                "minArguments": 5,
+                "return": 3
+            },
+            "IsPushed": {
+                "className": "ActionMap",
+                "maxArguments": 2,
+                "methodName": "IsPushed",
+                "minArguments": 2,
+                "return": 4
+            },
+            "Pop": {
+                "className": "ActionMap",
+                "maxArguments": 2,
+                "methodName": "Pop",
+                "minArguments": 2,
+                "return": 3
+            },
+            "Push": {
+                "className": "ActionMap",
+                "maxArguments": 2,
+                "methodName": "Push",
+                "minArguments": 2,
+                "return": 3
+            }
+        },
+        "AddressManager": {
+            "GetAddress": {
+                "className": "AddressManager",
+                "maxArguments": 8,
+                "methodName": "GetAddress",
+                "minArguments": 5,
+                "return": 0
+            },
+            "GroupGetByIndex": {
+                "className": "AddressManager",
+                "maxArguments": 4,
+                "methodName": "GroupGetByIndex",
+                "minArguments": 4,
+                "return": 0
+            }
+        },
+        "AnimationLoaderObject": {
+            "IsLoaded": {
+                "className": "AnimationLoaderObject",
+                "maxArguments": 2,
+                "methodName": "IsLoaded",
+                "minArguments": 2,
+                "return": 4
+            }
+        },
+        "BlackjackHUD": {
+            "Input": {
+                "className": "BlackjackHUD",
+                "maxArguments": 3,
+                "methodName": "Input",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "BoatPhysicsTemplate": {
+            "DoBuoyancyVibration": {
+                "className": "BoatPhysicsTemplate",
+                "maxArguments": 3,
+                "methodName": "DoBuoyancyVibration",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "BusinessDetailHUD": {
+            "Action": {
+                "className": "BusinessDetailHUD",
+                "maxArguments": 3,
+                "methodName": "Action",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "BusinessHUD": {
+            "Action": {
+                "className": "BusinessHUD",
+                "maxArguments": 3,
+                "methodName": "Action",
+                "minArguments": 3,
+                "return": 3
+            },
+            "Move": {
+                "className": "BusinessHUD",
+                "maxArguments": 3,
+                "methodName": "Move",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "CameraManager": {
+            "Request_NISCameraMode": {
+                "className": "CameraManager",
+                "maxArguments": 6,
+                "methodName": "Request_NISCameraMode",
+                "minArguments": 3,
+                "return": 3
+            },
+            "Request_ObjectControl": {
+                "className": "CameraManager",
+                "maxArguments": 3,
+                "methodName": "Request_ObjectControl",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetCameraShake": {
+                "className": "CameraManager",
+                "maxArguments": 7,
+                "methodName": "SetCameraShake",
+                "minArguments": 6,
+                "return": 3
+            },
+            "SetFinishedCallback": {
+                "className": "CameraManager",
+                "maxArguments": 3,
+                "methodName": "SetFinishedCallback",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "CameraObject": {
+            "GetFOVDegrees": {
+                "className": "CameraObject",
+                "maxArguments": 2,
+                "methodName": "GetFOVDegrees",
+                "minArguments": 2,
+                "return": 2
+            },
+            "SetActionMap": {
+                "className": "CameraObject",
+                "maxArguments": 3,
+                "methodName": "SetActionMap",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetCameraTransition": {
+                "className": "CameraObject",
+                "maxArguments": 6,
+                "methodName": "SetCameraTransition",
+                "minArguments": 6,
+                "return": 3
+            },
+            "SetFOVDegrees": {
+                "className": "CameraObject",
+                "maxArguments": 3,
+                "methodName": "SetFOVDegrees",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetFacingDirection": {
+                "className": "CameraObject",
+                "maxArguments": 3,
+                "methodName": "SetFacingDirection",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "CharacterObject": {
+            "AddHealth": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "AddHealth",
+                "minArguments": 3,
+                "return": 1
+            },
+            "AddWeaponTemplateToInventory": {
+                "className": "CharacterObject",
+                "maxArguments": 4,
+                "methodName": "AddWeaponTemplateToInventory",
+                "minArguments": 3,
+                "return": 3
+            },
+            "ApplyDamage": {
+                "className": "CharacterObject",
+                "maxArguments": 4,
+                "methodName": "ApplyDamage",
+                "minArguments": 3,
+                "return": 3
+            },
+            "ApplyDamageToGrappleCharacter": {
+                "className": "CharacterObject",
+                "maxArguments": 4,
+                "methodName": "ApplyDamageToGrappleCharacter",
+                "minArguments": 3,
+                "return": 3
+            },
+            "AttachObject": {
+                "className": "CharacterObject",
+                "maxArguments": 6,
+                "methodName": "AttachObject",
+                "minArguments": 6,
+                "return": 4
+            },
+            "BeKickedOutOfCar": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "BeKickedOutOfCar",
+                "minArguments": 2,
+                "return": 3
+            },
+            "ClearLastVehicle": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "ClearLastVehicle",
+                "minArguments": 2,
+                "return": 3
+            },
+            "CreateBloodPool": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "CreateBloodPool",
+                "minArguments": 2,
+                "return": 4
+            },
+            "CreateSplash": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "CreateSplash",
+                "minArguments": 2,
+                "return": 4
+            },
+            "DetachObject": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "DetachObject",
+                "minArguments": 3,
+                "return": 3
+            },
+            "EndRailShooter": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "EndRailShooter",
+                "minArguments": 2,
+                "return": 3
+            },
+            "EnterVehicleLowLevel": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "EnterVehicleLowLevel",
+                "minArguments": 3,
+                "return": 3
+            },
+            "ExitVehicle": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "ExitVehicle",
+                "minArguments": 2,
+                "return": 3
+            },
+            "FadeAndDelete": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "FadeAndDelete",
+                "minArguments": 2,
+                "return": 3
+            },
+            "FireWeapon": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "FireWeapon",
+                "minArguments": 2,
+                "return": 3
+            },
+            "FixVehicleSeat": {
+                "className": "CharacterObject",
+                "maxArguments": 4,
+                "methodName": "FixVehicleSeat",
+                "minArguments": 3,
+                "return": 4
+            },
+            "GetAlertStatus": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "GetAlertStatus",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetAnimationPriority": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "GetAnimationPriority",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetAnimationRequestID": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "GetAnimationRequestID",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetAttachedObject": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "GetAttachedObject",
+                "minArguments": 3,
+                "return": 1
+            },
+            "GetCharacterTemplate": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "GetCharacterTemplate",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetCharacterTemplateName": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "GetCharacterTemplateName",
+                "minArguments": 2,
+                "return": 0
+            },
+            "GetCurrentDrawnWeapon": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "GetCurrentDrawnWeapon",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetCurrentWeapon": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "GetCurrentWeapon",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetLastVehicleID": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "GetLastVehicleID",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetOnKilledVehicleID": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "GetOnKilledVehicleID",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetRemainingVocalMs": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "GetRemainingVocalMs",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetVehicleID": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "GetVehicleID",
+                "minArguments": 2,
+                "return": 1
+            },
+            "HasSample": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "HasSample",
+                "minArguments": 3,
+                "return": 4
+            },
+            "HealthChanged": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "HealthChanged",
+                "minArguments": 2,
+                "return": 3
+            },
+            "InfiniteAmmo": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "InfiniteAmmo",
+                "minArguments": 3,
+                "return": 3
+            },
+            "InitializeCloseDoorTimer": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "InitializeCloseDoorTimer",
+                "minArguments": 2,
+                "return": 4
+            },
+            "InitializeOpenDoorTimer": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "InitializeOpenDoorTimer",
+                "minArguments": 2,
+                "return": 4
+            },
+            "IsCharacterInBoat": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "IsCharacterInBoat",
+                "minArguments": 2,
+                "return": 4
+            },
+            "IsCharacterInCar": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "IsCharacterInCar",
+                "minArguments": 2,
+                "return": 4
+            },
+            "IsCharacterInDangerousVehicleState": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "IsCharacterInDangerousVehicleState",
+                "minArguments": 2,
+                "return": 4
+            },
+            "IsCharacterSeatedInVehicle": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "IsCharacterSeatedInVehicle",
+                "minArguments": 2,
+                "return": 4
+            },
+            "IsInCombat": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "IsInCombat",
+                "minArguments": 2,
+                "return": 1
+            },
+            "IsMainCharacter": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "IsMainCharacter",
+                "minArguments": 2,
+                "return": 4
+            },
+            "IsSniping": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "IsSniping",
+                "minArguments": 2,
+                "return": 4
+            },
+            "IsSuppressingTonyDialogue": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "IsSuppressingTonyDialogue",
+                "minArguments": 2,
+                "return": 4
+            },
+            "IsWallCoverAvailable": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "IsWallCoverAvailable",
+                "minArguments": 2,
+                "return": 1
+            },
+            "IsWithinTimeOfDayParameters": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "IsWithinTimeOfDayParameters",
+                "minArguments": 3,
+                "return": 4
+            },
+            "KillMe": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "KillMe",
+                "minArguments": 2,
+                "return": 4
+            },
+            "MaxAmmoCode": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "MaxAmmoCode",
+                "minArguments": 2,
+                "return": 3
+            },
+            "OnAlertStatusChanged": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "OnAlertStatusChanged",
+                "minArguments": 3,
+                "return": 3
+            },
+            "OnDyingFinished": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "OnDyingFinished",
+                "minArguments": 2,
+                "return": 3
+            },
+            "PlayCarjackCopRadio": {
+                "className": "CharacterObject",
+                "maxArguments": 4,
+                "methodName": "PlayCarjackCopRadio",
+                "minArguments": 4,
+                "return": 3
+            },
+            "RecognizesTony": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "RecognizesTony",
+                "minArguments": 2,
+                "return": 4
+            },
+            "RemoveWeaponFromInventory": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "RemoveWeaponFromInventory",
+                "minArguments": 3,
+                "return": 3
+            },
+            "RequestAnimation": {
+                "className": "CharacterObject",
+                "maxArguments": 4,
+                "methodName": "RequestAnimation",
+                "minArguments": 3,
+                "return": 1
+            },
+            "RequestCellPhoneEnd": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "RequestCellPhoneEnd",
+                "minArguments": 2,
+                "return": 4
+            },
+            "RequestCellPhoneRing": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "RequestCellPhoneRing",
+                "minArguments": 2,
+                "return": 4
+            },
+            "RequestVocal": {
+                "className": "CharacterObject",
+                "maxArguments": 11,
+                "methodName": "RequestVocal",
+                "minArguments": 4,
+                "return": 4
+            },
+            "RequestVocalAfterTargetFinished": {
+                "className": "CharacterObject",
+                "maxArguments": 11,
+                "methodName": "RequestVocalAfterTargetFinished",
+                "minArguments": 5,
+                "return": 3
+            },
+            "SetActionMap": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "SetActionMap",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetAlertStatus": {
+                "className": "CharacterObject",
+                "maxArguments": 4,
+                "methodName": "SetAlertStatus",
+                "minArguments": 3,
+                "return": 1
+            },
+            "SetAmbientCollision": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "SetAmbientCollision",
+                "minArguments": 2,
+                "return": 3
+            },
+            "SetCanCounterMeleeAttack": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "SetCanCounterMeleeAttack",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetCharacterVisible": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "SetCharacterVisible",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetConversationType": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "SetConversationType",
+                "minArguments": 3,
+                "return": 4
+            },
+            "SetDisabled": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "SetDisabled",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetImmuneToExecution": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "SetImmuneToExecution",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetIsShoveable": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "SetIsShoveable",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetKnockedDown": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "SetKnockedDown",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetOverrideCullDistance": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "SetOverrideCullDistance",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetSpawnUsage": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "SetSpawnUsage",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetTimeOfDayParameters": {
+                "className": "CharacterObject",
+                "maxArguments": 4,
+                "methodName": "SetTimeOfDayParameters",
+                "minArguments": 4,
+                "return": 3
+            },
+            "SetVisible": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "SetVisible",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetWalkingOnLandContext": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "SetWalkingOnLandContext",
+                "minArguments": 2,
+                "return": 3
+            },
+            "SpawnPickup": {
+                "className": "CharacterObject",
+                "maxArguments": 7,
+                "methodName": "SpawnPickup",
+                "minArguments": 5,
+                "return": 1
+            },
+            "StartRailShooter": {
+                "className": "CharacterObject",
+                "maxArguments": 4,
+                "methodName": "StartRailShooter",
+                "minArguments": 4,
+                "return": 3
+            },
+            "SwitchToWeaponType": {
+                "className": "CharacterObject",
+                "maxArguments": 4,
+                "methodName": "SwitchToWeaponType",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SyncAllWeaponsToInventory": {
+                "className": "CharacterObject",
+                "maxArguments": 3,
+                "methodName": "SyncAllWeaponsToInventory",
+                "minArguments": 2,
+                "return": 3
+            },
+            "SyncInventoryToAllWeapons": {
+                "className": "CharacterObject",
+                "maxArguments": 2,
+                "methodName": "SyncInventoryToAllWeapons",
+                "minArguments": 2,
+                "return": 3
+            },
+            "SyncWeaponToInventory": {
+                "className": "CharacterObject",
+                "maxArguments": 4,
+                "methodName": "SyncWeaponToInventory",
+                "minArguments": 4,
+                "return": 3
+            },
+            "UseTargetSet": {
+                "className": "CharacterObject",
+                "maxArguments": 4,
+                "methodName": "UseTargetSet",
+                "minArguments": 4,
+                "return": 3
+            }
+        },
+        "CoverObject": {
+            "GetCharacterTargetPosition": {
+                "className": "CoverObject",
+                "maxArguments": 2,
+                "methodName": "GetCharacterTargetPosition",
+                "minArguments": 2,
+                "return": 0
+            }
+        },
+        "DWHenchman": {
+            "IsAIOverriddenByScript": {
+                "className": "DWHenchman",
+                "maxArguments": 2,
+                "methodName": "IsAIOverriddenByScript",
+                "minArguments": 2,
+                "return": 4
+            }
+        },
+        "DanceState": {
+            "EnterDanceVolume": {
+                "className": "DanceState",
+                "maxArguments": 3,
+                "methodName": "EnterDanceVolume",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "DrugWarsHUD": {
+            "Action": {
+                "className": "DrugWarsHUD",
+                "maxArguments": 3,
+                "methodName": "Action",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "EffectsObject": {
+            "ClearAll": {
+                "className": "EffectsObject",
+                "maxArguments": 2,
+                "methodName": "ClearAll",
+                "minArguments": 2,
+                "return": 3
+            }
+        },
+        "EmpireHUD": {
+            "Action": {
+                "className": "EmpireHUD",
+                "maxArguments": 3,
+                "methodName": "Action",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "ExoticsHUD2": {
+            "Action": {
+                "className": "ExoticsHUD2",
+                "maxArguments": 3,
+                "methodName": "Action",
+                "minArguments": 3,
+                "return": 3
+            },
+            "InvestmentReturnMultiply": {
+                "className": "ExoticsHUD2",
+                "maxArguments": 4,
+                "methodName": "InvestmentReturnMultiply",
+                "minArguments": 4,
+                "return": 1
+            },
+            "Move": {
+                "className": "ExoticsHUD2",
+                "maxArguments": 3,
+                "methodName": "Move",
+                "minArguments": 3,
+                "return": 3
+            },
+            "RefreshCashAndDetails": {
+                "className": "ExoticsHUD2",
+                "maxArguments": 2,
+                "methodName": "RefreshCashAndDetails",
+                "minArguments": 2,
+                "return": 3
+            },
+            "ShowRepGained": {
+                "className": "ExoticsHUD2",
+                "maxArguments": 4,
+                "methodName": "ShowRepGained",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "ExplosionTemplate": {
+            "StartExplosion": {
+                "className": "ExplosionTemplate",
+                "maxArguments": 3,
+                "methodName": "StartExplosion",
+                "minArguments": 3,
+                "return": 3
+            },
+            "StartScaledExplosion": {
+                "className": "ExplosionTemplate",
+                "maxArguments": 4,
+                "methodName": "StartScaledExplosion",
+                "minArguments": 4,
+                "return": 3
+            },
+            "StartScaledExplosionAt": {
+                "className": "ExplosionTemplate",
+                "maxArguments": 4,
+                "methodName": "StartScaledExplosionAt",
+                "minArguments": 4,
+                "return": 3
+            }
+        },
+        "FEBoxObject": {
+            "SetPosition": {
+                "className": "FEBoxObject",
+                "maxArguments": 4,
+                "methodName": "SetPosition",
+                "minArguments": 4,
+                "return": 3
+            },
+            "SetTriPosition": {
+                "className": "FEBoxObject",
+                "maxArguments": 4,
+                "methodName": "SetTriPosition",
+                "minArguments": 4,
+                "return": 3
+            }
+        },
+        "FESpriteObject": {
+            "SetCurrentItem": {
+                "className": "FESpriteObject",
+                "maxArguments": 3,
+                "methodName": "SetCurrentItem",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "FETextObject": {
+            "ClearTextItems": {
+                "className": "FETextObject",
+                "maxArguments": 2,
+                "methodName": "ClearTextItems",
+                "minArguments": 2,
+                "return": 3
+            },
+            "SetText": {
+                "className": "FETextObject",
+                "maxArguments": 4,
+                "methodName": "SetText",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "FightBettingHUD": {
+            "Input": {
+                "className": "FightBettingHUD",
+                "maxArguments": 3,
+                "methodName": "Input",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetFightType": {
+                "className": "FightBettingHUD",
+                "maxArguments": 3,
+                "methodName": "SetFightType",
+                "minArguments": 3,
+                "return": 3
+            },
+            "Winner": {
+                "className": "FightBettingHUD",
+                "maxArguments": 3,
+                "methodName": "Winner",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "GameGroup": {
+            "Recurse": {
+                "className": "GameGroup",
+                "maxArguments": 10,
+                "methodName": "Recurse",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "GameObject": {
+            "SetDirection": {
+                "className": "GameObject",
+                "maxArguments": 3,
+                "methodName": "SetDirection",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetPosition": {
+                "className": "GameObject",
+                "maxArguments": 3,
+                "methodName": "SetPosition",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "GameOverHUD": {
+            "Input": {
+                "className": "GameOverHUD",
+                "maxArguments": 3,
+                "methodName": "Input",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "GameSet": {
+            "Add": {
+                "className": "GameSet",
+                "maxArguments": 3,
+                "methodName": "Add",
+                "minArguments": 3,
+                "return": 4
+            },
+            "Clear": {
+                "className": "GameSet",
+                "maxArguments": 2,
+                "methodName": "Clear",
+                "minArguments": 2,
+                "return": 3
+            },
+            "Find": {
+                "className": "GameSet",
+                "maxArguments": 3,
+                "methodName": "Find",
+                "minArguments": 3,
+                "return": 1
+            },
+            "GetMemberUsingIndex": {
+                "className": "GameSet",
+                "maxArguments": 3,
+                "methodName": "GetMemberUsingIndex",
+                "minArguments": 3,
+                "return": 1
+            },
+            "GetObject": {
+                "className": "GameSet",
+                "maxArguments": 3,
+                "methodName": "GetObject",
+                "minArguments": 3,
+                "return": 1
+            },
+            "Remove": {
+                "className": "GameSet",
+                "maxArguments": 3,
+                "methodName": "Remove",
+                "minArguments": 3,
+                "return": 4
+            },
+            "SetVisible": {
+                "className": "GameSet",
+                "maxArguments": 3,
+                "methodName": "SetVisible",
+                "minArguments": 3,
+                "return": 3
+            },
+            "Size": {
+                "className": "GameSet",
+                "maxArguments": 2,
+                "methodName": "Size",
+                "minArguments": 2,
+                "return": 1
+            }
+        },
+        "GameSimObject": {
+            "SetInvincible": {
+                "className": "GameSimObject",
+                "maxArguments": 4,
+                "methodName": "SetInvincible",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "GenericCharacterCamera": {
+            "AcquireTarget": {
+                "className": "GenericCharacterCamera",
+                "maxArguments": 3,
+                "methodName": "AcquireTarget",
+                "minArguments": 3,
+                "return": 4
+            },
+            "RecenterCamera": {
+                "className": "GenericCharacterCamera",
+                "maxArguments": 2,
+                "methodName": "RecenterCamera",
+                "minArguments": 2,
+                "return": 3
+            },
+            "ReleaseTarget": {
+                "className": "GenericCharacterCamera",
+                "maxArguments": 2,
+                "methodName": "ReleaseTarget",
+                "minArguments": 2,
+                "return": 3
+            },
+            "SetActionMap": {
+                "className": "GenericCharacterCamera",
+                "maxArguments": 3,
+                "methodName": "SetActionMap",
+                "minArguments": 3,
+                "return": 1
+            },
+            "SnapToObject": {
+                "className": "GenericCharacterCamera",
+                "maxArguments": 3,
+                "methodName": "SnapToObject",
+                "minArguments": 3,
+                "return": 1
+            }
+        },
+        "Graph": {
+            "AddKey": {
+                "className": "Graph",
+                "maxArguments": 3,
+                "methodName": "AddKey",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetMaxNumKeys": {
+                "className": "Graph",
+                "maxArguments": 3,
+                "methodName": "SetMaxNumKeys",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "HUDCallout2": {
+            "ActivateCallout": {
+                "className": "HUDCallout2",
+                "maxArguments": 4,
+                "methodName": "ActivateCallout",
+                "minArguments": 4,
+                "return": 3
+            },
+            "TerminateCallouts": {
+                "className": "HUDCallout2",
+                "maxArguments": 3,
+                "methodName": "TerminateCallouts",
+                "minArguments": 2,
+                "return": 3
+            }
+        },
+        "HUDElement2": {
+            "IsActive": {
+                "className": "HUDElement2",
+                "maxArguments": 2,
+                "methodName": "IsActive",
+                "minArguments": 2,
+                "return": 4
+            },
+            "SetActivated": {
+                "className": "HUDElement2",
+                "maxArguments": 4,
+                "methodName": "SetActivated",
+                "minArguments": 3,
+                "return": 4
+            }
+        },
+        "HUDSubtitle": {
+            "ActivateSubTitle": {
+                "className": "HUDSubtitle",
+                "maxArguments": 6,
+                "methodName": "ActivateSubTitle",
+                "minArguments": 6,
+                "return": 3
+            },
+            "DeactivateSubTitles": {
+                "className": "HUDSubtitle",
+                "maxArguments": 3,
+                "methodName": "DeactivateSubTitles",
+                "minArguments": 2,
+                "return": 3
+            }
+        },
+        "HUDTapePlayer": {
+            "GetCurrentlyPlayingMix": {
+                "className": "HUDTapePlayer",
+                "maxArguments": 2,
+                "methodName": "GetCurrentlyPlayingMix",
+                "minArguments": 2,
+                "return": 1
+            },
+            "HandleButtonPress": {
+                "className": "HUDTapePlayer",
+                "maxArguments": 3,
+                "methodName": "HandleButtonPress",
+                "minArguments": 3,
+                "return": 3
+            },
+            "IsCurrentlyPlaying": {
+                "className": "HUDTapePlayer",
+                "maxArguments": 2,
+                "methodName": "IsCurrentlyPlaying",
+                "minArguments": 2,
+                "return": 4
+            },
+            "PlayMix": {
+                "className": "HUDTapePlayer",
+                "maxArguments": 3,
+                "methodName": "PlayMix",
+                "minArguments": 3,
+                "return": 3
+            },
+            "Stop": {
+                "className": "HUDTapePlayer",
+                "maxArguments": 5,
+                "methodName": "Stop",
+                "minArguments": 2,
+                "return": 3
+            }
+        },
+        "InstanceObject": {
+            "Count": {
+                "className": "InstanceObject",
+                "maxArguments": 2,
+                "methodName": "Count",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetStatePropByIndex": {
+                "className": "InstanceObject",
+                "maxArguments": 3,
+                "methodName": "GetStatePropByIndex",
+                "minArguments": 3,
+                "return": 1
+            },
+            "SetStateByIndex": {
+                "className": "InstanceObject",
+                "maxArguments": 4,
+                "methodName": "SetStateByIndex",
+                "minArguments": 4,
+                "return": 3
+            }
+        },
+        "IntimidationHUD": {
+            "CreateMeter": {
+                "className": "IntimidationHUD",
+                "maxArguments": 7,
+                "methodName": "CreateMeter",
+                "minArguments": 6,
+                "return": 3
+            },
+            "RequestStopWindUp": {
+                "className": "IntimidationHUD",
+                "maxArguments": 2,
+                "methodName": "RequestStopWindUp",
+                "minArguments": 2,
+                "return": 3
+            },
+            "SetIntimidatedNPC": {
+                "className": "IntimidationHUD",
+                "maxArguments": 3,
+                "methodName": "SetIntimidatedNPC",
+                "minArguments": 3,
+                "return": 3
+            },
+            "StartWindUp": {
+                "className": "IntimidationHUD",
+                "maxArguments": 2,
+                "methodName": "StartWindUp",
+                "minArguments": 2,
+                "return": 3
+            }
+        },
+        "InvSelectionHUD": {
+            "DecrementSelection": {
+                "className": "InvSelectionHUD",
+                "maxArguments": 2,
+                "methodName": "DecrementSelection",
+                "minArguments": 2,
+                "return": 3
+            },
+            "IncrementSelection": {
+                "className": "InvSelectionHUD",
+                "maxArguments": 2,
+                "methodName": "IncrementSelection",
+                "minArguments": 2,
+                "return": 3
+            },
+            "IsToggleAllowed": {
+                "className": "InvSelectionHUD",
+                "maxArguments": 3,
+                "methodName": "IsToggleAllowed",
+                "minArguments": 3,
+                "return": 4
+            },
+            "SetMissionText": {
+                "className": "InvSelectionHUD",
+                "maxArguments": 3,
+                "methodName": "SetMissionText",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetSelectionCallback": {
+                "className": "InvSelectionHUD",
+                "maxArguments": 5,
+                "methodName": "SetSelectionCallback",
+                "minArguments": 5,
+                "return": 3
+            },
+            "SetToggleWait": {
+                "className": "InvSelectionHUD",
+                "maxArguments": 3,
+                "methodName": "SetToggleWait",
+                "minArguments": 3,
+                "return": 3
+            },
+            "StartInventorySelect": {
+                "className": "InvSelectionHUD",
+                "maxArguments": 2,
+                "methodName": "StartInventorySelect",
+                "minArguments": 2,
+                "return": 3
+            },
+            "StopInventorySelect": {
+                "className": "InvSelectionHUD",
+                "maxArguments": 3,
+                "methodName": "StopInventorySelect",
+                "minArguments": 2,
+                "return": 3
+            }
+        },
+        "InventoryBox": {
+            "GetCountOfType": {
+                "className": "InventoryBox",
+                "maxArguments": 3,
+                "methodName": "GetCountOfType",
+                "minArguments": 3,
+                "return": 1
+            },
+            "GetInventoryType": {
+                "className": "InventoryBox",
+                "maxArguments": 3,
+                "methodName": "GetInventoryType",
+                "minArguments": 3,
+                "return": 1
+            },
+            "GetMaxCountOfType": {
+                "className": "InventoryBox",
+                "maxArguments": 3,
+                "methodName": "GetMaxCountOfType",
+                "minArguments": 3,
+                "return": 1
+            },
+            "GetWeightCapacity": {
+                "className": "InventoryBox",
+                "maxArguments": 3,
+                "methodName": "GetWeightCapacity",
+                "minArguments": 3,
+                "return": 1
+            },
+            "GetWeightOfType": {
+                "className": "InventoryBox",
+                "maxArguments": 3,
+                "methodName": "GetWeightOfType",
+                "minArguments": 3,
+                "return": 1
+            },
+            "PRIVATE_INV_ADD": {
+                "className": "InventoryBox",
+                "maxArguments": 5,
+                "methodName": "PRIVATE_INV_ADD",
+                "minArguments": 5,
+                "return": 3
+            }
+        },
+        "InventoryOwner": {
+            "AddToInventory": {
+                "className": "InventoryOwner",
+                "maxArguments": 5,
+                "methodName": "AddToInventory",
+                "minArguments": 3,
+                "return": 0
+            },
+            "GetCountInInventory": {
+                "className": "InventoryOwner",
+                "maxArguments": 3,
+                "methodName": "GetCountInInventory",
+                "minArguments": 3,
+                "return": 1
+            },
+            "RemoveFromInventory": {
+                "className": "InventoryOwner",
+                "maxArguments": 4,
+                "methodName": "RemoveFromInventory",
+                "minArguments": 3,
+                "return": 0
+            }
+        },
+        "LaunderCashHUD": {
+            "Confirm": {
+                "className": "LaunderCashHUD",
+                "maxArguments": 2,
+                "methodName": "Confirm",
+                "minArguments": 2,
+                "return": 3
+            }
+        },
+        "LoadPackage": {
+            "Load": {
+                "className": "LoadPackage",
+                "maxArguments": 2,
+                "methodName": "Load",
+                "minArguments": 2,
+                "return": 3
+            },
+            "Reload": {
+                "className": "LoadPackage",
+                "maxArguments": 2,
+                "methodName": "Reload",
+                "minArguments": 2,
+                "return": 3
+            },
+            "ReloadPackage": {
+                "className": "LoadPackage",
+                "maxArguments": 2,
+                "methodName": "ReloadPackage",
+                "minArguments": 2,
+                "return": 3
+            },
+            "Unload": {
+                "className": "LoadPackage",
+                "maxArguments": 2,
+                "methodName": "Unload",
+                "minArguments": 2,
+                "return": 3
+            },
+            "UnloadComplete": {
+                "className": "LoadPackage",
+                "maxArguments": 2,
+                "methodName": "UnloadComplete",
+                "minArguments": 2,
+                "return": 3
+            }
+        },
+        "LockerWeaponHUD": {
+            "Input": {
+                "className": "LockerWeaponHUD",
+                "maxArguments": 3,
+                "methodName": "Input",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "LookTutorialHUD": {
+            "Pressed": {
+                "className": "LookTutorialHUD",
+                "maxArguments": 3,
+                "methodName": "Pressed",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "MapHUD2": {
+            "ActivateMaxiMap": {
+                "className": "MapHUD2",
+                "maxArguments": 2,
+                "methodName": "ActivateMaxiMap",
+                "minArguments": 2,
+                "return": 4
+            },
+            "ActivationAllowed": {
+                "className": "MapHUD2",
+                "maxArguments": 2,
+                "methodName": "ActivationAllowed",
+                "minArguments": 2,
+                "return": 4
+            },
+            "DeactivateMaxiMap": {
+                "className": "MapHUD2",
+                "maxArguments": 2,
+                "methodName": "DeactivateMaxiMap",
+                "minArguments": 2,
+                "return": 4
+            },
+            "GetCameraFocalPoint": {
+                "className": "MapHUD2",
+                "maxArguments": 2,
+                "methodName": "GetCameraFocalPoint",
+                "minArguments": 2,
+                "return": 0
+            },
+            "ResetActionMap": {
+                "className": "MapHUD2",
+                "maxArguments": 2,
+                "methodName": "ResetActionMap",
+                "minArguments": 2,
+                "return": 3
+            },
+            "SetConstraintVecs": {
+                "className": "MapHUD2",
+                "maxArguments": 8,
+                "methodName": "SetConstraintVecs",
+                "minArguments": 8,
+                "return": 3
+            },
+            "SetEventPosting": {
+                "className": "MapHUD2",
+                "maxArguments": 4,
+                "methodName": "SetEventPosting",
+                "minArguments": 4,
+                "return": 3
+            },
+            "TranslateToFocalPoint": {
+                "className": "MapHUD2",
+                "maxArguments": 3,
+                "methodName": "TranslateToFocalPoint",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "MissionCompleteHUD": {
+            "Select": {
+                "className": "MissionCompleteHUD",
+                "maxArguments": 2,
+                "methodName": "Select",
+                "minArguments": 2,
+                "return": 3
+            }
+        },
+        "MissionFailHUD": {
+            "Input": {
+                "className": "MissionFailHUD",
+                "maxArguments": 3,
+                "methodName": "Input",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "MissionHUD": {
+            "ActivateStartLayer": {
+                "className": "MissionHUD",
+                "maxArguments": 3,
+                "methodName": "ActivateStartLayer",
+                "minArguments": 3,
+                "return": 3
+            },
+            "FadeIn": {
+                "className": "MissionHUD",
+                "maxArguments": 2,
+                "methodName": "FadeIn",
+                "minArguments": 2,
+                "return": 3
+            }
+        },
+        "MissionStage": {
+            "ActivateObjectGroup": {
+                "className": "MissionStage",
+                "maxArguments": 3,
+                "methodName": "ActivateObjectGroup",
+                "minArguments": 3,
+                "return": 3
+            },
+            "DeactivateObjectGroup": {
+                "className": "MissionStage",
+                "maxArguments": 3,
+                "methodName": "DeactivateObjectGroup",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "MountedWeaponStateProp": {
+            "GetVehicleID": {
+                "className": "MountedWeaponStateProp",
+                "maxArguments": 2,
+                "methodName": "GetVehicleID",
+                "minArguments": 2,
+                "return": 1
+            }
+        },
+        "NISCamera": {
+            "AttachCameraToObject": {
+                "className": "NISCamera",
+                "maxArguments": 7,
+                "methodName": "AttachCameraToObject",
+                "minArguments": 7,
+                "return": 3
+            },
+            "Clear": {
+                "className": "NISCamera",
+                "maxArguments": 2,
+                "methodName": "Clear",
+                "minArguments": 2,
+                "return": 3
+            },
+            "Extend": {
+                "className": "NISCamera",
+                "maxArguments": 2,
+                "methodName": "Extend",
+                "minArguments": 2,
+                "return": 3
+            },
+            "FrameTwoPositions": {
+                "className": "NISCamera",
+                "maxArguments": 5,
+                "methodName": "FrameTwoPositions",
+                "minArguments": 5,
+                "return": 3
+            },
+            "SelectCamera2": {
+                "className": "NISCamera",
+                "maxArguments": 2,
+                "methodName": "SelectCamera2",
+                "minArguments": 2,
+                "return": 3
+            },
+            "SetAnimationParams": {
+                "className": "NISCamera",
+                "maxArguments": 7,
+                "methodName": "SetAnimationParams",
+                "minArguments": 7,
+                "return": 3
+            },
+            "SetBlend": {
+                "className": "NISCamera",
+                "maxArguments": 4,
+                "methodName": "SetBlend",
+                "minArguments": 4,
+                "return": 3
+            },
+            "SetCameraAnimation": {
+                "className": "NISCamera",
+                "maxArguments": 3,
+                "methodName": "SetCameraAnimation",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetCameraFOV": {
+                "className": "NISCamera",
+                "maxArguments": 3,
+                "methodName": "SetCameraFOV",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetCameraObject": {
+                "className": "NISCamera",
+                "maxArguments": 7,
+                "methodName": "SetCameraObject",
+                "minArguments": 7,
+                "return": 3
+            },
+            "SetCameraPosition": {
+                "className": "NISCamera",
+                "maxArguments": 3,
+                "methodName": "SetCameraPosition",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetCollision": {
+                "className": "NISCamera",
+                "maxArguments": 3,
+                "methodName": "SetCollision",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetOrbit": {
+                "className": "NISCamera",
+                "maxArguments": 4,
+                "methodName": "SetOrbit",
+                "minArguments": 4,
+                "return": 3
+            },
+            "SetTargetObject": {
+                "className": "NISCamera",
+                "maxArguments": 7,
+                "methodName": "SetTargetObject",
+                "minArguments": 7,
+                "return": 3
+            },
+            "SetTargetPosition": {
+                "className": "NISCamera",
+                "maxArguments": 3,
+                "methodName": "SetTargetPosition",
+                "minArguments": 3,
+                "return": 3
+            },
+            "Start": {
+                "className": "NISCamera",
+                "maxArguments": 2,
+                "methodName": "Start",
+                "minArguments": 2,
+                "return": 3
+            }
+        },
+        "OceanObject": {
+            "SetLOD": {
+                "className": "OceanObject",
+                "maxArguments": 3,
+                "methodName": "SetLOD",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetTuningTemplate": {
+                "className": "OceanObject",
+                "maxArguments": 4,
+                "methodName": "SetTuningTemplate",
+                "minArguments": 4,
+                "return": 3
+            }
+        },
+        "ParticleEffectObject": {
+            "Start": {
+                "className": "ParticleEffectObject",
+                "maxArguments": 2,
+                "methodName": "Start",
+                "minArguments": 2,
+                "return": 3
+            },
+            "Stop": {
+                "className": "ParticleEffectObject",
+                "maxArguments": 2,
+                "methodName": "Stop",
+                "minArguments": 2,
+                "return": 3
+            }
+        },
+        "PauseMenuPage": {
+            "Action": {
+                "className": "PauseMenuPage",
+                "maxArguments": 3,
+                "methodName": "Action",
+                "minArguments": 3,
+                "return": 3
+            },
+            "Move": {
+                "className": "PauseMenuPage",
+                "maxArguments": 3,
+                "methodName": "Move",
+                "minArguments": 3,
+                "return": 3
+            },
+            "RefreshMenu": {
+                "className": "PauseMenuPage",
+                "maxArguments": 2,
+                "methodName": "RefreshMenu",
+                "minArguments": 2,
+                "return": 3
+            }
+        },
+        "PauseMenuPageControllerConfig": {
+            "Input": {
+                "className": "PauseMenuPageControllerConfig",
+                "maxArguments": 3,
+                "methodName": "Input",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "PauseMenuPageOptions": {
+            "SetProgressiveRequest": {
+                "className": "PauseMenuPageOptions",
+                "maxArguments": 3,
+                "methodName": "SetProgressiveRequest",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "PimpYourMansionHUD": {
+            "Input": {
+                "className": "PimpYourMansionHUD",
+                "maxArguments": 3,
+                "methodName": "Input",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "PoiMarkerObject": {
+            "SetStatePropState": {
+                "className": "PoiMarkerObject",
+                "maxArguments": 3,
+                "methodName": "SetStatePropState",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "PokerHUD": {
+            "Input": {
+                "className": "PokerHUD",
+                "maxArguments": 3,
+                "methodName": "Input",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "PositionObject": {
+            "SetPosition": {
+                "className": "PositionObject",
+                "maxArguments": 3,
+                "methodName": "SetPosition",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "RageState": {
+            "EndBlindRage": {
+                "className": "RageState",
+                "maxArguments": 2,
+                "methodName": "EndBlindRage",
+                "minArguments": 2,
+                "return": 4
+            },
+            "IsRageModeOn": {
+                "className": "RageState",
+                "maxArguments": 2,
+                "methodName": "IsRageModeOn",
+                "minArguments": 2,
+                "return": 4
+            },
+            "StartBlindRage": {
+                "className": "RageState",
+                "maxArguments": 2,
+                "methodName": "StartBlindRage",
+                "minArguments": 2,
+                "return": 4
+            }
+        },
+        "RainObject": {
+            "EnableRain": {
+                "className": "RainObject",
+                "maxArguments": 3,
+                "methodName": "EnableRain",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "RepGainHUD": {
+            "Confirm": {
+                "className": "RepGainHUD",
+                "maxArguments": 2,
+                "methodName": "Confirm",
+                "minArguments": 2,
+                "return": 3
+            }
+        },
+        "SatPhoneWeaponHUD": {
+            "Input": {
+                "className": "SatPhoneWeaponHUD",
+                "maxArguments": 3,
+                "methodName": "Input",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "SaveGameController": {
+            "ActivateQueue": {
+                "className": "SaveGameController",
+                "maxArguments": 4,
+                "methodName": "ActivateQueue",
+                "minArguments": 4,
+                "return": 3
+            },
+            "CanWeSave": {
+                "className": "SaveGameController",
+                "maxArguments": 3,
+                "methodName": "CanWeSave",
+                "minArguments": 3,
+                "return": 4
+            },
+            "EnforceReleaseAssert": {
+                "className": "SaveGameController",
+                "maxArguments": 3,
+                "methodName": "EnforceReleaseAssert",
+                "minArguments": 3,
+                "return": 3
+            },
+            "LoadGame": {
+                "className": "SaveGameController",
+                "maxArguments": 6,
+                "methodName": "LoadGame",
+                "minArguments": 3,
+                "return": 3
+            },
+            "ResetRegisteredHandlers": {
+                "className": "SaveGameController",
+                "maxArguments": 2,
+                "methodName": "ResetRegisteredHandlers",
+                "minArguments": 2,
+                "return": 3
+            },
+            "SaveGame": {
+                "className": "SaveGameController",
+                "maxArguments": 6,
+                "methodName": "SaveGame",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetMissionStatus": {
+                "className": "SaveGameController",
+                "maxArguments": 3,
+                "methodName": "SetMissionStatus",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "ScriptCharacter": {
+            "SetNeedsMissionManagerHooks": {
+                "className": "ScriptCharacter",
+                "maxArguments": 3,
+                "methodName": "SetNeedsMissionManagerHooks",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "ScriptObject": {
+            "ApplyChanges": {
+                "className": "ScriptObject",
+                "maxArguments": 3,
+                "methodName": "ApplyChanges",
+                "minArguments": 2,
+                "return": 3
+            },
+            "Delete": {
+                "className": "ScriptObject",
+                "maxArguments": 2,
+                "methodName": "Delete",
+                "minArguments": 2,
+                "return": 3
+            },
+            "ExportAttribute": {
+                "className": "ScriptObject",
+                "maxArguments": 5,
+                "methodName": "ExportAttribute",
+                "minArguments": 3,
+                "return": 3
+            },
+            "GetClass": {
+                "className": "ScriptObject",
+                "maxArguments": 2,
+                "methodName": "GetClass",
+                "minArguments": 2,
+                "return": 0
+            },
+            "GetID": {
+                "className": "ScriptObject",
+                "maxArguments": 2,
+                "methodName": "GetID",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetParentGroup": {
+                "className": "ScriptObject",
+                "maxArguments": 2,
+                "methodName": "GetParentGroup",
+                "minArguments": 2,
+                "return": 1
+            },
+            "IsA": {
+                "className": "ScriptObject",
+                "maxArguments": 3,
+                "methodName": "IsA",
+                "minArguments": 3,
+                "return": 4
+            },
+            "Recurse": {
+                "className": "ScriptObject",
+                "maxArguments": 10,
+                "methodName": "Recurse",
+                "minArguments": 3,
+                "return": 3
+            },
+            "RelinkNamespaces": {
+                "className": "ScriptObject",
+                "maxArguments": 2,
+                "methodName": "RelinkNamespaces",
+                "minArguments": 2,
+                "return": 3
+            },
+            "SetDataField": {
+                "className": "ScriptObject",
+                "maxArguments": 4,
+                "methodName": "SetDataField",
+                "minArguments": 4,
+                "return": 3
+            },
+            "SetSubZone": {
+                "className": "ScriptObject",
+                "maxArguments": 3,
+                "methodName": "SetSubZone",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "SlotMachineHUD": {
+            "Input": {
+                "className": "SlotMachineHUD",
+                "maxArguments": 3,
+                "methodName": "Input",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "StatePropAttachmentObject": {
+            "Attach": {
+                "className": "StatePropAttachmentObject",
+                "maxArguments": 4,
+                "methodName": "Attach",
+                "minArguments": 4,
+                "return": 3
+            }
+        },
+        "StatePropObject": {
+            "AddHealth": {
+                "className": "StatePropObject",
+                "maxArguments": 3,
+                "methodName": "AddHealth",
+                "minArguments": 3,
+                "return": 3
+            },
+            "ApplyDamage": {
+                "className": "StatePropObject",
+                "maxArguments": 3,
+                "methodName": "ApplyDamage",
+                "minArguments": 3,
+                "return": 3
+            },
+            "CarriedByPlayer": {
+                "className": "StatePropObject",
+                "maxArguments": 3,
+                "methodName": "CarriedByPlayer",
+                "minArguments": 3,
+                "return": 3
+            },
+            "CarriedObjectIsSafeToDrop": {
+                "className": "StatePropObject",
+                "maxArguments": 2,
+                "methodName": "CarriedObjectIsSafeToDrop",
+                "minArguments": 2,
+                "return": 4
+            },
+            "CarriedObjectSetOffset": {
+                "className": "StatePropObject",
+                "maxArguments": 3,
+                "methodName": "CarriedObjectSetOffset",
+                "minArguments": 3,
+                "return": 3
+            },
+            "CarriedObjectSetRotationSpeed": {
+                "className": "StatePropObject",
+                "maxArguments": 3,
+                "methodName": "CarriedObjectSetRotationSpeed",
+                "minArguments": 3,
+                "return": 3
+            },
+            "DestroyPropObject": {
+                "className": "StatePropObject",
+                "maxArguments": 2,
+                "methodName": "DestroyPropObject",
+                "minArguments": 2,
+                "return": 3
+            },
+            "EnableCollision": {
+                "className": "StatePropObject",
+                "maxArguments": 3,
+                "methodName": "EnableCollision",
+                "minArguments": 3,
+                "return": 3
+            },
+            "GetCurrentHealth": {
+                "className": "StatePropObject",
+                "maxArguments": 2,
+                "methodName": "GetCurrentHealth",
+                "minArguments": 2,
+                "return": 2
+            },
+            "GetStateIndex": {
+                "className": "StatePropObject",
+                "maxArguments": 2,
+                "methodName": "GetStateIndex",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetWorldLocatorPosition": {
+                "className": "StatePropObject",
+                "maxArguments": 2,
+                "methodName": "GetWorldLocatorPosition",
+                "minArguments": 2,
+                "return": 0
+            },
+            "IsDestroyed": {
+                "className": "StatePropObject",
+                "maxArguments": 2,
+                "methodName": "IsDestroyed",
+                "minArguments": 2,
+                "return": 4
+            },
+            "IsState": {
+                "className": "StatePropObject",
+                "maxArguments": 3,
+                "methodName": "IsState",
+                "minArguments": 3,
+                "return": 4
+            },
+            "PlayPickupSound": {
+                "className": "StatePropObject",
+                "maxArguments": 2,
+                "methodName": "PlayPickupSound",
+                "minArguments": 2,
+                "return": 3
+            },
+            "RegisterForStateCallbacks": {
+                "className": "StatePropObject",
+                "maxArguments": 3,
+                "methodName": "RegisterForStateCallbacks",
+                "minArguments": 2,
+                "return": 3
+            },
+            "RequestStateSound": {
+                "className": "StatePropObject",
+                "maxArguments": 3,
+                "methodName": "RequestStateSound",
+                "minArguments": 3,
+                "return": 3
+            },
+            "ResetHealth": {
+                "className": "StatePropObject",
+                "maxArguments": 2,
+                "methodName": "ResetHealth",
+                "minArguments": 2,
+                "return": 3
+            },
+            "SetIsHighestPriorityForCuller": {
+                "className": "StatePropObject",
+                "maxArguments": 3,
+                "methodName": "SetIsHighestPriorityForCuller",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetPriorityScale": {
+                "className": "StatePropObject",
+                "maxArguments": 3,
+                "methodName": "SetPriorityScale",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetRemoveInNIS": {
+                "className": "StatePropObject",
+                "maxArguments": 3,
+                "methodName": "SetRemoveInNIS",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetState": {
+                "className": "StatePropObject",
+                "maxArguments": 3,
+                "methodName": "SetState",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetStateIndex": {
+                "className": "StatePropObject",
+                "maxArguments": 3,
+                "methodName": "SetStateIndex",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "StreetWeaponHUD": {
+            "Input": {
+                "className": "StreetWeaponHUD",
+                "maxArguments": 3,
+                "methodName": "Input",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "SystemDialogBox": {
+            "CloseSystemDialog": {
+                "className": "SystemDialogBox",
+                "maxArguments": 3,
+                "methodName": "CloseSystemDialog",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetScriptCallbacks": {
+                "className": "SystemDialogBox",
+                "maxArguments": 6,
+                "methodName": "SetScriptCallbacks",
+                "minArguments": 6,
+                "return": 3
+            }
+        },
+        "TODObject": {
+            "EnableRain": {
+                "className": "TODObject",
+                "maxArguments": 3,
+                "methodName": "EnableRain",
+                "minArguments": 3,
+                "return": 3
+            },
+            "EnableTODUpdate": {
+                "className": "TODObject",
+                "maxArguments": 3,
+                "methodName": "EnableTODUpdate",
+                "minArguments": 3,
+                "return": 3
+            },
+            "GetTimeHour": {
+                "className": "TODObject",
+                "maxArguments": 2,
+                "methodName": "GetTimeHour",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetTimeMinute": {
+                "className": "TODObject",
+                "maxArguments": 2,
+                "methodName": "GetTimeMinute",
+                "minArguments": 2,
+                "return": 1
+            },
+            "IsRaining": {
+                "className": "TODObject",
+                "maxArguments": 2,
+                "methodName": "IsRaining",
+                "minArguments": 2,
+                "return": 4
+            },
+            "IsUpdating": {
+                "className": "TODObject",
+                "maxArguments": 2,
+                "methodName": "IsUpdating",
+                "minArguments": 2,
+                "return": 4
+            },
+            "SetTime": {
+                "className": "TODObject",
+                "maxArguments": 5,
+                "methodName": "SetTime",
+                "minArguments": 5,
+                "return": 3
+            }
+        },
+        "TapeMixTape": {
+            "GetTrack": {
+                "className": "TapeMixTape",
+                "maxArguments": 3,
+                "methodName": "GetTrack",
+                "minArguments": 3,
+                "return": 1
+            },
+            "GetTrackCount": {
+                "className": "TapeMixTape",
+                "maxArguments": 2,
+                "methodName": "GetTrackCount",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetTrackIndex": {
+                "className": "TapeMixTape",
+                "maxArguments": 3,
+                "methodName": "GetTrackIndex",
+                "minArguments": 3,
+                "return": 1
+            }
+        },
+        "TapePlayer": {
+            "GetCurrentPlaylist": {
+                "className": "TapePlayer",
+                "maxArguments": 2,
+                "methodName": "GetCurrentPlaylist",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetCurrentTrack": {
+                "className": "TapePlayer",
+                "maxArguments": 2,
+                "methodName": "GetCurrentTrack",
+                "minArguments": 2,
+                "return": 1
+            },
+            "Pause": {
+                "className": "TapePlayer",
+                "maxArguments": 2,
+                "methodName": "Pause",
+                "minArguments": 2,
+                "return": 3
+            },
+            "Play": {
+                "className": "TapePlayer",
+                "maxArguments": 2,
+                "methodName": "Play",
+                "minArguments": 2,
+                "return": 3
+            },
+            "SetCanPlayLocked": {
+                "className": "TapePlayer",
+                "maxArguments": 3,
+                "methodName": "SetCanPlayLocked",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetCurrentPlaylist": {
+                "className": "TapePlayer",
+                "maxArguments": 3,
+                "methodName": "SetCurrentPlaylist",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetCurrentTrack": {
+                "className": "TapePlayer",
+                "maxArguments": 3,
+                "methodName": "SetCurrentTrack",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetIsRandom": {
+                "className": "TapePlayer",
+                "maxArguments": 3,
+                "methodName": "SetIsRandom",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "TapeTrackLibrary": {
+            "FindRandomTrackInUnlockList": {
+                "className": "TapeTrackLibrary",
+                "maxArguments": 3,
+                "methodName": "FindRandomTrackInUnlockList",
+                "minArguments": 3,
+                "return": 1
+            },
+            "GetTrack": {
+                "className": "TapeTrackLibrary",
+                "maxArguments": 3,
+                "methodName": "GetTrack",
+                "minArguments": 3,
+                "return": 1
+            },
+            "GetTrackCount": {
+                "className": "TapeTrackLibrary",
+                "maxArguments": 2,
+                "methodName": "GetTrackCount",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetTrackIndex": {
+                "className": "TapeTrackLibrary",
+                "maxArguments": 3,
+                "methodName": "GetTrackIndex",
+                "minArguments": 3,
+                "return": 1
+            }
+        },
+        "TeleportHUD": {
+            "InTransition": {
+                "className": "TeleportHUD",
+                "maxArguments": 2,
+                "methodName": "InTransition",
+                "minArguments": 2,
+                "return": 4
+            },
+            "PushSelection": {
+                "className": "TeleportHUD",
+                "maxArguments": 9,
+                "methodName": "PushSelection",
+                "minArguments": 9,
+                "return": 3
+            },
+            "SetBlendDestination": {
+                "className": "TeleportHUD",
+                "maxArguments": 7,
+                "methodName": "SetBlendDestination",
+                "minArguments": 6,
+                "return": 3
+            },
+            "SetNextSelection": {
+                "className": "TeleportHUD",
+                "maxArguments": 3,
+                "methodName": "SetNextSelection",
+                "minArguments": 3,
+                "return": 0
+            },
+            "TeleportCompensationVector": {
+                "className": "TeleportHUD",
+                "maxArguments": 4,
+                "methodName": "TeleportCompensationVector",
+                "minArguments": 4,
+                "return": 0
+            }
+        },
+        "VehicleControllerTemplate": {
+            "DoVibration": {
+                "className": "VehicleControllerTemplate",
+                "maxArguments": 2,
+                "methodName": "DoVibration",
+                "minArguments": 2,
+                "return": 3
+            }
+        },
+        "VehicleObject": {
+            "AddHealth": {
+                "className": "VehicleObject",
+                "maxArguments": 3,
+                "methodName": "AddHealth",
+                "minArguments": 3,
+                "return": 3
+            },
+            "ApplyDamage": {
+                "className": "VehicleObject",
+                "maxArguments": 3,
+                "methodName": "ApplyDamage",
+                "minArguments": 3,
+                "return": 3
+            },
+            "AttachObject": {
+                "className": "VehicleObject",
+                "maxArguments": 5,
+                "methodName": "AttachObject",
+                "minArguments": 5,
+                "return": 4
+            },
+            "DetachObject": {
+                "className": "VehicleObject",
+                "maxArguments": 3,
+                "methodName": "DetachObject",
+                "minArguments": 3,
+                "return": 3
+            },
+            "Explode": {
+                "className": "VehicleObject",
+                "maxArguments": 2,
+                "methodName": "Explode",
+                "minArguments": 2,
+                "return": 3
+            },
+            "FadeAndDelete": {
+                "className": "VehicleObject",
+                "maxArguments": 2,
+                "methodName": "FadeAndDelete",
+                "minArguments": 2,
+                "return": 3
+            },
+            "GetAttachedObject": {
+                "className": "VehicleObject",
+                "maxArguments": 3,
+                "methodName": "GetAttachedObject",
+                "minArguments": 3,
+                "return": 1
+            },
+            "GetCurrentHealth": {
+                "className": "VehicleObject",
+                "maxArguments": 2,
+                "methodName": "GetCurrentHealth",
+                "minArguments": 2,
+                "return": 2
+            },
+            "GetVehicleType": {
+                "className": "VehicleObject",
+                "maxArguments": 2,
+                "methodName": "GetVehicleType",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetVelocity": {
+                "className": "VehicleObject",
+                "maxArguments": 2,
+                "methodName": "GetVelocity",
+                "minArguments": 2,
+                "return": 0
+            },
+            "HasHealth": {
+                "className": "VehicleObject",
+                "maxArguments": 2,
+                "methodName": "HasHealth",
+                "minArguments": 2,
+                "return": 4
+            },
+            "IsBurning": {
+                "className": "VehicleObject",
+                "maxArguments": 2,
+                "methodName": "IsBurning",
+                "minArguments": 2,
+                "return": 4
+            },
+            "IsInWater": {
+                "className": "VehicleObject",
+                "maxArguments": 2,
+                "methodName": "IsInWater",
+                "minArguments": 2,
+                "return": 4
+            },
+            "IsLocked": {
+                "className": "VehicleObject",
+                "maxArguments": 2,
+                "methodName": "IsLocked",
+                "minArguments": 2,
+                "return": 4
+            },
+            "IsPlayerControlled": {
+                "className": "VehicleObject",
+                "maxArguments": 2,
+                "methodName": "IsPlayerControlled",
+                "minArguments": 2,
+                "return": 4
+            },
+            "OnZeroHealthScript": {
+                "className": "VehicleObject",
+                "maxArguments": 2,
+                "methodName": "OnZeroHealthScript",
+                "minArguments": 2,
+                "return": 3
+            },
+            "Reset": {
+                "className": "VehicleObject",
+                "maxArguments": 2,
+                "methodName": "Reset",
+                "minArguments": 2,
+                "return": 3
+            },
+            "ResetHealth": {
+                "className": "VehicleObject",
+                "maxArguments": 2,
+                "methodName": "ResetHealth",
+                "minArguments": 2,
+                "return": 3
+            },
+            "RotateLeftDoor": {
+                "className": "VehicleObject",
+                "maxArguments": 4,
+                "methodName": "RotateLeftDoor",
+                "minArguments": 4,
+                "return": 3
+            },
+            "RotateRearLeftDoor": {
+                "className": "VehicleObject",
+                "maxArguments": 4,
+                "methodName": "RotateRearLeftDoor",
+                "minArguments": 4,
+                "return": 3
+            },
+            "RotateRearRightDoor": {
+                "className": "VehicleObject",
+                "maxArguments": 4,
+                "methodName": "RotateRearRightDoor",
+                "minArguments": 4,
+                "return": 3
+            },
+            "RotateRightDoor": {
+                "className": "VehicleObject",
+                "maxArguments": 4,
+                "methodName": "RotateRightDoor",
+                "minArguments": 4,
+                "return": 3
+            },
+            "SetDamageScale": {
+                "className": "VehicleObject",
+                "maxArguments": 4,
+                "methodName": "SetDamageScale",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetFunctional": {
+                "className": "VehicleObject",
+                "maxArguments": 3,
+                "methodName": "SetFunctional",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetHealthOnZone": {
+                "className": "VehicleObject",
+                "maxArguments": 4,
+                "methodName": "SetHealthOnZone",
+                "minArguments": 4,
+                "return": 3
+            },
+            "SetHornEnabled": {
+                "className": "VehicleObject",
+                "maxArguments": 3,
+                "methodName": "SetHornEnabled",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetLocked": {
+                "className": "VehicleObject",
+                "maxArguments": 3,
+                "methodName": "SetLocked",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetNPCsCanSteal": {
+                "className": "VehicleObject",
+                "maxArguments": 3,
+                "methodName": "SetNPCsCanSteal",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetPilotable": {
+                "className": "VehicleObject",
+                "maxArguments": 3,
+                "methodName": "SetPilotable",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetSirenEnabled": {
+                "className": "VehicleObject",
+                "maxArguments": 3,
+                "methodName": "SetSirenEnabled",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetZoneDamageScaler": {
+                "className": "VehicleObject",
+                "maxArguments": 3,
+                "methodName": "SetZoneDamageScaler",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "VehicleSelectionHUD": {
+            "Action": {
+                "className": "VehicleSelectionHUD",
+                "maxArguments": 3,
+                "methodName": "Action",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "ViceCopHUD": {
+            "Action": {
+                "className": "ViceCopHUD",
+                "maxArguments": 3,
+                "methodName": "Action",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "WeaponPickup": {
+            "Pickup": {
+                "className": "WeaponPickup",
+                "maxArguments": 3,
+                "methodName": "Pickup",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "WeaponStateProp": {
+            "GetAlternateClipAmmoCount": {
+                "className": "WeaponStateProp",
+                "maxArguments": 2,
+                "methodName": "GetAlternateClipAmmoCount",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetAlternateTotalAmmoCount": {
+                "className": "WeaponStateProp",
+                "maxArguments": 2,
+                "methodName": "GetAlternateTotalAmmoCount",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetClipAmmoCount": {
+                "className": "WeaponStateProp",
+                "maxArguments": 2,
+                "methodName": "GetClipAmmoCount",
+                "minArguments": 2,
+                "return": 1
+            },
+            "GetTotalAmmoCount": {
+                "className": "WeaponStateProp",
+                "maxArguments": 2,
+                "methodName": "GetTotalAmmoCount",
+                "minArguments": 2,
+                "return": 1
+            },
+            "SetAlternateClipAmmoCount": {
+                "className": "WeaponStateProp",
+                "maxArguments": 3,
+                "methodName": "SetAlternateClipAmmoCount",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetAlternateTotalAmmoCount": {
+                "className": "WeaponStateProp",
+                "maxArguments": 3,
+                "methodName": "SetAlternateTotalAmmoCount",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetClipAmmoCount": {
+                "className": "WeaponStateProp",
+                "maxArguments": 3,
+                "methodName": "SetClipAmmoCount",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetPriorityScale": {
+                "className": "WeaponStateProp",
+                "maxArguments": 3,
+                "methodName": "SetPriorityScale",
+                "minArguments": 3,
+                "return": 3
+            },
+            "SetTotalAmmoCount": {
+                "className": "WeaponStateProp",
+                "maxArguments": 3,
+                "methodName": "SetTotalAmmoCount",
+                "minArguments": 3,
+                "return": 3
+            }
+        },
+        "WeaponTemplate": {
+            "GetRootTemplate": {
+                "className": "WeaponTemplate",
+                "maxArguments": 2,
+                "methodName": "GetRootTemplate",
+                "minArguments": 2,
+                "return": 1
+            }
+        },
+        "WheeledVehicleObject": {
+            "SetWheelDestroyed": {
+                "className": "WheeledVehicleObject",
+                "maxArguments": 5,
+                "methodName": "SetWheelDestroyed",
+                "minArguments": 5,
+                "return": 3
+            }
+        },
+        "vehicleObject": {
+            "SetHealthCallbackThresholdPercent": {
+                "className": "vehicleObject",
+                "maxArguments": 3,
+                "methodName": "SetHealthCallbackThresholdPercent",
+                "minArguments": 3,
+                "return": 3
+            }
+        }
+    },
+    "globalFunctions": {
+        "AISenseEventNotifyAll": {
+            "maxArguments": 7,
+            "methodName": "AISenseEventNotifyAll",
+            "minArguments": 5,
+            "return": 3
+        },
+        "AddMemoryHack": {
+            "maxArguments": 1,
+            "methodName": "AddMemoryHack",
+            "minArguments": 1,
+            "return": 3
+        },
+        "AddTextbibleEntryToLoad": {
+            "maxArguments": 3,
+            "methodName": "AddTextbibleEntryToLoad",
+            "minArguments": 3,
+            "return": 3
+        },
+        "AdvanceTutorialState": {
+            "maxArguments": 1,
+            "methodName": "AdvanceTutorialState",
+            "minArguments": 1,
+            "return": 3
+        },
+        "AllocateMemoryForPMGTextbibles": {
+            "maxArguments": 3,
+            "methodName": "AllocateMemoryForPMGTextbibles",
+            "minArguments": 3,
+            "return": 3
+        },
+        "ApplyEventInputChanges": {
+            "maxArguments": 1,
+            "methodName": "ApplyEventInputChanges",
+            "minArguments": 1,
+            "return": 3
+        },
+        "AreBoundaryTeleportsDisabled": {
+            "maxArguments": 1,
+            "methodName": "AreBoundaryTeleportsDisabled",
+            "minArguments": 1,
+            "return": 4
+        },
+        "AssertMsg": {
+            "maxArguments": 63,
+            "methodName": "AssertMsg",
+            "minArguments": 3,
+            "return": 3
+        },
+        "BindTriggeredSlots": {
+            "maxArguments": 1,
+            "methodName": "BindTriggeredSlots",
+            "minArguments": 1,
+            "return": 3
+        },
+        "Blackout": {
+            "maxArguments": 4,
+            "methodName": "Blackout",
+            "minArguments": 1,
+            "return": 3
+        },
+        "CCB_ClearBumped": {
+            "maxArguments": 1,
+            "methodName": "CCB_ClearBumped",
+            "minArguments": 1,
+            "return": 3
+        },
+        "CVM_BlackoutWaitForSet": {
+            "maxArguments": 3,
+            "methodName": "CVM_BlackoutWaitForSet",
+            "minArguments": 3,
+            "return": 3
+        },
+        "CVM_GetCVTemplateNameByIndex": {
+            "maxArguments": 3,
+            "methodName": "CVM_GetCVTemplateNameByIndex",
+            "minArguments": 3,
+            "return": 0
+        },
+        "CVM_GetLastCVTemplateIndex": {
+            "maxArguments": 2,
+            "methodName": "CVM_GetLastCVTemplateIndex",
+            "minArguments": 2,
+            "return": 1
+        },
+        "CVM_GetMainCharacterPackage": {
+            "maxArguments": 1,
+            "methodName": "CVM_GetMainCharacterPackage",
+            "minArguments": 1,
+            "return": 0
+        },
+        "CVM_GetNumCVTemplates": {
+            "maxArguments": 2,
+            "methodName": "CVM_GetNumCVTemplates",
+            "minArguments": 2,
+            "return": 1
+        },
+        "CVM_IsMainCharacterPackageLoaded": {
+            "maxArguments": 1,
+            "methodName": "CVM_IsMainCharacterPackageLoaded",
+            "minArguments": 1,
+            "return": 4
+        },
+        "CVM_KillAll": {
+            "maxArguments": 1,
+            "methodName": "CVM_KillAll",
+            "minArguments": 1,
+            "return": 3
+        },
+        "CVM_KillAllAmbientCharacters": {
+            "maxArguments": 1,
+            "methodName": "CVM_KillAllAmbientCharacters",
+            "minArguments": 1,
+            "return": 3
+        },
+        "CVM_KillAllDealers": {
+            "maxArguments": 1,
+            "methodName": "CVM_KillAllDealers",
+            "minArguments": 1,
+            "return": 3
+        },
+        "CVM_KillAllGangMembers": {
+            "maxArguments": 1,
+            "methodName": "CVM_KillAllGangMembers",
+            "minArguments": 1,
+            "return": 3
+        },
+        "CVM_KillAllGangMembersAndVehicles": {
+            "maxArguments": 1,
+            "methodName": "CVM_KillAllGangMembersAndVehicles",
+            "minArguments": 1,
+            "return": 3
+        },
+        "CVM_KillAllGangMembersInRange": {
+            "maxArguments": 3,
+            "methodName": "CVM_KillAllGangMembersInRange",
+            "minArguments": 3,
+            "return": 3
+        },
+        "CVM_KillAllTraffic": {
+            "maxArguments": 1,
+            "methodName": "CVM_KillAllTraffic",
+            "minArguments": 1,
+            "return": 3
+        },
+        "CVM_SetAmbientSpawnObjectsEnabled": {
+            "maxArguments": 2,
+            "methodName": "CVM_SetAmbientSpawnObjectsEnabled",
+            "minArguments": 2,
+            "return": 3
+        },
+        "CVM_SetMainCharacterPackage": {
+            "maxArguments": 2,
+            "methodName": "CVM_SetMainCharacterPackage",
+            "minArguments": 2,
+            "return": 3
+        },
+        "CVM_SetNISModeCharacterDeleteNotSuspend": {
+            "maxArguments": 2,
+            "methodName": "CVM_SetNISModeCharacterDeleteNotSuspend",
+            "minArguments": 2,
+            "return": 3
+        },
+        "CVM_SetPirateBoatsEnabled": {
+            "maxArguments": 2,
+            "methodName": "CVM_SetPirateBoatsEnabled",
+            "minArguments": 2,
+            "return": 3
+        },
+        "CVM_SetPirateHelicoptersEnabled": {
+            "maxArguments": 2,
+            "methodName": "CVM_SetPirateHelicoptersEnabled",
+            "minArguments": 2,
+            "return": 3
+        },
+        "CVM_SetPiratesEnabled": {
+            "maxArguments": 2,
+            "methodName": "CVM_SetPiratesEnabled",
+            "minArguments": 2,
+            "return": 3
+        },
+        "CVM_SetProceduralSpawnerEnabled": {
+            "maxArguments": 2,
+            "methodName": "CVM_SetProceduralSpawnerEnabled",
+            "minArguments": 2,
+            "return": 3
+        },
+        "CVM_SetWaitingForLoad": {
+            "maxArguments": 2,
+            "methodName": "CVM_SetWaitingForLoad",
+            "minArguments": 2,
+            "return": 3
+        },
+        "CallAnyNISActivate": {
+            "maxArguments": 2,
+            "methodName": "CallAnyNISActivate",
+            "minArguments": 2,
+            "return": 3
+        },
+        "CallAnyNISChangeCounter": {
+            "maxArguments": 2,
+            "methodName": "CallAnyNISChangeCounter",
+            "minArguments": 2,
+            "return": 3
+        },
+        "CallAnyNISGetCurrent": {
+            "maxArguments": 1,
+            "methodName": "CallAnyNISGetCurrent",
+            "minArguments": 1,
+            "return": 0
+        },
+        "CanCallForBoat": {
+            "maxArguments": 3,
+            "methodName": "CanCallForBoat",
+            "minArguments": 3,
+            "return": 4
+        },
+        "CanLegendBeShown": {
+            "maxArguments": 1,
+            "methodName": "CanLegendBeShown",
+            "minArguments": 1,
+            "return": 4
+        },
+        "CanLegendBeUnshown": {
+            "maxArguments": 1,
+            "methodName": "CanLegendBeUnshown",
+            "minArguments": 1,
+            "return": 4
+        },
+        "Cancel": {
+            "maxArguments": 2,
+            "methodName": "Cancel",
+            "minArguments": 2,
+            "return": 3
+        },
+        "CancelAllStreaming": {
+            "maxArguments": 1,
+            "methodName": "CancelAllStreaming",
+            "minArguments": 1,
+            "return": 3
+        },
+        "CancelNIS": {
+            "maxArguments": 1,
+            "methodName": "CancelNIS",
+            "minArguments": 1,
+            "return": 3
+        },
+        "CastLOS": {
+            "maxArguments": 3,
+            "methodName": "CastLOS",
+            "minArguments": 3,
+            "return": 0
+        },
+        "CastWorldLOS": {
+            "maxArguments": 3,
+            "methodName": "CastWorldLOS",
+            "minArguments": 3,
+            "return": 0
+        },
+        "Ceiling": {
+            "maxArguments": 2,
+            "methodName": "Ceiling",
+            "minArguments": 2,
+            "return": 1
+        },
+        "ChangeBrightness": {
+            "maxArguments": 2,
+            "methodName": "ChangeBrightness",
+            "minArguments": 2,
+            "return": 3
+        },
+        "ChangeMSAA": {
+            "maxArguments": 2,
+            "methodName": "ChangeMSAA",
+            "minArguments": 2,
+            "return": 3
+        },
+        "ChangeResolution": {
+            "maxArguments": 4,
+            "methodName": "ChangeResolution",
+            "minArguments": 4,
+            "return": 3
+        },
+        "ClearMissionStringTable": {
+            "maxArguments": 1,
+            "methodName": "ClearMissionStringTable",
+            "minArguments": 1,
+            "return": 3
+        },
+        "ClearPhysicalOverride": {
+            "maxArguments": 1,
+            "methodName": "ClearPhysicalOverride",
+            "minArguments": 1,
+            "return": 3
+        },
+        "ClearPickups": {
+            "maxArguments": 1,
+            "methodName": "ClearPickups",
+            "minArguments": 1,
+            "return": 3
+        },
+        "CodeBlockExists": {
+            "maxArguments": 2,
+            "methodName": "CodeBlockExists",
+            "minArguments": 2,
+            "return": 4
+        },
+        "CompositionPlayerInitialize": {
+            "maxArguments": 2,
+            "methodName": "CompositionPlayerInitialize",
+            "minArguments": 2,
+            "return": 3
+        },
+        "ContextualActionDialog": {
+            "maxArguments": 5,
+            "methodName": "ContextualActionDialog",
+            "minArguments": 2,
+            "return": 1
+        },
+        "ContextualActionDialog_Exit": {
+            "maxArguments": 2,
+            "methodName": "ContextualActionDialog_Exit",
+            "minArguments": 2,
+            "return": 3
+        },
+        "ContextualActionDialog_InputPressed": {
+            "maxArguments": 2,
+            "methodName": "ContextualActionDialog_InputPressed",
+            "minArguments": 2,
+            "return": 3
+        },
+        "ContextualActionDialog_InputReleased": {
+            "maxArguments": 2,
+            "methodName": "ContextualActionDialog_InputReleased",
+            "minArguments": 2,
+            "return": 3
+        },
+        "CreateDockGroup": {
+            "maxArguments": 2,
+            "methodName": "CreateDockGroup",
+            "minArguments": 1,
+            "return": 1
+        },
+        "CreateInventory": {
+            "maxArguments": 3,
+            "methodName": "CreateInventory",
+            "minArguments": 2,
+            "return": 3
+        },
+        "CreateScroobyProject": {
+            "maxArguments": 6,
+            "methodName": "CreateScroobyProject",
+            "minArguments": 5,
+            "return": 3
+        },
+        "DBChangeBalls": {
+            "maxArguments": 2,
+            "methodName": "DBChangeBalls",
+            "minArguments": 2,
+            "return": 2
+        },
+        "DBChangeCleanCash": {
+            "maxArguments": 2,
+            "methodName": "DBChangeCleanCash",
+            "minArguments": 2,
+            "return": 1
+        },
+        "DBChangeCopHeat": {
+            "maxArguments": 2,
+            "methodName": "DBChangeCopHeat",
+            "minArguments": 2,
+            "return": 2
+        },
+        "DBChangeDirtyCash": {
+            "maxArguments": 2,
+            "methodName": "DBChangeDirtyCash",
+            "minArguments": 2,
+            "return": 1
+        },
+        "DBChangeFloat": {
+            "maxArguments": 4,
+            "methodName": "DBChangeFloat",
+            "minArguments": 4,
+            "return": 2
+        },
+        "DBChangeGangHeat": {
+            "maxArguments": 2,
+            "methodName": "DBChangeGangHeat",
+            "minArguments": 2,
+            "return": 2
+        },
+        "DBChangeInt": {
+            "maxArguments": 4,
+            "methodName": "DBChangeInt",
+            "minArguments": 4,
+            "return": 1
+        },
+        "DBChangeProduct": {
+            "maxArguments": 2,
+            "methodName": "DBChangeProduct",
+            "minArguments": 2,
+            "return": 1
+        },
+        "DBChangeReputationPoints": {
+            "maxArguments": 3,
+            "methodName": "DBChangeReputationPoints",
+            "minArguments": 3,
+            "return": 1
+        },
+        "DBChangeVehicleProduct": {
+            "maxArguments": 2,
+            "methodName": "DBChangeVehicleProduct",
+            "minArguments": 2,
+            "return": 1
+        },
+        "DBGetAsFloat": {
+            "maxArguments": 3,
+            "methodName": "DBGetAsFloat",
+            "minArguments": 2,
+            "return": 2
+        },
+        "DBGetAsInt": {
+            "maxArguments": 3,
+            "methodName": "DBGetAsInt",
+            "minArguments": 2,
+            "return": 1
+        },
+        "DBGetPointsToNextLevel": {
+            "maxArguments": 1,
+            "methodName": "DBGetPointsToNextLevel",
+            "minArguments": 1,
+            "return": 1
+        },
+        "DBGetReputationLevel": {
+            "maxArguments": 1,
+            "methodName": "DBGetReputationLevel",
+            "minArguments": 1,
+            "return": 1
+        },
+        "DBGetReputationLevel_Possible": {
+            "maxArguments": 1,
+            "methodName": "DBGetReputationLevel_Possible",
+            "minArguments": 1,
+            "return": 1
+        },
+        "DBGetReputationPoints": {
+            "maxArguments": 1,
+            "methodName": "DBGetReputationPoints",
+            "minArguments": 1,
+            "return": 1
+        },
+        "DBGetTotalExoticsPoints": {
+            "maxArguments": 1,
+            "methodName": "DBGetTotalExoticsPoints",
+            "minArguments": 1,
+            "return": 1
+        },
+        "DBGetTotalMissionPoints": {
+            "maxArguments": 1,
+            "methodName": "DBGetTotalMissionPoints",
+            "minArguments": 1,
+            "return": 1
+        },
+        "DBGetTotalSkilledPoints": {
+            "maxArguments": 1,
+            "methodName": "DBGetTotalSkilledPoints",
+            "minArguments": 1,
+            "return": 1
+        },
+        "DBPostFloat": {
+            "maxArguments": 4,
+            "methodName": "DBPostFloat",
+            "minArguments": 3,
+            "return": 3
+        },
+        "DBPostInt": {
+            "maxArguments": 4,
+            "methodName": "DBPostInt",
+            "minArguments": 3,
+            "return": 3
+        },
+        "DBSetReputationLevel": {
+            "maxArguments": 2,
+            "methodName": "DBSetReputationLevel",
+            "minArguments": 2,
+            "return": 3
+        },
+        "DBSetTotalExoticsPoints": {
+            "maxArguments": 2,
+            "methodName": "DBSetTotalExoticsPoints",
+            "minArguments": 2,
+            "return": 3
+        },
+        "DBSetTotalMissionPoints": {
+            "maxArguments": 2,
+            "methodName": "DBSetTotalMissionPoints",
+            "minArguments": 2,
+            "return": 3
+        },
+        "DBSetTotalSkilledPoints": {
+            "maxArguments": 2,
+            "methodName": "DBSetTotalSkilledPoints",
+            "minArguments": 2,
+            "return": 3
+        },
+        "DebugMsg": {
+            "maxArguments": 63,
+            "methodName": "DebugMsg",
+            "minArguments": 3,
+            "return": 3
+        },
+        "DelayNISStart": {
+            "maxArguments": 2,
+            "methodName": "DelayNISStart",
+            "minArguments": 2,
+            "return": 3
+        },
+        "DelayedEval": {
+            "maxArguments": 2,
+            "methodName": "DelayedEval",
+            "minArguments": 2,
+            "return": 3
+        },
+        "DestroyInventory": {
+            "maxArguments": 2,
+            "methodName": "DestroyInventory",
+            "minArguments": 2,
+            "return": 3
+        },
+        "DestroyScroobyProject": {
+            "maxArguments": 2,
+            "methodName": "DestroyScroobyProject",
+            "minArguments": 2,
+            "return": 3
+        },
+        "DisplayExteriors_Enable": {
+            "maxArguments": 2,
+            "methodName": "DisplayExteriors_Enable",
+            "minArguments": 2,
+            "return": 3
+        },
+        "DisplayFakeNPCHealth": {
+            "maxArguments": 8,
+            "methodName": "DisplayFakeNPCHealth",
+            "minArguments": 3,
+            "return": 3
+        },
+        "DisplayInteriors_Enable": {
+            "maxArguments": 2,
+            "methodName": "DisplayInteriors_Enable",
+            "minArguments": 2,
+            "return": 3
+        },
+        "DisplayNPCHealth": {
+            "maxArguments": 6,
+            "methodName": "DisplayNPCHealth",
+            "minArguments": 3,
+            "return": 3
+        },
+        "DisplayObjectDistance": {
+            "maxArguments": 8,
+            "methodName": "DisplayObjectDistance",
+            "minArguments": 3,
+            "return": 3
+        },
+        "DumpNamespaces": {
+            "maxArguments": 1,
+            "methodName": "DumpNamespaces",
+            "minArguments": 1,
+            "return": 3
+        },
+        "Echo": {
+            "maxArguments": 63,
+            "methodName": "Echo",
+            "minArguments": 3,
+            "return": 3
+        },
+        "EnableCollisionDebugDrawables": {
+            "maxArguments": 2,
+            "methodName": "EnableCollisionDebugDrawables",
+            "minArguments": 1,
+            "return": 3
+        },
+        "EnableSFX": {
+            "maxArguments": 2,
+            "methodName": "EnableSFX",
+            "minArguments": 2,
+            "return": 3
+        },
+        "EnableStartGameLoad": {
+            "maxArguments": 2,
+            "methodName": "EnableStartGameLoad",
+            "minArguments": 2,
+            "return": 3
+        },
+        "EndScriptSection": {
+            "maxArguments": 2,
+            "methodName": "EndScriptSection",
+            "minArguments": 2,
+            "return": 3
+        },
+        "ExecScript": {
+            "maxArguments": 4,
+            "methodName": "ExecScript",
+            "minArguments": 3,
+            "return": 4
+        },
+        "ExportObject": {
+            "maxArguments": 5,
+            "methodName": "ExportObject",
+            "minArguments": 3,
+            "return": 4
+        },
+        "FeHudRequestHudSound": {
+            "maxArguments": 2,
+            "methodName": "FeHudRequestHudSound",
+            "minArguments": 2,
+            "return": 3
+        },
+        "FeHudRequestMenuSound": {
+            "maxArguments": 2,
+            "methodName": "FeHudRequestMenuSound",
+            "minArguments": 2,
+            "return": 3
+        },
+        "FindNearbyMountedWeapon": {
+            "maxArguments": 3,
+            "methodName": "FindNearbyMountedWeapon",
+            "minArguments": 2,
+            "return": 1
+        },
+        "FindSubzoneByPoint": {
+            "maxArguments": 2,
+            "methodName": "FindSubzoneByPoint",
+            "minArguments": 2,
+            "return": 0
+        },
+        "FlashGangHeatMeter": {
+            "maxArguments": 1,
+            "methodName": "FlashGangHeatMeter",
+            "minArguments": 1,
+            "return": 3
+        },
+        "Floor": {
+            "maxArguments": 2,
+            "methodName": "Floor",
+            "minArguments": 2,
+            "return": 1
+        },
+        "ForceWorldReload": {
+            "maxArguments": 1,
+            "methodName": "ForceWorldReload",
+            "minArguments": 1,
+            "return": 3
+        },
+        "FreezeGame": {
+            "maxArguments": 2,
+            "methodName": "FreezeGame",
+            "minArguments": 2,
+            "return": 3
+        },
+        "GNM_GetNestHealth": {
+            "maxArguments": 2,
+            "methodName": "GNM_GetNestHealth",
+            "minArguments": 2,
+            "return": 1
+        },
+        "GNM_GetNestState": {
+            "maxArguments": 2,
+            "methodName": "GNM_GetNestState",
+            "minArguments": 2,
+            "return": 1
+        },
+        "GNM_IsNestActive": {
+            "maxArguments": 2,
+            "methodName": "GNM_IsNestActive",
+            "minArguments": 2,
+            "return": 4
+        },
+        "GNM_SetNestHealth": {
+            "maxArguments": 3,
+            "methodName": "GNM_SetNestHealth",
+            "minArguments": 3,
+            "return": 3
+        },
+        "GNM_SetNestState": {
+            "maxArguments": 3,
+            "methodName": "GNM_SetNestState",
+            "minArguments": 3,
+            "return": 3
+        },
+        "GNM_UpdateAllNests": {
+            "maxArguments": 1,
+            "methodName": "GNM_UpdateAllNests",
+            "minArguments": 1,
+            "return": 3
+        },
+        "GNM_UpdateAllNestsInTurf": {
+            "maxArguments": 2,
+            "methodName": "GNM_UpdateAllNestsInTurf",
+            "minArguments": 2,
+            "return": 3
+        },
+        "GNM_UpdateNest": {
+            "maxArguments": 2,
+            "methodName": "GNM_UpdateNest",
+            "minArguments": 2,
+            "return": 3
+        },
+        "GNM_UpdateNestHealth": {
+            "maxArguments": 2,
+            "methodName": "GNM_UpdateNestHealth",
+            "minArguments": 2,
+            "return": 3
+        },
+        "GOM_GetPermanentDataGroup": {
+            "maxArguments": 1,
+            "methodName": "GOM_GetPermanentDataGroup",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GameShutdown": {
+            "maxArguments": 1,
+            "methodName": "GameShutdown",
+            "minArguments": 0,
+            "return": 3
+        },
+        "GangstaTestFunc": {
+            "maxArguments": 1,
+            "methodName": "GangstaTestFunc",
+            "minArguments": 1,
+            "return": 3
+        },
+        "GenerateFormattedNumericString": {
+            "maxArguments": 4,
+            "methodName": "GenerateFormattedNumericString",
+            "minArguments": 4,
+            "return": 0
+        },
+        "GetAnisotropicValue": {
+            "maxArguments": 1,
+            "methodName": "GetAnisotropicValue",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GetBrightness": {
+            "maxArguments": 1,
+            "methodName": "GetBrightness",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GetCodeOverlayPriority": {
+            "maxArguments": 1,
+            "methodName": "GetCodeOverlayPriority",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GetCurrentLanguage": {
+            "maxArguments": 1,
+            "methodName": "GetCurrentLanguage",
+            "minArguments": 1,
+            "return": 0
+        },
+        "GetCurrentSubzone": {
+            "maxArguments": 1,
+            "methodName": "GetCurrentSubzone",
+            "minArguments": 1,
+            "return": 0
+        },
+        "GetDisplayHeight": {
+            "maxArguments": 1,
+            "methodName": "GetDisplayHeight",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GetDisplayNameByInputPoint": {
+            "maxArguments": 2,
+            "methodName": "GetDisplayNameByInputPoint",
+            "minArguments": 2,
+            "return": 0
+        },
+        "GetDisplayWidth": {
+            "maxArguments": 1,
+            "methodName": "GetDisplayWidth",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GetDrawDistance": {
+            "maxArguments": 1,
+            "methodName": "GetDrawDistance",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GetEngineTime": {
+            "maxArguments": 1,
+            "methodName": "GetEngineTime",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GetFileLine": {
+            "maxArguments": 1,
+            "methodName": "GetFileLine",
+            "minArguments": 1,
+            "return": 0
+        },
+        "GetFirstUnusedNPCMeterSlot": {
+            "maxArguments": 2,
+            "methodName": "GetFirstUnusedNPCMeterSlot",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GetGameTime": {
+            "maxArguments": 1,
+            "methodName": "GetGameTime",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GetInputPointByLogicalName": {
+            "maxArguments": 3,
+            "methodName": "GetInputPointByLogicalName",
+            "minArguments": 2,
+            "return": 1
+        },
+        "GetInputPointByName": {
+            "maxArguments": 2,
+            "methodName": "GetInputPointByName",
+            "minArguments": 2,
+            "return": 1
+        },
+        "GetInventoryId": {
+            "maxArguments": 2,
+            "methodName": "GetInventoryId",
+            "minArguments": 2,
+            "return": 1
+        },
+        "GetIsLeftHand": {
+            "maxArguments": 1,
+            "methodName": "GetIsLeftHand",
+            "minArguments": 1,
+            "return": 4
+        },
+        "GetLastRootObject": {
+            "maxArguments": 1,
+            "methodName": "GetLastRootObject",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GetMSAA": {
+            "maxArguments": 1,
+            "methodName": "GetMSAA",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GetMaxMSAACaps": {
+            "maxArguments": 1,
+            "methodName": "GetMaxMSAACaps",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GetMaxNumOptions": {
+            "maxArguments": 1,
+            "methodName": "GetMaxNumOptions",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GetMissionCriticalPriority": {
+            "maxArguments": 1,
+            "methodName": "GetMissionCriticalPriority",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GetMouseSensitivityLevel": {
+            "maxArguments": 1,
+            "methodName": "GetMouseSensitivityLevel",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GetNewObjectParentGroup": {
+            "maxArguments": 1,
+            "methodName": "GetNewObjectParentGroup",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GetNumSubzones": {
+            "maxArguments": 1,
+            "methodName": "GetNumSubzones",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GetNumTextbibleEntriesToLoad": {
+            "maxArguments": 2,
+            "methodName": "GetNumTextbibleEntriesToLoad",
+            "minArguments": 2,
+            "return": 1
+        },
+        "GetPhysicalOverride": {
+            "maxArguments": 2,
+            "methodName": "GetPhysicalOverride",
+            "minArguments": 2,
+            "return": 0
+        },
+        "GetResourceId": {
+            "maxArguments": 2,
+            "methodName": "GetResourceId",
+            "minArguments": 2,
+            "return": 1
+        },
+        "GetStreamerObjectOfInterest": {
+            "maxArguments": 1,
+            "methodName": "GetStreamerObjectOfInterest",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GetSubzoneName": {
+            "maxArguments": 2,
+            "methodName": "GetSubzoneName",
+            "minArguments": 2,
+            "return": 0
+        },
+        "GetUIInteractionPriority": {
+            "maxArguments": 1,
+            "methodName": "GetUIInteractionPriority",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GetVideoCardLevel": {
+            "maxArguments": 1,
+            "methodName": "GetVideoCardLevel",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GlobalSoundGetCurrentMs": {
+            "maxArguments": 1,
+            "methodName": "GlobalSoundGetCurrentMs",
+            "minArguments": 1,
+            "return": 1
+        },
+        "GlobalSoundIsPlaying": {
+            "maxArguments": 3,
+            "methodName": "GlobalSoundIsPlaying",
+            "minArguments": 3,
+            "return": 4
+        },
+        "GlobalSoundPlay": {
+            "maxArguments": 6,
+            "methodName": "GlobalSoundPlay",
+            "minArguments": 3,
+            "return": 4
+        },
+        "GlobalSoundRequestMusic": {
+            "maxArguments": 8,
+            "methodName": "GlobalSoundRequestMusic",
+            "minArguments": 6,
+            "return": 4
+        },
+        "GlobalSoundRequestMusicBase": {
+            "maxArguments": 1,
+            "methodName": "GlobalSoundRequestMusicBase",
+            "minArguments": 1,
+            "return": 4
+        },
+        "GlobalSoundSetMusicBase": {
+            "maxArguments": 6,
+            "methodName": "GlobalSoundSetMusicBase",
+            "minArguments": 6,
+            "return": 4
+        },
+        "GlobalSoundStop": {
+            "maxArguments": 1,
+            "methodName": "GlobalSoundStop",
+            "minArguments": 1,
+            "return": 4
+        },
+        "HDTV_Enable": {
+            "maxArguments": 2,
+            "methodName": "HDTV_Enable",
+            "minArguments": 2,
+            "return": 3
+        },
+        "HDTV_IsEnabled": {
+            "maxArguments": 1,
+            "methodName": "HDTV_IsEnabled",
+            "minArguments": 1,
+            "return": 4
+        },
+        "HUDIsCreated": {
+            "maxArguments": 1,
+            "methodName": "HUDIsCreated",
+            "minArguments": 1,
+            "return": 4
+        },
+        "HUDSetElementEnabled": {
+            "maxArguments": 3,
+            "methodName": "HUDSetElementEnabled",
+            "minArguments": 3,
+            "return": 3
+        },
+        "HUDTapePlayer_GetMixIndex": {
+            "maxArguments": 2,
+            "methodName": "HUDTapePlayer_GetMixIndex",
+            "minArguments": 2,
+            "return": 1
+        },
+        "HUDTapePlayer_GetShuffle": {
+            "maxArguments": 1,
+            "methodName": "HUDTapePlayer_GetShuffle",
+            "minArguments": 1,
+            "return": 4
+        },
+        "HUDTapePlayer_GetSongAt": {
+            "maxArguments": 3,
+            "methodName": "HUDTapePlayer_GetSongAt",
+            "minArguments": 3,
+            "return": 1
+        },
+        "HUDTapePlayer_SetShuffle": {
+            "maxArguments": 2,
+            "methodName": "HUDTapePlayer_SetShuffle",
+            "minArguments": 2,
+            "return": 3
+        },
+        "HUDTapePlayer_SetSongAt": {
+            "maxArguments": 4,
+            "methodName": "HUDTapePlayer_SetSongAt",
+            "minArguments": 4,
+            "return": 3
+        },
+        "HUDTapePlayer_UnlockSong": {
+            "maxArguments": 2,
+            "methodName": "HUDTapePlayer_UnlockSong",
+            "minArguments": 2,
+            "return": 3
+        },
+        "HUD_ClearRestoreData": {
+            "maxArguments": 1,
+            "methodName": "HUD_ClearRestoreData",
+            "minArguments": 1,
+            "return": 3
+        },
+        "HUD_Create": {
+            "maxArguments": 1,
+            "methodName": "HUD_Create",
+            "minArguments": 1,
+            "return": 3
+        },
+        "HUD_CreatePermanent": {
+            "maxArguments": 1,
+            "methodName": "HUD_CreatePermanent",
+            "minArguments": 1,
+            "return": 3
+        },
+        "HUD_Destroy": {
+            "maxArguments": 1,
+            "methodName": "HUD_Destroy",
+            "minArguments": 1,
+            "return": 3
+        },
+        "HUD_DestroyPermanent": {
+            "maxArguments": 1,
+            "methodName": "HUD_DestroyPermanent",
+            "minArguments": 1,
+            "return": 3
+        },
+        "HUD_Hide": {
+            "maxArguments": 2,
+            "methodName": "HUD_Hide",
+            "minArguments": 1,
+            "return": 3
+        },
+        "HUD_IsForcedDisabled": {
+            "maxArguments": 1,
+            "methodName": "HUD_IsForcedDisabled",
+            "minArguments": 1,
+            "return": 4
+        },
+        "HUD_IsGamePaused": {
+            "maxArguments": 1,
+            "methodName": "HUD_IsGamePaused",
+            "minArguments": 1,
+            "return": 4
+        },
+        "HUD_Reset": {
+            "maxArguments": 1,
+            "methodName": "HUD_Reset",
+            "minArguments": 1,
+            "return": 3
+        },
+        "HUD_SetCurrentModalVisibility": {
+            "maxArguments": 2,
+            "methodName": "HUD_SetCurrentModalVisibility",
+            "minArguments": 2,
+            "return": 3
+        },
+        "HUD_SetGlobalSafeToActivate": {
+            "maxArguments": 2,
+            "methodName": "HUD_SetGlobalSafeToActivate",
+            "minArguments": 2,
+            "return": 3
+        },
+        "HUD_SetNextToActivate": {
+            "maxArguments": 2,
+            "methodName": "HUD_SetNextToActivate",
+            "minArguments": 2,
+            "return": 3
+        },
+        "HUD_Show": {
+            "maxArguments": 2,
+            "methodName": "HUD_Show",
+            "minArguments": 1,
+            "return": 3
+        },
+        "HUD_ToggleHUD": {
+            "maxArguments": 1,
+            "methodName": "HUD_ToggleHUD",
+            "minArguments": 1,
+            "return": 3
+        },
+        "HenchmanManager_GetFollowTony": {
+            "maxArguments": 1,
+            "methodName": "HenchmanManager_GetFollowTony",
+            "minArguments": 1,
+            "return": 4
+        },
+        "HenchmanManager_GetNumAttackingEnemiesNearby": {
+            "maxArguments": 1,
+            "methodName": "HenchmanManager_GetNumAttackingEnemiesNearby",
+            "minArguments": 1,
+            "return": 1
+        },
+        "HenchmanManager_SetFollowTony": {
+            "maxArguments": 2,
+            "methodName": "HenchmanManager_SetFollowTony",
+            "minArguments": 2,
+            "return": 3
+        },
+        "HideMapModalMini": {
+            "maxArguments": 2,
+            "methodName": "HideMapModalMini",
+            "minArguments": 2,
+            "return": 3
+        },
+        "IsEventPending": {
+            "maxArguments": 2,
+            "methodName": "IsEventPending",
+            "minArguments": 2,
+            "return": 4
+        },
+        "IsGameInNormalGameState": {
+            "maxArguments": 1,
+            "methodName": "IsGameInNormalGameState",
+            "minArguments": 1,
+            "return": 4
+        },
+        "IsLoadingComplete": {
+            "maxArguments": 2,
+            "methodName": "IsLoadingComplete",
+            "minArguments": 1,
+            "return": 4
+        },
+        "IsMainCharacterKilledOrFlaggedForOnKilled": {
+            "maxArguments": 1,
+            "methodName": "IsMainCharacterKilledOrFlaggedForOnKilled",
+            "minArguments": 1,
+            "return": 4
+        },
+        "IsMapModalMiniShown": {
+            "maxArguments": 1,
+            "methodName": "IsMapModalMiniShown",
+            "minArguments": 1,
+            "return": 4
+        },
+        "IsMemoryAllocatedForPMGTextbibles": {
+            "maxArguments": 1,
+            "methodName": "IsMemoryAllocatedForPMGTextbibles",
+            "minArguments": 1,
+            "return": 4
+        },
+        "IsModalActive": {
+            "maxArguments": 1,
+            "methodName": "IsModalActive",
+            "minArguments": 1,
+            "return": 4
+        },
+        "IsNTSCsku": {
+            "maxArguments": 1,
+            "methodName": "IsNTSCsku",
+            "minArguments": 1,
+            "return": 4
+        },
+        "IsResourceLoadComplete": {
+            "maxArguments": 3,
+            "methodName": "IsResourceLoadComplete",
+            "minArguments": 3,
+            "return": 4
+        },
+        "IsSafeToActivateDialog": {
+            "maxArguments": 1,
+            "methodName": "IsSafeToActivateDialog",
+            "minArguments": 1,
+            "return": 4
+        },
+        "IsScriptedEventMemoryAvailable": {
+            "maxArguments": 1,
+            "methodName": "IsScriptedEventMemoryAvailable",
+            "minArguments": 1,
+            "return": 4
+        },
+        "IsTeleporting": {
+            "maxArguments": 1,
+            "methodName": "IsTeleporting",
+            "minArguments": 1,
+            "return": 4
+        },
+        "IsTrilinearEnabled": {
+            "maxArguments": 1,
+            "methodName": "IsTrilinearEnabled",
+            "minArguments": 1,
+            "return": 1
+        },
+        "Is_gPauseGame": {
+            "maxArguments": 1,
+            "methodName": "Is_gPauseGame",
+            "minArguments": 0,
+            "return": 4
+        },
+        "LOSSetBehaviourTypeGroup": {
+            "maxArguments": 2,
+            "methodName": "LOSSetBehaviourTypeGroup",
+            "minArguments": 2,
+            "return": 3
+        },
+        "LaunchTonyTauntFromScript": {
+            "maxArguments": 1,
+            "methodName": "LaunchTonyTauntFromScript",
+            "minArguments": 1,
+            "return": 3
+        },
+        "LinkToNamespace": {
+            "maxArguments": 2,
+            "methodName": "LinkToNamespace",
+            "minArguments": 2,
+            "return": 4
+        },
+        "LoadAZoneInCode": {
+            "maxArguments": 2,
+            "methodName": "LoadAZoneInCode",
+            "minArguments": 2,
+            "return": 3
+        },
+        "LoadDZoneInCode": {
+            "maxArguments": 2,
+            "methodName": "LoadDZoneInCode",
+            "minArguments": 2,
+            "return": 3
+        },
+        "LoadInteriorHUDMap": {
+            "maxArguments": 3,
+            "methodName": "LoadInteriorHUDMap",
+            "minArguments": 3,
+            "return": 3
+        },
+        "LoadResource": {
+            "maxArguments": 5,
+            "methodName": "LoadResource",
+            "minArguments": 5,
+            "return": 3
+        },
+        "LoadScriptResource": {
+            "maxArguments": 5,
+            "methodName": "LoadScriptResource",
+            "minArguments": 5,
+            "return": 3
+        },
+        "LockMemoryForMiniNIS": {
+            "maxArguments": 1,
+            "methodName": "LockMemoryForMiniNIS",
+            "minArguments": 1,
+            "return": 3
+        },
+        "LockMemoryForPEG": {
+            "maxArguments": 1,
+            "methodName": "LockMemoryForPEG",
+            "minArguments": 1,
+            "return": 3
+        },
+        "MGM_EscapeCopsNow": {
+            "maxArguments": 1,
+            "methodName": "MGM_EscapeCopsNow",
+            "minArguments": 1,
+            "return": 3
+        },
+        "MGM_GetAllowCopSpawningDuringMission": {
+            "maxArguments": 1,
+            "methodName": "MGM_GetAllowCopSpawningDuringMission",
+            "minArguments": 1,
+            "return": 4
+        },
+        "MGM_GetCurrentTurfIndex": {
+            "maxArguments": 1,
+            "methodName": "MGM_GetCurrentTurfIndex",
+            "minArguments": 1,
+            "return": 1
+        },
+        "MGM_GetGangHeatReductionForRetaliation": {
+            "maxArguments": 1,
+            "methodName": "MGM_GetGangHeatReductionForRetaliation",
+            "minArguments": 1,
+            "return": 1
+        },
+        "MGM_GetGangNestDestroyed": {
+            "maxArguments": 2,
+            "methodName": "MGM_GetGangNestDestroyed",
+            "minArguments": 2,
+            "return": 4
+        },
+        "MGM_GetGangNestSaveGameString": {
+            "maxArguments": 1,
+            "methodName": "MGM_GetGangNestSaveGameString",
+            "minArguments": 1,
+            "return": 0
+        },
+        "MGM_GetMissionActive": {
+            "maxArguments": 1,
+            "methodName": "MGM_GetMissionActive",
+            "minArguments": 1,
+            "return": 4
+        },
+        "MGM_GetVisibilityPoints": {
+            "maxArguments": 1,
+            "methodName": "MGM_GetVisibilityPoints",
+            "minArguments": 1,
+            "return": 1
+        },
+        "MGM_KillAllCops": {
+            "maxArguments": 0,
+            "methodName": "MGM_KillAllCops",
+            "minArguments": 0,
+            "return": 3
+        },
+        "MGM_OnMissionDone": {
+            "maxArguments": 1,
+            "methodName": "MGM_OnMissionDone",
+            "minArguments": 1,
+            "return": 3
+        },
+        "MGM_OnMissionFailed": {
+            "maxArguments": 1,
+            "methodName": "MGM_OnMissionFailed",
+            "minArguments": 1,
+            "return": 3
+        },
+        "MGM_OnMissionStageEnd": {
+            "maxArguments": 2,
+            "methodName": "MGM_OnMissionStageEnd",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MGM_OnMissionStageStarted": {
+            "maxArguments": 2,
+            "methodName": "MGM_OnMissionStageStarted",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MGM_RotationToDirection": {
+            "maxArguments": 2,
+            "methodName": "MGM_RotationToDirection",
+            "minArguments": 2,
+            "return": 0
+        },
+        "MGM_SendMessage": {
+            "maxArguments": 2,
+            "methodName": "MGM_SendMessage",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MGM_SetAllowCopSpawningDuringMission": {
+            "maxArguments": 2,
+            "methodName": "MGM_SetAllowCopSpawningDuringMission",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MGM_SetDontEscapeCops": {
+            "maxArguments": 2,
+            "methodName": "MGM_SetDontEscapeCops",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MGM_SetGangNestDestroyed": {
+            "maxArguments": 3,
+            "methodName": "MGM_SetGangNestDestroyed",
+            "minArguments": 3,
+            "return": 3
+        },
+        "MGM_SetGangNestSaveGameString": {
+            "maxArguments": 2,
+            "methodName": "MGM_SetGangNestSaveGameString",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MGM_SetIgnoreNPCModifier": {
+            "maxArguments": 2,
+            "methodName": "MGM_SetIgnoreNPCModifier",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MGM_SetMetaGameStuffEnabled": {
+            "maxArguments": 2,
+            "methodName": "MGM_SetMetaGameStuffEnabled",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MGM_SetMissionFailOnRedVisibility": {
+            "maxArguments": 2,
+            "methodName": "MGM_SetMissionFailOnRedVisibility",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MGM_SetVisibilityPoints": {
+            "maxArguments": 2,
+            "methodName": "MGM_SetVisibilityPoints",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MGM_TriggerGetID": {
+            "maxArguments": 2,
+            "methodName": "MGM_TriggerGetID",
+            "minArguments": 2,
+            "return": 1
+        },
+        "MGM_TriggerSet": {
+            "maxArguments": 8,
+            "methodName": "MGM_TriggerSet",
+            "minArguments": 7,
+            "return": 3
+        },
+        "MGM_VisibilityAddSphere": {
+            "maxArguments": 5,
+            "methodName": "MGM_VisibilityAddSphere",
+            "minArguments": 5,
+            "return": 4
+        },
+        "MGM_VisibilityChangeSphereValue": {
+            "maxArguments": 3,
+            "methodName": "MGM_VisibilityChangeSphereValue",
+            "minArguments": 3,
+            "return": 4
+        },
+        "MGM_VisibilityGetEnabled": {
+            "maxArguments": 1,
+            "methodName": "MGM_VisibilityGetEnabled",
+            "minArguments": 1,
+            "return": 4
+        },
+        "MGM_VisibilityGetScaleDuringMission": {
+            "maxArguments": 1,
+            "methodName": "MGM_VisibilityGetScaleDuringMission",
+            "minArguments": 1,
+            "return": 2
+        },
+        "MGM_VisibilityIsFucked": {
+            "maxArguments": 0,
+            "methodName": "MGM_VisibilityIsFucked",
+            "minArguments": 0,
+            "return": 4
+        },
+        "MGM_VisibilityIsRed": {
+            "maxArguments": 1,
+            "methodName": "MGM_VisibilityIsRed",
+            "minArguments": 1,
+            "return": 4
+        },
+        "MGM_VisibilityMasterEnable": {
+            "maxArguments": 2,
+            "methodName": "MGM_VisibilityMasterEnable",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MGM_VisibilityReset": {
+            "maxArguments": 2,
+            "methodName": "MGM_VisibilityReset",
+            "minArguments": 1,
+            "return": 3
+        },
+        "MGM_VisibilityResetTimers": {
+            "maxArguments": 1,
+            "methodName": "MGM_VisibilityResetTimers",
+            "minArguments": 1,
+            "return": 3
+        },
+        "MGM_VisibilityScaleModifierSetCivilianValue": {
+            "maxArguments": 2,
+            "methodName": "MGM_VisibilityScaleModifierSetCivilianValue",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MGM_VisibilityScaleModifierSetCopValue": {
+            "maxArguments": 2,
+            "methodName": "MGM_VisibilityScaleModifierSetCopValue",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MGM_VisibilityScaleModifierSetDistance": {
+            "maxArguments": 2,
+            "methodName": "MGM_VisibilityScaleModifierSetDistance",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MGM_VisibilitySetEnabled": {
+            "maxArguments": 2,
+            "methodName": "MGM_VisibilitySetEnabled",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MGM_VisibilitySetEscapeRadiusScale": {
+            "maxArguments": 2,
+            "methodName": "MGM_VisibilitySetEscapeRadiusScale",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MGM_VisibilitySetScaleDuringMission": {
+            "maxArguments": 2,
+            "methodName": "MGM_VisibilitySetScaleDuringMission",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MGM_VisibilitySetTimeToEscapeCops": {
+            "maxArguments": 2,
+            "methodName": "MGM_VisibilitySetTimeToEscapeCops",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MM_AddMissionDeliverer": {
+            "maxArguments": 2,
+            "methodName": "MM_AddMissionDeliverer",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MM_AddMissionName": {
+            "maxArguments": 3,
+            "methodName": "MM_AddMissionName",
+            "minArguments": 3,
+            "return": 3
+        },
+        "MM_GetMissionIndex": {
+            "maxArguments": 2,
+            "methodName": "MM_GetMissionIndex",
+            "minArguments": 2,
+            "return": 1
+        },
+        "MM_IsMissionDeliverer": {
+            "maxArguments": 2,
+            "methodName": "MM_IsMissionDeliverer",
+            "minArguments": 2,
+            "return": 4
+        },
+        "MM_SetMissionCount": {
+            "maxArguments": 2,
+            "methodName": "MM_SetMissionCount",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MM_SetMissionDelivererCount": {
+            "maxArguments": 2,
+            "methodName": "MM_SetMissionDelivererCount",
+            "minArguments": 2,
+            "return": 3
+        },
+        "MapAddGOPoint": {
+            "maxArguments": 9,
+            "methodName": "MapAddGOPoint",
+            "minArguments": 9,
+            "return": 4
+        },
+        "MapRemoveByGroup": {
+            "maxArguments": 2,
+            "methodName": "MapRemoveByGroup",
+            "minArguments": 2,
+            "return": 4
+        },
+        "MapRemoveByName": {
+            "maxArguments": 2,
+            "methodName": "MapRemoveByName",
+            "minArguments": 2,
+            "return": 4
+        },
+        "NISIsPlaying": {
+            "maxArguments": 1,
+            "methodName": "NISIsPlaying",
+            "minArguments": 1,
+            "return": 4
+        },
+        "NME_AddDefinedTunables": {
+            "maxArguments": 3,
+            "methodName": "NME_AddDefinedTunables",
+            "minArguments": 3,
+            "return": 3
+        },
+        "NME_CreateInitialWeapon": {
+            "maxArguments": 2,
+            "methodName": "NME_CreateInitialWeapon",
+            "minArguments": 2,
+            "return": 3
+        },
+        "NME_SetAIDef": {
+            "maxArguments": 4,
+            "methodName": "NME_SetAIDef",
+            "minArguments": 4,
+            "return": 3
+        },
+        "NME_SetDefinedTunablesCount": {
+            "maxArguments": 2,
+            "methodName": "NME_SetDefinedTunablesCount",
+            "minArguments": 2,
+            "return": 3
+        },
+        "NME_SetTunables": {
+            "maxArguments": 2,
+            "methodName": "NME_SetTunables",
+            "minArguments": 2,
+            "return": 3
+        },
+        "NME_SetWeaponPickerWeights": {
+            "maxArguments": 2,
+            "methodName": "NME_SetWeaponPickerWeights",
+            "minArguments": 2,
+            "return": 3
+        },
+        "NME_SetWeaponTunables": {
+            "maxArguments": 3,
+            "methodName": "NME_SetWeaponTunables",
+            "minArguments": 3,
+            "return": 3
+        },
+        "NextToken": {
+            "maxArguments": 4,
+            "methodName": "NextToken",
+            "minArguments": 4,
+            "return": 0
+        },
+        "OpeningSequenceMissionLoadComplete": {
+            "maxArguments": 2,
+            "methodName": "OpeningSequenceMissionLoadComplete",
+            "minArguments": 2,
+            "return": 3
+        },
+        "OpeningSequenceTutorialComplete": {
+            "maxArguments": 2,
+            "methodName": "OpeningSequenceTutorialComplete",
+            "minArguments": 1,
+            "return": 3
+        },
+        "OptionManager_GetInvertStatus": {
+            "maxArguments": 2,
+            "methodName": "OptionManager_GetInvertStatus",
+            "minArguments": 2,
+            "return": 4
+        },
+        "OptionManager_GetMemoryMode": {
+            "maxArguments": 1,
+            "methodName": "OptionManager_GetMemoryMode",
+            "minArguments": 1,
+            "return": 0
+        },
+        "OptionManager_ParseCommandLineInput": {
+            "maxArguments": 2,
+            "methodName": "OptionManager_ParseCommandLineInput",
+            "minArguments": 2,
+            "return": 3
+        },
+        "OverlayActivateItem": {
+            "maxArguments": 2,
+            "methodName": "OverlayActivateItem",
+            "minArguments": 1,
+            "return": 3
+        },
+        "OverlayCreateItem": {
+            "maxArguments": 2,
+            "methodName": "OverlayCreateItem",
+            "minArguments": 2,
+            "return": 1
+        },
+        "OverlayDeactivateAll": {
+            "maxArguments": 1,
+            "methodName": "OverlayDeactivateAll",
+            "minArguments": 1,
+            "return": 3
+        },
+        "OverlayDeactivateItem": {
+            "maxArguments": 2,
+            "methodName": "OverlayDeactivateItem",
+            "minArguments": 1,
+            "return": 3
+        },
+        "OverlayGetFirstItemName": {
+            "maxArguments": 1,
+            "methodName": "OverlayGetFirstItemName",
+            "minArguments": 1,
+            "return": 0
+        },
+        "OverlayGetItemParent": {
+            "maxArguments": 2,
+            "methodName": "OverlayGetItemParent",
+            "minArguments": 1,
+            "return": 0
+        },
+        "OverlayGetNextItemName": {
+            "maxArguments": 1,
+            "methodName": "OverlayGetNextItemName",
+            "minArguments": 1,
+            "return": 0
+        },
+        "OverlayIsItemActivated": {
+            "maxArguments": 2,
+            "methodName": "OverlayIsItemActivated",
+            "minArguments": 1,
+            "return": 4
+        },
+        "OverlayIsMenuEnabled": {
+            "maxArguments": 1,
+            "methodName": "OverlayIsMenuEnabled",
+            "minArguments": 1,
+            "return": 4
+        },
+        "OverlayNextItem": {
+            "maxArguments": 1,
+            "methodName": "OverlayNextItem",
+            "minArguments": 1,
+            "return": 3
+        },
+        "OverlayNextParentedItem": {
+            "maxArguments": 1,
+            "methodName": "OverlayNextParentedItem",
+            "minArguments": 1,
+            "return": 3
+        },
+        "OverlayPrevItem": {
+            "maxArguments": 1,
+            "methodName": "OverlayPrevItem",
+            "minArguments": 1,
+            "return": 3
+        },
+        "OverlayPrevParentedItem": {
+            "maxArguments": 1,
+            "methodName": "OverlayPrevParentedItem",
+            "minArguments": 1,
+            "return": 3
+        },
+        "OverlaySetCurrentItem": {
+            "maxArguments": 2,
+            "methodName": "OverlaySetCurrentItem",
+            "minArguments": 2,
+            "return": 3
+        },
+        "OverlaySetItemPersistent": {
+            "maxArguments": 3,
+            "methodName": "OverlaySetItemPersistent",
+            "minArguments": 3,
+            "return": 3
+        },
+        "OverlaySetParentItem": {
+            "maxArguments": 3,
+            "methodName": "OverlaySetParentItem",
+            "minArguments": 3,
+            "return": 3
+        },
+        "OverlaySetTitle": {
+            "maxArguments": 2,
+            "methodName": "OverlaySetTitle",
+            "minArguments": 2,
+            "return": 3
+        },
+        "OverlayToggleCurrentItem": {
+            "maxArguments": 1,
+            "methodName": "OverlayToggleCurrentItem",
+            "minArguments": 1,
+            "return": 3
+        },
+        "OverlayToggleMenu": {
+            "maxArguments": 1,
+            "methodName": "OverlayToggleMenu",
+            "minArguments": 1,
+            "return": 3
+        },
+        "PEG_AnimationResourceLoading": {
+            "maxArguments": 1,
+            "methodName": "PEG_AnimationResourceLoading",
+            "minArguments": 1,
+            "return": 4
+        },
+        "PMG_CalculateStagePriority": {
+            "maxArguments": 3,
+            "methodName": "PMG_CalculateStagePriority",
+            "minArguments": 3,
+            "return": 1
+        },
+        "PMG_IsStageDefinitionValid": {
+            "maxArguments": 2,
+            "methodName": "PMG_IsStageDefinitionValid",
+            "minArguments": 2,
+            "return": 4
+        },
+        "PM_RegisterDestructData": {
+            "maxArguments": 2,
+            "methodName": "PM_RegisterDestructData",
+            "minArguments": 2,
+            "return": 3
+        },
+        "PM_RegisterLoadingData": {
+            "maxArguments": 3,
+            "methodName": "PM_RegisterLoadingData",
+            "minArguments": 3,
+            "return": 3
+        },
+        "PM_RequestState": {
+            "maxArguments": 2,
+            "methodName": "PM_RequestState",
+            "minArguments": 2,
+            "return": 3
+        },
+        "PauseGame": {
+            "maxArguments": 2,
+            "methodName": "PauseGame",
+            "minArguments": 1,
+            "return": 3
+        },
+        "PickElementFromWeightedStringList": {
+            "maxArguments": 2,
+            "methodName": "PickElementFromWeightedStringList",
+            "minArguments": 2,
+            "return": 1
+        },
+        "PlayNIS": {
+            "maxArguments": 13,
+            "methodName": "PlayNIS",
+            "minArguments": 2,
+            "return": 3
+        },
+        "PopStreamerObjectOfInterest": {
+            "maxArguments": 2,
+            "methodName": "PopStreamerObjectOfInterest",
+            "minArguments": 2,
+            "return": 3
+        },
+        "PopTimeScale": {
+            "maxArguments": 1,
+            "methodName": "PopTimeScale",
+            "minArguments": 1,
+            "return": 3
+        },
+        "PopTrafficConfig": {
+            "maxArguments": 3,
+            "methodName": "PopTrafficConfig",
+            "minArguments": 2,
+            "return": 3
+        },
+        "PrintFreeMemory": {
+            "maxArguments": 2,
+            "methodName": "PrintFreeMemory",
+            "minArguments": 2,
+            "return": 3
+        },
+        "PushStreamerObjectOfInterest": {
+            "maxArguments": 2,
+            "methodName": "PushStreamerObjectOfInterest",
+            "minArguments": 2,
+            "return": 3
+        },
+        "PushTimeScale": {
+            "maxArguments": 2,
+            "methodName": "PushTimeScale",
+            "minArguments": 2,
+            "return": 3
+        },
+        "PushTrafficConfig": {
+            "maxArguments": 4,
+            "methodName": "PushTrafficConfig",
+            "minArguments": 2,
+            "return": 3
+        },
+        "Random": {
+            "maxArguments": 1,
+            "methodName": "Random",
+            "minArguments": 1,
+            "return": 2
+        },
+        "ReExecScript": {
+            "maxArguments": 2,
+            "methodName": "ReExecScript",
+            "minArguments": 2,
+            "return": 4
+        },
+        "ReloadPackage": {
+            "maxArguments": 2,
+            "methodName": "ReloadPackage",
+            "minArguments": 2,
+            "return": 4
+        },
+        "RemoveCodeBlock": {
+            "maxArguments": 2,
+            "methodName": "RemoveCodeBlock",
+            "minArguments": 2,
+            "return": 3
+        },
+        "RemoveMemoryHack": {
+            "maxArguments": 1,
+            "methodName": "RemoveMemoryHack",
+            "minArguments": 1,
+            "return": 3
+        },
+        "RemoveTextbibleSpecialStringData": {
+            "maxArguments": 2,
+            "methodName": "RemoveTextbibleSpecialStringData",
+            "minArguments": 1,
+            "return": 3
+        },
+        "ResetLastDriveError": {
+            "maxArguments": 1,
+            "methodName": "ResetLastDriveError",
+            "minArguments": 1,
+            "return": 3
+        },
+        "ResetLookTutorial": {
+            "maxArguments": 1,
+            "methodName": "ResetLookTutorial",
+            "minArguments": 1,
+            "return": 3
+        },
+        "ResourceListAddResource": {
+            "maxArguments": 3,
+            "methodName": "ResourceListAddResource",
+            "minArguments": 3,
+            "return": 3
+        },
+        "ResourceListCreate": {
+            "maxArguments": 4,
+            "methodName": "ResourceListCreate",
+            "minArguments": 4,
+            "return": 1
+        },
+        "ResourceListLoad": {
+            "maxArguments": 2,
+            "methodName": "ResourceListLoad",
+            "minArguments": 2,
+            "return": 3
+        },
+        "ResourceListRemove": {
+            "maxArguments": 2,
+            "methodName": "ResourceListRemove",
+            "minArguments": 2,
+            "return": 3
+        },
+        "ResourceListSetLoadCompleteCallback": {
+            "maxArguments": 9,
+            "methodName": "ResourceListSetLoadCompleteCallback",
+            "minArguments": 3,
+            "return": 3
+        },
+        "RestartOpeningSequence": {
+            "maxArguments": 2,
+            "methodName": "RestartOpeningSequence",
+            "minArguments": 2,
+            "return": 3
+        },
+        "RoadGraph_SetArrivedAtDestinationCallback": {
+            "maxArguments": 2,
+            "methodName": "RoadGraph_SetArrivedAtDestinationCallback",
+            "minArguments": 2,
+            "return": 3
+        },
+        "RoadGraph_SetLapCompletedCallback": {
+            "maxArguments": 2,
+            "methodName": "RoadGraph_SetLapCompletedCallback",
+            "minArguments": 2,
+            "return": 3
+        },
+        "RoadGraph_ShowHintsToDestination": {
+            "maxArguments": 4,
+            "methodName": "RoadGraph_ShowHintsToDestination",
+            "minArguments": 3,
+            "return": 3
+        },
+        "RoadGraph_ShowHintsWithPath": {
+            "maxArguments": 3,
+            "methodName": "RoadGraph_ShowHintsWithPath",
+            "minArguments": 3,
+            "return": 3
+        },
+        "RoadGraph_ShowRaceHUD": {
+            "maxArguments": 2,
+            "methodName": "RoadGraph_ShowRaceHUD",
+            "minArguments": 2,
+            "return": 3
+        },
+        "RoadGraph_StopHints": {
+            "maxArguments": 1,
+            "methodName": "RoadGraph_StopHints",
+            "minArguments": 1,
+            "return": 3
+        },
+        "SFXEnabled": {
+            "maxArguments": 1,
+            "methodName": "SFXEnabled",
+            "minArguments": 1,
+            "return": 4
+        },
+        "SPM_TargetVolumeAddToGroup": {
+            "maxArguments": 3,
+            "methodName": "SPM_TargetVolumeAddToGroup",
+            "minArguments": 2,
+            "return": 1
+        },
+        "SPM_TargetVolumeClear": {
+            "maxArguments": 1,
+            "methodName": "SPM_TargetVolumeClear",
+            "minArguments": 1,
+            "return": 3
+        },
+        "SRC_SetLayerScale": {
+            "maxArguments": 6,
+            "methodName": "SRC_SetLayerScale",
+            "minArguments": 6,
+            "return": 3
+        },
+        "SRC_SetLayerVisible": {
+            "maxArguments": 3,
+            "methodName": "SRC_SetLayerVisible",
+            "minArguments": 3,
+            "return": 3
+        },
+        "SRC_SetNumLayers": {
+            "maxArguments": 2,
+            "methodName": "SRC_SetNumLayers",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SRC_SetOffset": {
+            "maxArguments": 4,
+            "methodName": "SRC_SetOffset",
+            "minArguments": 4,
+            "return": 3
+        },
+        "SaveResolutionChangeToRegistry": {
+            "maxArguments": 1,
+            "methodName": "SaveResolutionChangeToRegistry",
+            "minArguments": 1,
+            "return": 3
+        },
+        "Schedule": {
+            "maxArguments": 63,
+            "methodName": "Schedule",
+            "minArguments": 3,
+            "return": 1
+        },
+        "ScheduleAlways": {
+            "maxArguments": 63,
+            "methodName": "ScheduleAlways",
+            "minArguments": 3,
+            "return": 1
+        },
+        "ScreenFxTransitionIsBlackedOut": {
+            "maxArguments": 1,
+            "methodName": "ScreenFxTransitionIsBlackedOut",
+            "minArguments": 1,
+            "return": 4
+        },
+        "SetAIAttacksEnabled": {
+            "maxArguments": 2,
+            "methodName": "SetAIAttacksEnabled",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SetAnalogDeadZone": {
+            "maxArguments": 2,
+            "methodName": "SetAnalogDeadZone",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SetAnisValue": {
+            "maxArguments": 2,
+            "methodName": "SetAnisValue",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SetCharacterContextsEnabled": {
+            "maxArguments": 2,
+            "methodName": "SetCharacterContextsEnabled",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SetDrawDistance": {
+            "maxArguments": 2,
+            "methodName": "SetDrawDistance",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SetFastTuningMode": {
+            "maxArguments": 2,
+            "methodName": "SetFastTuningMode",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SetFitnessHenchmen": {
+            "maxArguments": 2,
+            "methodName": "SetFitnessHenchmen",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SetFontInventory": {
+            "maxArguments": 2,
+            "methodName": "SetFontInventory",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SetGroundCollisionSurfaceVisible": {
+            "maxArguments": 2,
+            "methodName": "SetGroundCollisionSurfaceVisible",
+            "minArguments": 1,
+            "return": 3
+        },
+        "SetGroundCollisionWireframeVisible": {
+            "maxArguments": 2,
+            "methodName": "SetGroundCollisionWireframeVisible",
+            "minArguments": 1,
+            "return": 3
+        },
+        "SetGroundVisible": {
+            "maxArguments": 2,
+            "methodName": "SetGroundVisible",
+            "minArguments": 1,
+            "return": 3
+        },
+        "SetIntimidationSequenceParams": {
+            "maxArguments": 9,
+            "methodName": "SetIntimidationSequenceParams",
+            "minArguments": 9,
+            "return": 3
+        },
+        "SetIsLeftHand": {
+            "maxArguments": 2,
+            "methodName": "SetIsLeftHand",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SetLoaderAllocator": {
+            "maxArguments": 2,
+            "methodName": "SetLoaderAllocator",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SetMapBlendDestination": {
+            "maxArguments": 6,
+            "methodName": "SetMapBlendDestination",
+            "minArguments": 6,
+            "return": 3
+        },
+        "SetMapLegendShown": {
+            "maxArguments": 2,
+            "methodName": "SetMapLegendShown",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SetMaxNPCOneHandedWeaponUpperBodyTwistAngles": {
+            "maxArguments": 3,
+            "methodName": "SetMaxNPCOneHandedWeaponUpperBodyTwistAngles",
+            "minArguments": 3,
+            "return": 3
+        },
+        "SetMaxNPCTwoHandedWeaponUpperBodyTwistAngles": {
+            "maxArguments": 3,
+            "methodName": "SetMaxNPCTwoHandedWeaponUpperBodyTwistAngles",
+            "minArguments": 3,
+            "return": 3
+        },
+        "SetMaximumProcessingTime": {
+            "maxArguments": 2,
+            "methodName": "SetMaximumProcessingTime",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SetMissionCounterParams": {
+            "maxArguments": 4,
+            "methodName": "SetMissionCounterParams",
+            "minArguments": 3,
+            "return": 3
+        },
+        "SetMissionHUDParams": {
+            "maxArguments": 6,
+            "methodName": "SetMissionHUDParams",
+            "minArguments": 6,
+            "return": 3
+        },
+        "SetMouseSensitivityLevel": {
+            "maxArguments": 2,
+            "methodName": "SetMouseSensitivityLevel",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SetNISEffectOverride": {
+            "maxArguments": 2,
+            "methodName": "SetNISEffectOverride",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SetNewObjectParentGroup": {
+            "maxArguments": 2,
+            "methodName": "SetNewObjectParentGroup",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SetPlayerGameObject": {
+            "maxArguments": 2,
+            "methodName": "SetPlayerGameObject",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SetProjectileDamageEnabled": {
+            "maxArguments": 2,
+            "methodName": "SetProjectileDamageEnabled",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SetScreenFXTransitionParams": {
+            "maxArguments": 8,
+            "methodName": "SetScreenFXTransitionParams",
+            "minArguments": 7,
+            "return": 3
+        },
+        "SetSlowMotionUpdate": {
+            "maxArguments": 2,
+            "methodName": "SetSlowMotionUpdate",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SetTextbibleToSpecialLoad": {
+            "maxArguments": 3,
+            "methodName": "SetTextbibleToSpecialLoad",
+            "minArguments": 3,
+            "return": 1
+        },
+        "SetTonyTeleportCallback": {
+            "maxArguments": 2,
+            "methodName": "SetTonyTeleportCallback",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SetTrilinear": {
+            "maxArguments": 2,
+            "methodName": "SetTrilinear",
+            "minArguments": 2,
+            "return": 3
+        },
+        "Set_gPauseGame": {
+            "maxArguments": 3,
+            "methodName": "Set_gPauseGame",
+            "minArguments": 2,
+            "return": 3
+        },
+        "ShowLoadingList": {
+            "maxArguments": 1,
+            "methodName": "ShowLoadingList",
+            "minArguments": 1,
+            "return": 3
+        },
+        "ShowLoadingScreen": {
+            "maxArguments": 2,
+            "methodName": "ShowLoadingScreen",
+            "minArguments": 2,
+            "return": 3
+        },
+        "Slot_Create": {
+            "maxArguments": 5,
+            "methodName": "Slot_Create",
+            "minArguments": 4,
+            "return": 3
+        },
+        "Slot_Destroy": {
+            "maxArguments": 2,
+            "methodName": "Slot_Destroy",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SlowEcho": {
+            "maxArguments": 3,
+            "methodName": "SlowEcho",
+            "minArguments": 3,
+            "return": 3
+        },
+        "SoundDisableAmbience": {
+            "maxArguments": 2,
+            "methodName": "SoundDisableAmbience",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SoundDisableClips": {
+            "maxArguments": 2,
+            "methodName": "SoundDisableClips",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SoundDisableMusic": {
+            "maxArguments": 2,
+            "methodName": "SoundDisableMusic",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SoundFadeinMix": {
+            "maxArguments": 5,
+            "methodName": "SoundFadeinMix",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SoundFadeoutMix": {
+            "maxArguments": 5,
+            "methodName": "SoundFadeoutMix",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SoundGetCharacterPoiIndex": {
+            "maxArguments": 2,
+            "methodName": "SoundGetCharacterPoiIndex",
+            "minArguments": 2,
+            "return": 1
+        },
+        "SoundGetFaderValue": {
+            "maxArguments": 2,
+            "methodName": "SoundGetFaderValue",
+            "minArguments": 2,
+            "return": 2
+        },
+        "SoundGetPOIConversationCompleteStatus": {
+            "maxArguments": 2,
+            "methodName": "SoundGetPOIConversationCompleteStatus",
+            "minArguments": 2,
+            "return": 4
+        },
+        "SoundGetnConversationsCompleted": {
+            "maxArguments": 1,
+            "methodName": "SoundGetnConversationsCompleted",
+            "minArguments": 1,
+            "return": 1
+        },
+        "SoundIsDaytime": {
+            "maxArguments": 1,
+            "methodName": "SoundIsDaytime",
+            "minArguments": 1,
+            "return": 4
+        },
+        "SoundIsLureVocalCondition": {
+            "maxArguments": 1,
+            "methodName": "SoundIsLureVocalCondition",
+            "minArguments": 1,
+            "return": 4
+        },
+        "SoundIsRaining": {
+            "maxArguments": 1,
+            "methodName": "SoundIsRaining",
+            "minArguments": 1,
+            "return": 4
+        },
+        "SoundManagerGetOutputMode": {
+            "maxArguments": 1,
+            "methodName": "SoundManagerGetOutputMode",
+            "minArguments": 1,
+            "return": 0
+        },
+        "SoundManagerSetOutputMode": {
+            "maxArguments": 2,
+            "methodName": "SoundManagerSetOutputMode",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SoundManagerSetReverb": {
+            "maxArguments": 5,
+            "methodName": "SoundManagerSetReverb",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SoundSetFaderValue": {
+            "maxArguments": 3,
+            "methodName": "SoundSetFaderValue",
+            "minArguments": 3,
+            "return": 3
+        },
+        "SoundSetPOIConversationCompleteStatus": {
+            "maxArguments": 3,
+            "methodName": "SoundSetPOIConversationCompleteStatus",
+            "minArguments": 3,
+            "return": 3
+        },
+        "SoundSetTimeOfDayParams": {
+            "maxArguments": 5,
+            "methodName": "SoundSetTimeOfDayParams",
+            "minArguments": 5,
+            "return": 3
+        },
+        "SoundTotalConversationsInGame": {
+            "maxArguments": 1,
+            "methodName": "SoundTotalConversationsInGame",
+            "minArguments": 1,
+            "return": 1
+        },
+        "SpawnPickup": {
+            "maxArguments": 8,
+            "methodName": "SpawnPickup",
+            "minArguments": 6,
+            "return": 3
+        },
+        "StartMissionStringTable": {
+            "maxArguments": 1,
+            "methodName": "StartMissionStringTable",
+            "minArguments": 1,
+            "return": 3
+        },
+        "StartScriptSection": {
+            "maxArguments": 2,
+            "methodName": "StartScriptSection",
+            "minArguments": 2,
+            "return": 3
+        },
+        "StopMissionStringTable": {
+            "maxArguments": 1,
+            "methodName": "StopMissionStringTable",
+            "minArguments": 1,
+            "return": 3
+        },
+        "StopScriptSection": {
+            "maxArguments": 1,
+            "methodName": "StopScriptSection",
+            "minArguments": 1,
+            "return": 3
+        },
+        "SubtitleManager_ClearDialogueEvents": {
+            "maxArguments": 1,
+            "methodName": "SubtitleManager_ClearDialogueEvents",
+            "minArguments": 1,
+            "return": 3
+        },
+        "SubtitleManager_GetIsSubtitleEnabled": {
+            "maxArguments": 1,
+            "methodName": "SubtitleManager_GetIsSubtitleEnabled",
+            "minArguments": 1,
+            "return": 4
+        },
+        "SubtitleManager_LocalisedDialogueEvent": {
+            "maxArguments": 5,
+            "methodName": "SubtitleManager_LocalisedDialogueEvent",
+            "minArguments": 4,
+            "return": 3
+        },
+        "SubtitleManager_QueingFMVSubtitles": {
+            "maxArguments": 2,
+            "methodName": "SubtitleManager_QueingFMVSubtitles",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SubtitleManager_SetIsSubtitleEnabled": {
+            "maxArguments": 2,
+            "methodName": "SubtitleManager_SetIsSubtitleEnabled",
+            "minArguments": 2,
+            "return": 3
+        },
+        "SubtitleManager_TriggerDialogueEvent": {
+            "maxArguments": 5,
+            "methodName": "SubtitleManager_TriggerDialogueEvent",
+            "minArguments": 4,
+            "return": 3
+        },
+        "TBE_To_Text": {
+            "maxArguments": 2,
+            "methodName": "TBE_To_Text",
+            "minArguments": 2,
+            "return": 0
+        },
+        "TOD_GetDeltaTime": {
+            "maxArguments": 3,
+            "methodName": "TOD_GetDeltaTime",
+            "minArguments": 3,
+            "return": 1
+        },
+        "TOD_IsTimeInside": {
+            "maxArguments": 4,
+            "methodName": "TOD_IsTimeInside",
+            "minArguments": 4,
+            "return": 4
+        },
+        "TOM_GetTurfLetter": {
+            "maxArguments": 2,
+            "methodName": "TOM_GetTurfLetter",
+            "minArguments": 2,
+            "return": 0
+        },
+        "TSM_AddTargetSetFilter": {
+            "maxArguments": 9,
+            "methodName": "TSM_AddTargetSetFilter",
+            "minArguments": 5,
+            "return": 3
+        },
+        "TSM_Cleanup": {
+            "maxArguments": 1,
+            "methodName": "TSM_Cleanup",
+            "minArguments": 1,
+            "return": 3
+        },
+        "TSM_NewTargetSet": {
+            "maxArguments": 2,
+            "methodName": "TSM_NewTargetSet",
+            "minArguments": 2,
+            "return": 3
+        },
+        "TakeScreenShot": {
+            "maxArguments": 4,
+            "methodName": "TakeScreenShot",
+            "minArguments": 1,
+            "return": 0
+        },
+        "TimeOfDay_Enable": {
+            "maxArguments": 2,
+            "methodName": "TimeOfDay_Enable",
+            "minArguments": 2,
+            "return": 3
+        },
+        "ToggleFreezeGame": {
+            "maxArguments": 1,
+            "methodName": "ToggleFreezeGame",
+            "minArguments": 1,
+            "return": 3
+        },
+        "ToggleSlowMotion": {
+            "maxArguments": 1,
+            "methodName": "ToggleSlowMotion",
+            "minArguments": 1,
+            "return": 3
+        },
+        "TonyEnteredDeathVolume": {
+            "maxArguments": 1,
+            "methodName": "TonyEnteredDeathVolume",
+            "minArguments": 1,
+            "return": 3
+        },
+        "TonyTeleport": {
+            "maxArguments": 6,
+            "methodName": "TonyTeleport",
+            "minArguments": 2,
+            "return": 3
+        },
+        "TonyTeleportWithoutFadeIn": {
+            "maxArguments": 6,
+            "methodName": "TonyTeleportWithoutFadeIn",
+            "minArguments": 2,
+            "return": 3
+        },
+        "TraceFireInitialize": {
+            "maxArguments": 1,
+            "methodName": "TraceFireInitialize",
+            "minArguments": 1,
+            "return": 3
+        },
+        "TraceFireTerminate": {
+            "maxArguments": 1,
+            "methodName": "TraceFireTerminate",
+            "minArguments": 1,
+            "return": 3
+        },
+        "TriggerAmbientEffect": {
+            "maxArguments": 5,
+            "methodName": "TriggerAmbientEffect",
+            "minArguments": 5,
+            "return": 3
+        },
+        "TutorialAddSequence": {
+            "maxArguments": 4,
+            "methodName": "TutorialAddSequence",
+            "minArguments": 4,
+            "return": 3
+        },
+        "TutorialManager_IsActive": {
+            "maxArguments": 1,
+            "methodName": "TutorialManager_IsActive",
+            "minArguments": 1,
+            "return": 4
+        },
+        "UnFreezeForOneFrame": {
+            "maxArguments": 1,
+            "methodName": "UnFreezeForOneFrame",
+            "minArguments": 1,
+            "return": 3
+        },
+        "UnloadAZoneInCode": {
+            "maxArguments": 2,
+            "methodName": "UnloadAZoneInCode",
+            "minArguments": 2,
+            "return": 3
+        },
+        "UnloadDZoneInCode": {
+            "maxArguments": 2,
+            "methodName": "UnloadDZoneInCode",
+            "minArguments": 2,
+            "return": 3
+        },
+        "UnlockScriptEventMemory": {
+            "maxArguments": 1,
+            "methodName": "UnlockScriptEventMemory",
+            "minArguments": 1,
+            "return": 3
+        },
+        "UnpauseGame": {
+            "maxArguments": 3,
+            "methodName": "UnpauseGame",
+            "minArguments": 1,
+            "return": 3
+        },
+        "UpdateInputPoint": {
+            "maxArguments": 3,
+            "methodName": "UpdateInputPoint",
+            "minArguments": 3,
+            "return": 4
+        },
+        "UpdateMapPostSerialize": {
+            "maxArguments": 2,
+            "methodName": "UpdateMapPostSerialize",
+            "minArguments": 2,
+            "return": 3
+        },
+        "VectorGetX": {
+            "maxArguments": 2,
+            "methodName": "VectorGetX",
+            "minArguments": 2,
+            "return": 2
+        },
+        "VectorGetZ": {
+            "maxArguments": 2,
+            "methodName": "VectorGetZ",
+            "minArguments": 2,
+            "return": 2
+        },
+        "VectorIsEqual": {
+            "maxArguments": 3,
+            "methodName": "VectorIsEqual",
+            "minArguments": 3,
+            "return": 4
+        },
+        "VectorMultiply": {
+            "maxArguments": 3,
+            "methodName": "VectorMultiply",
+            "minArguments": 3,
+            "return": 0
+        },
+        "VectorSetX": {
+            "maxArguments": 3,
+            "methodName": "VectorSetX",
+            "minArguments": 3,
+            "return": 0
+        },
+        "VectorSetY": {
+            "maxArguments": 3,
+            "methodName": "VectorSetY",
+            "minArguments": 3,
+            "return": 0
+        },
+        "VectorSetZ": {
+            "maxArguments": 3,
+            "methodName": "VectorSetZ",
+            "minArguments": 3,
+            "return": 0
+        },
+        "VectorVectorMultiply": {
+            "maxArguments": 3,
+            "methodName": "VectorVectorMultiply",
+            "minArguments": 3,
+            "return": 0
+        },
+        "WarningMsg": {
+            "maxArguments": 63,
+            "methodName": "WarningMsg",
+            "minArguments": 3,
+            "return": 3
+        },
+        "Widescreen_Enable": {
+            "maxArguments": 2,
+            "methodName": "Widescreen_Enable",
+            "minArguments": 2,
+            "return": 3
+        },
+        "Widescreen_IsEnabled": {
+            "maxArguments": 1,
+            "methodName": "Widescreen_IsEnabled",
+            "minArguments": 1,
+            "return": 4
+        },
+        "WorldFadeIn_Enable": {
+            "maxArguments": 2,
+            "methodName": "WorldFadeIn_Enable",
+            "minArguments": 2,
+            "return": 3
+        },
+        "backtrace": {
+            "maxArguments": 1,
+            "methodName": "backtrace",
+            "minArguments": 1,
+            "return": 3
+        },
+        "call": {
+            "maxArguments": 0,
+            "methodName": "call",
+            "minArguments": 2,
+            "return": 0
+        },
+        "collapseEscape": {
+            "maxArguments": 2,
+            "methodName": "collapseEscape",
+            "minArguments": 2,
+            "return": 0
+        },
+        "deleteVariables": {
+            "maxArguments": 2,
+            "methodName": "deleteVariables",
+            "minArguments": 2,
+            "return": 3
+        },
+        "detag": {
+            "maxArguments": 2,
+            "methodName": "detag",
+            "minArguments": 2,
+            "return": 0
+        },
+        "eval": {
+            "maxArguments": 2,
+            "methodName": "eval",
+            "minArguments": 2,
+            "return": 0
+        },
+        "expandEscape": {
+            "maxArguments": 2,
+            "methodName": "expandEscape",
+            "minArguments": 2,
+            "return": 0
+        },
+        "firstWord": {
+            "maxArguments": 2,
+            "methodName": "firstWord",
+            "minArguments": 2,
+            "return": 0
+        },
+        "getField": {
+            "maxArguments": 3,
+            "methodName": "getField",
+            "minArguments": 3,
+            "return": 0
+        },
+        "getFieldCount": {
+            "maxArguments": 2,
+            "methodName": "getFieldCount",
+            "minArguments": 2,
+            "return": 1
+        },
+        "getFields": {
+            "maxArguments": 4,
+            "methodName": "getFields",
+            "minArguments": 3,
+            "return": 0
+        },
+        "getRecord": {
+            "maxArguments": 3,
+            "methodName": "getRecord",
+            "minArguments": 3,
+            "return": 0
+        },
+        "getRecordCount": {
+            "maxArguments": 2,
+            "methodName": "getRecordCount",
+            "minArguments": 2,
+            "return": 1
+        },
+        "getRecords": {
+            "maxArguments": 4,
+            "methodName": "getRecords",
+            "minArguments": 3,
+            "return": 0
+        },
+        "getSubStr": {
+            "maxArguments": 4,
+            "methodName": "getSubStr",
+            "minArguments": 4,
+            "return": 0
+        },
+        "getTag": {
+            "maxArguments": 2,
+            "methodName": "getTag",
+            "minArguments": 2,
+            "return": 0
+        },
+        "getWord": {
+            "maxArguments": 3,
+            "methodName": "getWord",
+            "minArguments": 3,
+            "return": 0
+        },
+        "getWordCount": {
+            "maxArguments": 2,
+            "methodName": "getWordCount",
+            "minArguments": 2,
+            "return": 1
+        },
+        "getWords": {
+            "maxArguments": 4,
+            "methodName": "getWords",
+            "minArguments": 3,
+            "return": 0
+        },
+        "isFunction": {
+            "maxArguments": 2,
+            "methodName": "isFunction",
+            "minArguments": 2,
+            "return": 4
+        },
+        "ltrim": {
+            "maxArguments": 2,
+            "methodName": "ltrim",
+            "minArguments": 2,
+            "return": 0
+        },
+        "removeField": {
+            "maxArguments": 3,
+            "methodName": "removeField",
+            "minArguments": 3,
+            "return": 0
+        },
+        "removeRecord": {
+            "maxArguments": 3,
+            "methodName": "removeRecord",
+            "minArguments": 3,
+            "return": 0
+        },
+        "removeWord": {
+            "maxArguments": 3,
+            "methodName": "removeWord",
+            "minArguments": 3,
+            "return": 0
+        },
+        "restWords": {
+            "maxArguments": 2,
+            "methodName": "restWords",
+            "minArguments": 2,
+            "return": 0
+        },
+        "rtrim": {
+            "maxArguments": 2,
+            "methodName": "rtrim",
+            "minArguments": 2,
+            "return": 0
+        },
+        "setEchoFileLoads": {
+            "maxArguments": 2,
+            "methodName": "setEchoFileLoads",
+            "minArguments": 2,
+            "return": 3
+        },
+        "setField": {
+            "maxArguments": 4,
+            "methodName": "setField",
+            "minArguments": 4,
+            "return": 0
+        },
+        "setLogMode": {
+            "maxArguments": 2,
+            "methodName": "setLogMode",
+            "minArguments": 2,
+            "return": 3
+        },
+        "setRecord": {
+            "maxArguments": 4,
+            "methodName": "setRecord",
+            "minArguments": 4,
+            "return": 0
+        },
+        "setWord": {
+            "maxArguments": 4,
+            "methodName": "setWord",
+            "minArguments": 4,
+            "return": 0
+        },
+        "strchr": {
+            "maxArguments": 3,
+            "methodName": "strchr",
+            "minArguments": 3,
+            "return": 0
+        },
+        "strcmp": {
+            "maxArguments": 3,
+            "methodName": "strcmp",
+            "minArguments": 3,
+            "return": 1
+        },
+        "stricmp": {
+            "maxArguments": 3,
+            "methodName": "stricmp",
+            "minArguments": 3,
+            "return": 1
+        },
+        "stripChars": {
+            "maxArguments": 3,
+            "methodName": "stripChars",
+            "minArguments": 3,
+            "return": 0
+        },
+        "strlen": {
+            "maxArguments": 2,
+            "methodName": "strlen",
+            "minArguments": 2,
+            "return": 1
+        },
+        "strncmp": {
+            "maxArguments": 4,
+            "methodName": "strncmp",
+            "minArguments": 4,
+            "return": 1
+        },
+        "strnicmp": {
+            "maxArguments": 4,
+            "methodName": "strnicmp",
+            "minArguments": 4,
+            "return": 1
+        },
+        "strpos": {
+            "maxArguments": 4,
+            "methodName": "strpos",
+            "minArguments": 3,
+            "return": 1
+        },
+        "strreplace": {
+            "maxArguments": 4,
+            "methodName": "strreplace",
+            "minArguments": 4,
+            "return": 0
+        },
+        "strstr": {
+            "maxArguments": 3,
+            "methodName": "strstr",
+            "minArguments": 3,
+            "return": 1
+        },
+        "trace": {
+            "maxArguments": 2,
+            "methodName": "trace",
+            "minArguments": 2,
+            "return": 3
+        },
+        "trim": {
+            "maxArguments": 2,
+            "methodName": "trim",
+            "minArguments": 2,
+            "return": 0
+        }
+    },
+    "returnNames": [
+        "string",
+        "int",
+        "float",
+        "void",
+        "bool"
+    ]
+}
