@@ -42,7 +42,7 @@ general.content = [
     "Planes",
     "Helicopters",
     "Boats",
-    "Natives",
+    //"Natives",
 ];
 window.api = [];
 window.api['general'] = general;
