@@ -98,7 +98,7 @@ function LoadData(root, cb){
             cb();
         }
     };
-    xmlhttp.open("GET", "/api/"+root.root+".json", true);
+    xmlhttp.open("GET", "api/"+root.root+".json", true);
     xmlhttp.send();
 }
 
