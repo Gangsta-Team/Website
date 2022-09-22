@@ -1,0 +1,13 @@
+
+{
+    "helicopters" :[
+        {
+            "name": "DEA TWIN EAGLE",
+            "miniature" : ""
+        },
+        {
+            "name": "EXOTIC TWIN EAGLE",
+            "miniature" : ""
+        }
+    ]
+}
