@@ -12,6 +12,7 @@
     "core-js": "^3.6.5",
     "highlight.js": "^11.6.0",
     "jquery": "^3.6.1",
+    "list.js": "^2.3.1",
     "marked": "^4.1.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",

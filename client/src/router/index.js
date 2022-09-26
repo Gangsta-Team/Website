@@ -39,7 +39,8 @@ const routes = [
         meta: {
             breadcrumb: [
                 {
-                    name: "Documentation"
+                    name: "Documentation",
+                    class: "bc-link"
                 }
             ]
         },
@@ -52,10 +53,12 @@ const routes = [
                     breadcrumb: [
                         {
                             name: "Documentation",
-                            link: "Documentation"
+                            link: "Documentation",
+                            class: "bc-link"
                         },
                         {
-                            name: "Game"
+                            name: "Game",
+                            class: "bc-link-active"
                         },
                     ]
                 },
@@ -68,10 +71,12 @@ const routes = [
                             breadcrumb: [
                                 {
                                     name: "Documentation",
-                                    link: "Documentation"
+                                    link: "Documentation",
+                                    class: "bc-link"
                                 },
                                 {
-                                    name: "Characters"
+                                    name: "Characters",
+                                    class: "bc-link-active"
                                 },
                             ]
                         },
@@ -84,10 +89,12 @@ const routes = [
                             breadcrumb: [
                                 {
                                     name: "Documentation",
-                                    link: "Documentation"
+                                    link: "Documentation",
+                                    class: "bc-link"
                                 },
                                 {
-                                    name: "Vehicles"
+                                    name: "Vehicles",
+                                    class: "bc-link-active"
                                 },
                             ]
                         },
@@ -100,10 +107,12 @@ const routes = [
                             breadcrumb: [
                                 {
                                     name: "Documentation",
-                                    link: "Documentation"
+                                    link: "Documentation",
+                                    class: "bc-link"
                                 },
                                 {
-                                    name: "Helicopters"
+                                    name: "Helicopters",
+                                    class: "bc-link-active"
                                 },
                             ]
                         },
@@ -116,10 +125,12 @@ const routes = [
                             breadcrumb: [
                                 {
                                     name: "Documentation",
-                                    link: "Documentation"
+                                    link: "Documentation",
+                                    class: "bc-link"
                                 },
                                 {
-                                    name: "Boats"
+                                    name: "Boats",
+                                    class: "bc-link-active"
                                 },
                             ]
                         },
@@ -132,10 +143,12 @@ const routes = [
                             breadcrumb: [
                                 {
                                     name: "Documentation",
-                                    link: "Documentation"
+                                    link: "Documentation",
+                                    class: "bc-link"
                                 },
                                 {
-                                    name: "Planes"
+                                    name: "Planes",
+                                    class: "bc-link-active"
                                 },
                             ]
                         },
@@ -152,10 +165,12 @@ const routes = [
             breadcrumb: [
                 {
                     name: "Documentation",
-                    link: "Documentation"
+                    link: "Documentation",
+                    class: "bc-link"
                 },
                 {
-                    name: "Natives"
+                    name: "Natives",
+                    class: "bc-link-active"
                 },
             ]
         },
@@ -168,10 +183,12 @@ const routes = [
             breadcrumb: [
                 {
                     name: "Documentation",
-                    link: "Documentation"
+                    link: "Documentation",
+                    class: "bc-link"
                 },
                 {
-                    name: "Internals"
+                    name: "Internals",
+                    class: "bc-link-active"
                 },
             ]
         },
@@ -180,8 +197,8 @@ const routes = [
 
 const router = createRouter({
     history: createWebHistory(process.env.BASE_URL),
-    linkActiveClass: "active font-weight-light text-decoration-none text-light",
-    linkExactActiveClass: "text-white font-weight-bold text-decoration-underline",
+    //linkActiveClass: "active font-weight-light text-decoration-none text-light",
+    //linkExactActiveClass: "text-white font-weight-bold text-decoration-underline",
     routes
 })
 

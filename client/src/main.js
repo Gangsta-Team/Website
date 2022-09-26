@@ -16,4 +16,7 @@ window.hl = hl
 import { marked } from 'marked';
 window.marked = marked
 
+import listjs from 'list.js'
+window.listjs = listjs;
+
 window.vueapp = createApp(App).use(store).use(router).mount('#app')

@@ -11,21 +11,40 @@
                     </div>
                 </nav>
                 <ul class="list-unstyled p-2 overflow-auto m-0" id="doc-list">
-                    <li class="mb-1 d-flex flex-column">
-                        <template v-for="(key, val) in classFunctions" v-bind:key="val">
-                            <button :class="'btn btn-toggle align-items-center rounded'+ ((working_class == val) ? '' : ' collapsed')" @click="getMD('/classes/'+val+'/', true)" data-bs-toggle="collapse" :data-bs-target="'#'+val.toLowerCase()+'-collapse'" aria-expanded="false">
-                                {{ val }}
-                            </button>
-                            <div :class="'collapse'+ ((working_class == val) ? ' show' : '')" :id="val.toLowerCase() + '-collapse'">
-                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                    <li v-for="(props, method_name) in key">
-                                        <a href="#" :class="'link-dark rounded'+ ((working_path == '/classes/'+val+'/'+method_name+'.md') ? ' active' : '')" :data-md="'/classes/'+val+'/'+method_name+'.md'" @click="getMD('/classes/'+val+'/'+method_name+'.md', false)">{{ method_name }}</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </template>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#classes-collapse" aria-expanded="false">
+                            Classes
+                        </button>
+                        <div class="collapse" id="classes-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li class="ms-3" v-for="(key, val) in classFunctions" v-bind:key="val">
+                                    <button :class="'btn btn-toggle align-items-center rounded'+ ((working_class == val) ? '' : ' collapsed')" @click="getMD('/classes/'+val+'/', true)" data-bs-toggle="collapse" :data-bs-target="'#'+val.toLowerCase()+'-collapse'" aria-expanded="false">
+                                        {{ val }}
+                                    </button>
+                                    <div :class="'collapse'+ ((working_class == val) ? ' show' : '')" :id="val.toLowerCase() + '-collapse'">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li v-for="(props, method_name) in key">
+                                                <a href="#" :class="'link-dark rounded'+ ((working_path == '/classes/'+val+'/'+method_name+'.md') ? ' active' : '')" :data-md="'/classes/'+val+'/'+method_name+'.md'" @click="getMD('/classes/'+val+'/'+method_name+'.md', false)">{{ method_name }}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
-                </ul>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#blobals-collapse" aria-expanded="false">
+                            Globals
+                        </button>
+                        <div class="collapse" id="blobals-collapse" style="">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li class="ms-3" v-for="(key, val) in globalFunctions" v-bind:key="val">
+                                    <a href="#" :class="'link-dark rounded'+ ((working_path == '/globals/'+val+'.md') ? ' active' : '')" @click="getMD('/globals/'+val+'.md', false)">{{ val }}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    </ul>
             </div>
             <div class="p-0" style="width: calc(100% - 280px)">
                 <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
