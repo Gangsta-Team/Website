@@ -6,6 +6,7 @@
                 :item="item"
                 v-slot="item"
                 :class="class"
+                @click="item.click(item)"
             >
                 <slot :item="item"></slot>
             </GridItem>

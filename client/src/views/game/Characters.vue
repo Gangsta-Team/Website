@@ -1,5 +1,36 @@
 <template>
     <div class="characters" id="characters-list">
+
+        <div class="modal fade" id="characterModal" tabindex="-1" aria-labelledby="characterModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="characterModalLabel">Character detail</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex" v-if="selected_character">
+                    <img loading="lazzy" alt="character" class="character-img m-2" :src="selected_character.img" width="130">
+                    <div class="d-flex justify-content-between align-items-between flex-column w-100 h-100 m-2">
+                        <strong>
+                            {{ selected_character.id }} Name: <strong class="character-name">{{ selected_character.name }}</strong>
+                        </strong>
+                        <div class="d-flex justify-content-center align-items-center p-2 bg-light h-100">
+                            <i class="character-text">
+                                {{ selected_character.text }}
+                            </i>
+                        </div>
+                        <div>
+                            <strong>Locale:</strong> <span class="character-locale">{{ selected_character.locale }}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
         <h2 class="p-3 mb-0 pb-0">Game characters</h2>
         <hr>
         <div class="card m-3">
@@ -22,7 +53,7 @@
                 This information is taken from: <a href="https://archive.org/details/Scarface_The_World_is_Yours_Prima_Official_eGuide" target="_blank">Scarface The World is Yours Prima Official eGuide.pdf</a>
             </div>
         </div>
-        <Grid :items="characters" :keyprop="'name'" @on_loaded="characters_loaded" v-slot="{ item }" :class="'character p-3 d-flex justify-content-start align-items-center'">
+        <Grid :items="characters" :keyprop="'name'" @on_loaded="characters_loaded" v-slot="{ item }" @on_click="on_click" :class="'character p-3 d-flex justify-content-start align-items-center'">
             <img loading="lazzy" alt="character" class="character-img" :src="item.item.img" width="130">
             <div class="d-flex justify-content-between align-items-between flex-column w-100 h-100">
                 <strong>
@@ -44,7 +75,7 @@
 <script>
     
 import Grid from '@/components/Grid.vue'
-
+window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
 import Characters from '@/assets/api/characters.json'
 
 export default {
@@ -56,10 +87,17 @@ export default {
         return {
             characters: [],
             character_list: null,
-            character_locales: []
+            character_locales: [],
+            character_modal: null,
+            selected_character: null,
         };
     },
     methods : {
+        on_click:function(evt){
+            console.log("Charater click", evt)
+            this.selected_character = evt;
+            this.character_modal.show();
+        },
         locale_filter_change: function(evt){
             this.character_list.search(evt.target.value, ['character-locale']);
         },
@@ -89,6 +127,7 @@ export default {
             
             this.characters.push({
                 id: idx,
+                click: this.on_click,
                 name: character.name,
                 text: character.text,
                 locale: character.locale,
@@ -99,6 +138,10 @@ export default {
                 this.character_locales.push(character.locale);
         });
         this.$store.commit("setLoading", false);
+
+        this.character_modal = new bootstrap.Modal('#characterModal', {
+            keyboard: false
+        })
     }
 }
 </script>
