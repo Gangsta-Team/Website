@@ -2,12 +2,16 @@
 {
     "helicopters" :[
         {
-            "name": "DEA TWIN EAGLE",
-            "miniature" : ""
+            "name": "EXOTIC TWIN EAGLE",
+            "template": "ArmyHeliTemplate"
         },
         {
-            "name": "EXOTIC TWIN EAGLE",
-            "miniature" : ""
+            "name": "DEA TWIN EAGLE",
+            "template": "PoliceHeliTemplate"
+        },
+        {
+            "name": "ARMY HELICOPTER",
+            "template": "MountedArmyHeliTemplate"
         }
     ]
 }

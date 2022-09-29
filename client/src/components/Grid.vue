@@ -1,5 +1,5 @@
 <template>
-    <ul class="list">
+    <ul class="list p-3">
         <template v-for="item in items" :v-bind:key="item[keyprop]">
             <GridItem
                 :item_key="item[keyprop]"
@@ -46,11 +46,20 @@
   
   <style scoped>
     .list {
-        justify-content: space-between;
+        /*justify-content: space-between;
         display: grid;
         grid-template-columns: repeat(auto-fit, 200px);
         margin: 0 1rem;
-        padding-left: 0px;
+        padding-left: 0px;*/
+
+         --auto-grid-min-size: 16rem;
+
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fill,
+            minmax(var(--auto-grid-min-size), 1fr)
+        );
+        grid-gap: 1rem;
     }
   </style>
   

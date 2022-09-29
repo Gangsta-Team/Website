@@ -1,84 +1,69 @@
 <template>
-    <div class="container-fluid h-100">
-        <div class="row d-flex h-100">
-            <div class="flex-shrink-0 ps-0 pe-0 navbar-dark bg-light" style="width: 280px;">
-                <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top" id="doc-nav">
-                    <div class="container-fluid">
-                        <a class="navbar-brand navbar-brand d-flex justify-content-center align-items-center" href="/">
+    <div class="wrapper">
+        <!-- Sidebar  -->
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top" id="doc-nav">
+                <div class="container-fluid d-flex">
+                    <div class="d-flex" style="width: 250px;">
+                        <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand navbar-brand d-flex justify-content-center align-items-center ms-3" href="/">
                             <img src="@/assets/logo.png" alt="Logo" height="24" class="bg-white p-1 rounded d-inline-block align-text-top me-2">
                             STWIY
                         </a>
                     </div>
-                </nav>
-                <ul class="list-unstyled p-2 overflow-auto m-0" id="doc-list">
-                    <!--li class="mb-1 d-flex flex-column">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-                            General
-                        </button>
-                        <div class="collapse show" id="home-collapse">
-                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a href="#" class="link-dark rounded">Overview</a></li>
-                                <li><a href="#" class="link-dark rounded">Updates</a></li>
-                                <li><a href="#" class="link-dark rounded">Troubleshooting</a></li>
-                                <li><a href="#" class="link-dark rounded">FAQ</a></li>
-                            </ul>
-                        </div>
-                    </li-->
-                    <li class="mb-1 d-flex flex-column">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" @click="$router.push('/documentation/game');" data-bs-toggle="collapse" data-bs-target="#orders-collapse" :aria-expanded="(['Game', 'Characters', 'Vehicles', 'Helicopters', 'Boats', 'Planes', 'Natives'].includes($route.name)) ? true : false">
-                            Game
-                        </button>
-                        <div :class="(['Game', 'Characters', 'Vehicles', 'Helicopters', 'Boats', 'Planes', 'Natives'].includes($route.name)) ? 'collapse show' :'collapse'" id="orders-collapse">
-                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><router-link :to="{ name: 'Characters'}" :class="'link-dark rounded' + ((isLinkActive('Characters')) ? ' active':'')">Characters</router-link></li>
-                                <li><router-link :to="{ name: 'Vehicles'}" :class="'link-dark rounded' + ((isLinkActive('Vehicles')) ? ' active':'')">Vehicles</router-link></li>
-                                <li><router-link :to="{ name: 'Helicopters'}" :class="'link-dark rounded' + ((isLinkActive('Helicopters')) ? ' active':'')" href="/documentation/game/helicopters">Helicopters</router-link></li>
-                                <li><router-link :to="{ name: 'Boats'}" :class="'link-dark rounded' + ((isLinkActive('Boats')) ? ' active':'')" href="/documentation/game/boats">Boats</router-link></li>
-                                <li><router-link :to="{ name: 'Planes'}" :class="'link-dark rounded' + ((isLinkActive('Planes')) ? ' active':'')" href="/documentation/game/planes">Planes</router-link></li>
-                                <li><router-link :to="{ name: 'Natives'}" :class="'link-dark rounded' + ((isLinkActive('Natives')) ? ' active':'')" href="/documentation/game/natives">Natives</router-link></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="p-0" style="width: calc(100% - 280px)">
-                <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
-                    <div class="container-fluid">
-                        <Breadcrumb/>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div class="me-auto"></div>
-                        <!--form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form-->
-                        </div>
-                    </div>
-                </nav>
-                <router-view v-if="!['Documentation'].includes($route.name)" id="main-view" class="overflow-auto"/>
-                <div v-else class="container-fluid" id="main-view">
-                    <div class="row mt-3">
-                        <div class="col"> 
-                            <div class="p-3 mb-4 bg-light rounded-3">
-                                <div class="container-fluid py-3">
-                                    <h3 class="fw-bold">Scarface The World is Yours: Documentation</h3>
-                                    <hr>
-                                    <p>Welcome to the <b>Scarface The World Is Yours</b> documentation, here you will find the needed information that you are searching for.</p>
-                                    <p> You may find some missing information from pages since the status of the documentation is still a <b>work in progress</b>. If you need any help, feel free to use the <a target="_blank" href="https://discord.com/invite/TA9zKUXQAc">discord server</a>.</p>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
+                    <Breadcrumb/>
                 </div>
-                <Loader v-if="$store.state.loading"/>
+            </nav>
+
+            <div class="d-flex" id="main-view" >
+                <nav id="sidebar" class=" bg-light">
+                    <ul class="list-unstyled overflow-auto m-0 p-2" id="doc-list">
+                        <li class="mb-1 d-flex flex-column">
+                            <button class="btn btn-toggle align-items-center rounded collapsed" @click="$router.push('/documentation/game');" data-bs-toggle="collapse" data-bs-target="#orders-collapse" :aria-expanded="(['Game', 'Characters', 'Vehicles', 'Helicopters', 'Boats', 'Planes', 'Natives'].includes($route.name)) ? true : false">
+                                Game
+                            </button>
+                            <div :class="(['Game', 'Characters', 'Vehicles', 'Helicopters', 'Boats', 'Planes', 'Natives'].includes($route.name)) ? 'collapse show' :'collapse'" id="orders-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><router-link :to="{ name: 'Characters'}" :class="'link-dark rounded' + ((isLinkActive('Characters')) ? ' active':'')">Characters</router-link></li>
+                                    <li><router-link :to="{ name: 'Vehicles'}" :class="'link-dark rounded' + ((isLinkActive('Vehicles')) ? ' active':'')">Vehicles</router-link></li>
+                                    <li><router-link :to="{ name: 'Helicopters'}" :class="'link-dark rounded' + ((isLinkActive('Helicopters')) ? ' active':'')" href="/documentation/game/helicopters">Helicopters</router-link></li>
+                                    <li><router-link :to="{ name: 'Boats'}" :class="'link-dark rounded' + ((isLinkActive('Boats')) ? ' active':'')" href="/documentation/game/boats">Boats</router-link></li>
+                                    <li><router-link :to="{ name: 'Planes'}" :class="'link-dark rounded' + ((isLinkActive('Planes')) ? ' active':'')" href="/documentation/game/planes">Planes</router-link></li>
+                                    <li><router-link :to="{ name: 'Natives'}" :class="'link-dark rounded' + ((isLinkActive('Natives')) ? ' active':'')" href="/documentation/game/natives">Natives</router-link></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <main class="w-100">
+                    <router-view v-if="!['Documentation'].includes($route.name)" class="overflow-auto"/>
+                    <div v-else class="container-fluid">
+                        <div class="row mt-3">
+                            <div class="col"> 
+                                <div class="p-3 mb-4 bg-light rounded-3">
+                                    <div class="container-fluid py-3">
+                                        <h3 class="fw-bold">Scarface The World is Yours: Documentation</h3>
+                                        <hr>
+                                        <p>Welcome to the <b>Scarface The World Is Yours</b> documentation, here you will find the needed information that you are searching for.</p>
+                                        <p> You may find some missing information from pages since the status of the documentation is still a <b>work in progress</b>. If you need any help, feel free to use the <a target="_blank" href="https://discord.com/invite/TA9zKUXQAc">discord server</a>.</p>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <Loader v-if="$store.state.loading"/>
+                </main>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+
     import Breadcrumb from '@/components/Breadcrumb'
     import Loader from '@/components/Loader'
 
@@ -93,6 +78,11 @@
             $(window).resize(function(){
                 this.adjustSize();
             }.bind(this));
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
         },
         methods:{
             adjustSize(){
@@ -111,6 +101,7 @@
 </script>
 
 <style scoped>
+
 main {
   display: flex;
   flex-wrap: nowrap;
@@ -192,4 +183,36 @@ main {
 
 .fw-semibold { font-weight: 600; }
 .lh-tight { line-height: 1.25; }
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
 </style>

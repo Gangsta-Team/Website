@@ -1,5 +1,5 @@
 <template>
-    <div class="boats">
+    <div class="boats w-100 start-0 bg-white">
         <h2 class="p-3 mb-0">Game boats</h2>
         <Grid>
             <GridItem v-for="(boat, idx) in boats">

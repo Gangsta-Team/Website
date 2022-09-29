@@ -1,8 +1,8 @@
 <template>
-    <div class="game">
+    <div class="game w-100 start-0 bg-white">
         <div v-if="$route.name == 'Game'">
             <div class="row m-0 mt-3 mb-3 d-flex justify-content-center align-items-center">
-                <div class="col-8">
+                <div class="col-xs-12 col-md-8 col-lg-4">
                     <div class="card w-100">
                         <div class="card-header">
                             Scarface The World Is Yours: Game
@@ -21,19 +21,19 @@
                 </div>
             </div>
             <div class="row m-0 mt-3 mb-3">
-                <div class="col">
+                <div class="col-lg-4 my-2">
                     <div class="bd-callout bd-callout-info h-100">
                         <h4><a href="/documentation/game/natives">Explore the game natives</a></h4>
                         Get an overview of the game scripting natives. You can play arround game natives if you have intalled the scarface mod.
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-4 my-2">
                     <div class="bd-callout bd-callout-info h-100">
                         <h4><a href="/documentation/game/internals">Explore the game internals</a></h4>
                         Get an idea on how the game was made.
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-4 my-2">
                     <div class="bd-callout bd-callout-info h-100">
                         <h4><a href="/documentation/contribute">Contribute</a></h4>
                     </div>

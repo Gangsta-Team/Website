@@ -33,10 +33,10 @@
                         </div>
                     </li>
                     <li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#blobals-collapse" aria-expanded="false">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#globals-collapse" aria-expanded="false">
                             Globals
                         </button>
-                        <div class="collapse" id="blobals-collapse" style="">
+                        <div class="collapse" id="globals-collapse" style="">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                 <li class="ms-3" v-for="(key, val) in globalFunctions" v-bind:key="val">
                                     <a href="#" :class="'link-dark rounded'+ ((working_path == '/globals/'+val+'.md') ? ' active' : '')" @click="getMD('/globals/'+val+'.md', false)">{{ val }}</a>

@@ -6,7 +6,7 @@
 export default {
     name: 'App',
     mounted(){
-        this.$router.push({name: "Home"});
+        //this.$router.push({name: "Home"});
     }
 }
 </script>

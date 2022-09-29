@@ -28,13 +28,21 @@
   <style scoped>
 
     .item {
-        margin: 1rem 0;
+        /*margin: 1rem 0;
         width: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        font-size: 14px;
+        font-size: 14px;*/
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5rem 1rem;
+        text-align: center;
+        font-size: 1rem;
     }
   </style>
   

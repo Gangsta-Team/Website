@@ -1,5 +1,5 @@
 <template>
-    <div class="characters" id="characters-list">
+    <div class="characters w-100 start-0 bg-white" id="characters-list">
 
         <div class="modal fade" id="characterModal" tabindex="-1" aria-labelledby="characterModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -36,15 +36,33 @@
         <div class="card m-3">
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md">
-                        <input class="form-control search" placeholder="Search...">
+                    <div class="col-sm-12 col-md-12  col-lg-6">
+                        <div class="row">
+                            <div class="col">
+                                <input class="form-control search" placeholder="Search...">
+                            </div>
+                            <div class="col">
+                                <select class="form-select" @change="locale_filter_change" aria-label="">
+                                    <option value="">Filter by character locale</option>
+                                    <option :value="locale" v-for="locale in character_locales">{{ locale }}</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
-                    <!--div class="col-md">
-                        <select class="form-select" @change="locale_filter_change" aria-label="">
-                            <option value="">Filter by character locale</option>
-                            <option :value="locale" v-for="locale in character_locales">{{ locale }}</option>
-                        </select>
-                    </div-->
+                    <div class="col-sm-12 col-md-12  col-lg-6">
+                        <div class="row">
+                            <div class="col-md">
+                                <button class="sort btn btn-primary w-100" data-sort="character-name">
+                                    Sort by name
+                                </button>
+                            </div>
+                            <div class="col-md">
+                                <button class="sort btn btn-primary w-100" data-sort="character-locale">
+                                    Sort by locale
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,7 +123,8 @@ export default {
             var options = {
                 valueNames: [ 
                     'character-name', 
-                    'character-text' 
+                    'character-text', 
+                    'character-locale', 
                 ]
             };
 
@@ -157,5 +176,43 @@ export default {
 }
 .character-name{
     color: rgb(199 151 42);
+}
+
+.sort:focus {
+  outline:none;
+}
+.sort:after {
+  display:inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:4px;
+  right:-5px;
+}
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:-4px;
+  right:-5px;
 }
 </style>
