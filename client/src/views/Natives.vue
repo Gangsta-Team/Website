@@ -15,7 +15,7 @@
                     <Breadcrumb/>
                 </div>
             </nav>
-            <div class="d-flex" id="main-view">
+            <div class="d-flex p-0" id="main-view">
                 <nav id="sidebar" class=" bg-light">
                     <ul class="list-unstyled overflow-auto m-0 p-2" id="doc-list">
                         <li class="mb-1">
@@ -24,16 +24,16 @@
                             </a>
                             <div :class="'collapse'+((working_group=='classes') ?' show':'')" id="classes-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                    <li class="ms-3" v-for="(key, val) in classFunctions" v-bind:key="val">
-                                        <a class="btn btn-toggle align-items-center rounded native-link class-btn" :data-href="'/website/#/documentation/game/natives?class='+val" :data-class="val" :data-md="'/classes/'+val+'/README.md'" @click="handleClassLink(val)" data-bs-toggle="collapse" :data-bs-target="'#'+val.toLowerCase()+'-collapse'" aria-expanded="false">
+                                    <li v-for="(key, val) in classFunctions" v-bind:key="val">
+                                        <a class="btn btn-toggle align-items-center rounded native-link class-btn" :data-href="'/website/#/documentation/game/natives?class='+val" :data-class="val" :data-md="'/classes/'+val+'/README.md'" @click="handleClassLink(val, false)" data-bs-toggle="collapse" :data-bs-target="'#'+val.toLowerCase()+'-collapse'" aria-expanded="false">
                                             {{ val }}
                                         </a>
                                         <div :class="'collapse'+((working_class==val) ?' show':'')" :id="val.toLowerCase() + '-collapse'">
                                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                                <li v-for="(props, method_name) in key" v-bind:key="method_name">
+                                                <li class="ms-4" v-for="(props, method_name) in key" v-bind:key="method_name">
                                                     <a 
                                                     :href="'/website/#/documentation/game/natives?addr='+props.address" 
-                                                    @click="handleNativeLink(props.address)" 
+                                                    @click="handleNativeLink(props.address, false)" 
                                                     :class="'link-dark rounded native-link class-link'+((working_method ==method_name) ? ' active':'')" 
                                                     :data-class="val" 
                                                     :data-method="method_name" 
@@ -56,7 +56,7 @@
                                     <li class="ms-3" v-for="(key, val) in globalFunctions" v-bind:key="val">
                                         <a 
                                             :href="'/website/#/documentation/game/natives?addr='+key.address" 
-                                            @click="handleNativeLink(key.address)" 
+                                            @click="handleNativeLink(key.address, false)" 
                                             :class="'link-dark rounded native-link global-link'+((working_method ==val) ? ' active':'')" 
                                             :data-method="val"
                                             :data-addr="key.address"
@@ -68,9 +68,7 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="w-100" style="width: calc(100% - 280px)">
-                    <div class="p-3 overflow-auto w-100" id="native">
-                    </div>
+                <div class="w-100 overflow-auto p-3" style="width: calc(100% - 280px)"  id="native">
                 </div>
             </div>
         </div>
@@ -106,7 +104,7 @@ export default {
         };
     },
     methods:{
-        handleNativeLink(addr){
+        handleNativeLink(addr, by_url){
             var element = $('*[data-addr="'+addr+'"]');            
             this.working_class = element.attr("data-class");
             this.working_method = element.attr("data-method");
@@ -120,11 +118,13 @@ export default {
                     $('#native').html(window.marked.parse(res));
                     window.hl.highlightAll();
                     this.$store.commit("setLoading", false);
+                    if(by_url)
+                        $('.native-link[data-addr="'+addr+'"]')[0].scrollIntoView();
                 }.bind(this),
                 dataType: "text"
             });
         },
-        handleClassLink(class_name){
+        handleClassLink(class_name, by_url){
             var element = $('.class-btn[data-class="'+class_name+'"]');
             console.log(element)
             var location = element.attr("data-href");
@@ -142,17 +142,19 @@ export default {
                     $('#native table').addClass("table table-striped table-hover w-auto table-bordered");
                     this.formatTableLinks();
                     this.$store.commit("setLoading", false);
+                    if(by_url)
+                        $('.native-link[data-class="'+this.working_class+'"]')[0].scrollIntoView();
                 }.bind(this),
                 dataType: "text"
             });
         },
         handleQuery(){
             if(typeof this.$route.query.addr !== 'undefined'){
-                this.handleNativeLink(this.$route.query.addr);
+                this.handleNativeLink(this.$route.query.addr, true);
             } 
             if(typeof this.$route.query.class !== 'undefined'){
                 console.log("class: "+this.$route.query.class)
-                this.handleClassLink(this.$route.query.class);
+                this.handleClassLink(this.$route.query.class, true);
             }            
         },
         adjustSize(){
