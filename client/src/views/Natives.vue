@@ -26,7 +26,7 @@
                                             <li v-for="(props, method_name) in key" v-bind:key="method_name">
                                                 <a 
                                                 :href="'/website/#/documentation/game/natives?addr='+props.address" 
-                                                @click="handleNativeLink(key.address)" 
+                                                @click="handleNativeLink(props.address)" 
                                                 :class="'link-dark rounded native-link class-link'+((working_method ==method_name) ? ' active':'')" 
                                                 :data-class="val" 
                                                 :data-method="method_name" 
@@ -136,8 +136,6 @@ export default {
             this.handleNativeLink(addr);
         },
         handleQuery(){
-            console.log("handleQuery")
-            console.log(this.$route.query.addr)
             if(typeof this.$route.query.addr !== 'undefined'){
                 console.log("addr"+this.$route.query.addr)
                 this.findElemenyByAddr(this.$route.query.addr);
@@ -200,7 +198,7 @@ export default {
                 this.globalFunctions[method_name] = itm_data;
                 this.globalFunctionsLen +=1;
             }
-            //this.returnNames = data.returnNames;
+            this.returnNames = data.returnNames;
             this.$store.commit("setLoading", false);
         }.bind(this));
         this.adjustSize();
