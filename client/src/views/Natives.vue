@@ -26,7 +26,7 @@
                                         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                             <li v-for="(props, method_name) in key" v-bind:key="method_name">
                                                 <a 
-                                                :href="'/#/documentation/game/natives?addr='+props.address" 
+                                                :href="'/website/#/documentation/game/natives?addr='+props.address" 
                                                 @click="handleNativeLink(key.address)" 
                                                 :class="'link-dark rounded native-link class-link'+((working_method ==method_name) ? ' active':'')" 
                                                 :data-class="val" 
@@ -49,7 +49,7 @@
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                 <li class="ms-3" v-for="(key, val) in globalFunctions" v-bind:key="val">
                                     <a 
-                                        :href="'/#/documentation/game/natives?addr='+key.address" 
+                                        :href="'/website/#/documentation/game/natives?addr='+key.address" 
                                         @click="handleNativeLink(key.address)" 
                                         :class="'link-dark rounded native-link global-link'+((working_method ==val) ? ' active':'')" 
                                         :data-method="val"
