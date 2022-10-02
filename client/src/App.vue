@@ -36,4 +36,16 @@ html, body, #app{
     --bd-callout-border: rgba(var(--bs-info-rgb), .5);
 }
 
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
 </style>
+

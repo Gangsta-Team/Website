@@ -1,79 +1,76 @@
 <template>
     <div class="container-fluid h-100">
-        <div class="row d-flex h-100">
-            <div class="flex-shrink-0 ps-0 pe-0 navbar-dark bg-light" style="width: 280px;">
-                <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top" id="doc-nav">
-                    <div class="container-fluid">
-                        <a class="navbar-brand navbar-brand d-flex justify-content-center align-items-center" href="/">
+        <div class="row">
+            <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top" id="doc-nav">
+                <div class="container-fluid d-flex">
+                    <div class="d-flex" style="width: 250px;">
+                        <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand navbar-brand d-flex justify-content-center align-items-center ms-3" href="/">
                             <img src="@/assets/logo.png" alt="Logo" height="24" class="bg-white p-1 rounded d-inline-block align-text-top me-2">
                             STWIY
                         </a>
                     </div>
-                </nav>
-                <ul class="list-unstyled p-2 overflow-auto m-0" id="doc-list">
-                    <li class="mb-1">
-                        <button :class="'btn btn-toggle align-items-center rounded'+((working_group=='classes') ?'':' collapsed')" data-menu="classes" data-bs-toggle="collapse" data-bs-target="#classes-collapse" :aria-expanded="((working_group=='classes') ?'true':'false')">
-                            Classes
-                        </button>
-                        <div :class="'collapse'+((working_group=='classes') ?' show':'')" id="classes-collapse">
-                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li class="ms-3" v-for="(key, val) in classFunctions" v-bind:key="val">
-                                    <button class="btn btn-toggle align-items-center rounded native-link" :data-class="val" :data-md="'/classes/'+val+'/README.md'" data-bs-toggle="collapse" :data-bs-target="'#'+val.toLowerCase()+'-collapse'" aria-expanded="false">
-                                        {{ val }}
-                                    </button>
-                                    <div :class="'collapse'+((working_class==val) ?' show':'')" :id="val.toLowerCase() + '-collapse'">
-                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                            <li v-for="(props, method_name) in key" v-bind:key="method_name">
-                                                <a 
-                                                :href="'/website/#/documentation/game/natives?addr='+props.address" 
-                                                @click="handleNativeLink(props.address)" 
-                                                :class="'link-dark rounded native-link class-link'+((working_method ==method_name) ? ' active':'')" 
-                                                :data-class="val" 
-                                                :data-method="method_name" 
-                                                :data-addr="props.address"
-                                                :data-md="'/classes/'+val+'/'+method_name+'.md'"
-                                                data-group="classes" >{{ method_name }}</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <button :class="'btn btn-toggle align-items-center rounded'+((working_group=='globals') ?'':' collapsed')" data-menu="globals" data-bs-toggle="collapse" data-bs-target="#globals-collapse" :aria-expanded="((working_group=='globals') ?'true':'false')">
-                            Globals
-                        </button>
-                        <div :class="'collapse'+((working_group=='globals') ?' show':'')" id="globals-collapse" style="">
-                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li class="ms-3" v-for="(key, val) in globalFunctions" v-bind:key="val">
-                                    <a 
-                                        :href="'/website/#/documentation/game/natives?addr='+key.address" 
-                                        @click="handleNativeLink(key.address)" 
-                                        :class="'link-dark rounded native-link global-link'+((working_method ==val) ? ' active':'')" 
-                                        :data-method="val"
-                                        :data-addr="key.address"
-                                        :data-md="'/globals/'+val+'.md'"
-                                        data-group="globals">{{ val }}</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+                    <Breadcrumb/>
+                </div>
+            </nav>
+            <div class="d-flex" id="main-view">
+                <nav id="sidebar" class=" bg-light">
+                    <ul class="list-unstyled overflow-auto m-0 p-2" id="doc-list">
+                        <li class="mb-1">
+                            <a :class="'btn btn-toggle align-items-center rounded'+((working_group=='classes') ?'':' collapsed')" data-menu="classes" data-bs-toggle="collapse" data-bs-target="#classes-collapse" :aria-expanded="((working_group=='classes') ?'true':'false')">
+                                Classes
+                            </a>
+                            <div :class="'collapse'+((working_group=='classes') ?' show':'')" id="classes-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li class="ms-3" v-for="(key, val) in classFunctions" v-bind:key="val">
+                                        <a class="btn btn-toggle align-items-center rounded native-link class-btn" :data-href="'/website/#/documentation/game/natives?class='+val" :data-class="val" :data-md="'/classes/'+val+'/README.md'" @click="handleClassLink(val)" data-bs-toggle="collapse" :data-bs-target="'#'+val.toLowerCase()+'-collapse'" aria-expanded="false">
+                                            {{ val }}
+                                        </a>
+                                        <div :class="'collapse'+((working_class==val) ?' show':'')" :id="val.toLowerCase() + '-collapse'">
+                                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                                <li v-for="(props, method_name) in key" v-bind:key="method_name">
+                                                    <a 
+                                                    :href="'/website/#/documentation/game/natives?addr='+props.address" 
+                                                    @click="handleNativeLink(props.address)" 
+                                                    :class="'link-dark rounded native-link class-link'+((working_method ==method_name) ? ' active':'')" 
+                                                    :data-class="val" 
+                                                    :data-method="method_name" 
+                                                    :data-addr="props.address"
+                                                    :data-md="'/classes/'+val+'/'+method_name+'.md'"
+                                                    data-group="classes" >{{ method_name }}</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button :class="'btn btn-toggle align-items-center rounded'+((working_group=='globals') ?'':' collapsed')" data-menu="globals" data-bs-toggle="collapse" data-bs-target="#globals-collapse" :aria-expanded="((working_group=='globals') ?'true':'false')">
+                                Globals
+                            </button>
+                            <div :class="'collapse'+((working_group=='globals') ?' show':'')" id="globals-collapse" style="">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li class="ms-3" v-for="(key, val) in globalFunctions" v-bind:key="val">
+                                        <a 
+                                            :href="'/website/#/documentation/game/natives?addr='+key.address" 
+                                            @click="handleNativeLink(key.address)" 
+                                            :class="'link-dark rounded native-link global-link'+((working_method ==val) ? ' active':'')" 
+                                            :data-method="val"
+                                            :data-addr="key.address"
+                                            :data-md="'/globals/'+val+'.md'"
+                                            data-group="globals">{{ val }}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
-            </div>
-            <div class="p-0" style="width: calc(100% - 280px)">
-                <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
-                    <div class="container-fluid">
-                        <Breadcrumb/>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div class="me-auto"></div>
-                        </div>
-                    </div>
                 </nav>
-                <div class="p-3 overflow-auto position-absolute end-0" style="width: calc(100% - 280px)" id="native">
+                <div class="w-100" style="width: calc(100% - 280px)">
+                    <div class="p-3 overflow-auto w-100" id="native">
+                    </div>
                 </div>
             </div>
         </div>
@@ -110,15 +107,32 @@ export default {
     },
     methods:{
         handleNativeLink(addr){
-            var element = $('*[data-addr="'+addr+'"]');
-            
+            var element = $('*[data-addr="'+addr+'"]');            
             this.working_class = element.attr("data-class");
             this.working_method = element.attr("data-method");
             this.working_group = element.attr("data-group");
             var md = element.attr("data-md");
-
             this.$store.commit("setLoading", true);
-
+            $.ajax({
+                url: "https://raw.githubusercontent.com/Gangsta-Team/natives/main/docs"+md,
+                data: null,
+                success: function(res){
+                    $('#native').html(window.marked.parse(res));
+                    window.hl.highlightAll();
+                    this.$store.commit("setLoading", false);
+                }.bind(this),
+                dataType: "text"
+            });
+        },
+        handleClassLink(class_name){
+            var element = $('.class-btn[data-class="'+class_name+'"]');
+            console.log(element)
+            var location = element.attr("data-href");
+            var md = element.attr("data-md");   
+            this.working_group = "classes";
+            this.working_class = element.attr("data-class");
+            window.history.pushState({}, null, location);
+            this.$store.commit("setLoading", true);
             $.ajax({
                 url: "https://raw.githubusercontent.com/Gangsta-Team/natives/main/docs"+md,
                 data: null,
@@ -132,20 +146,20 @@ export default {
                 dataType: "text"
             });
         },
-        findElemenyByAddr(addr){
-            this.handleNativeLink(addr);
-        },
         handleQuery(){
             if(typeof this.$route.query.addr !== 'undefined'){
-                console.log("addr"+this.$route.query.addr)
-                this.findElemenyByAddr(this.$route.query.addr);
+                this.handleNativeLink(this.$route.query.addr);
+            } 
+            if(typeof this.$route.query.class !== 'undefined'){
+                console.log("class: "+this.$route.query.class)
+                this.handleClassLink(this.$route.query.class);
             }            
         },
         adjustSize(){
             var app_h = $("#app").outerHeight();
             var nav_h = $('#doc-nav').outerHeight();
             $('#doc-list').css("height", (app_h - nav_h)+"px");
-            $('#native').css("height", (app_h - nav_h)+"px");
+            $('#main-view').css("height", (app_h - nav_h)+"px");
         },
         formatTableLinks(){
             var links = $('#native table').find("a").toArray();
@@ -205,6 +219,9 @@ export default {
         $(window).resize(function(){
             this.adjustSize();
         }.bind(this));
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
     }
 }
 </script>
