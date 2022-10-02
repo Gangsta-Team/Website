@@ -101,6 +101,7 @@ export default {
             working_group: null,
             working_class: null,
             loaded: false,
+            small_res: true,
         };
     },
     methods:{
@@ -120,6 +121,8 @@ export default {
                     this.$store.commit("setLoading", false);
                     if(by_url)
                         $('.native-link[data-addr="'+addr+'"]')[0].scrollIntoView();
+                    if(this.small_res)
+                        $('#sidebar').toggleClass('active');
                 }.bind(this),
                 dataType: "text"
             });
@@ -142,8 +145,11 @@ export default {
                     $('#native table').addClass("table table-striped table-hover w-auto table-bordered");
                     this.formatTableLinks();
                     this.$store.commit("setLoading", false);
-                    if(by_url)
+                    if(by_url){
                         $('.native-link[data-class="'+this.working_class+'"]')[0].scrollIntoView();
+                        if(this.small_res)
+                            $('#sidebar').toggleClass('active');
+                    }
                 }.bind(this),
                 dataType: "text"
             });
@@ -158,10 +164,17 @@ export default {
             }            
         },
         adjustSize(){
+            console.log("adjustSize",$(window).width())
             var app_h = $("#app").outerHeight();
             var nav_h = $('#doc-nav').outerHeight();
             $('#doc-list').css("height", (app_h - nav_h)+"px");
             $('#main-view').css("height", (app_h - nav_h)+"px");
+
+            if ($(window).width() < 768) {
+                this.small_res = true;
+            }else{
+                this.small_res = false;
+            }
         },
         formatTableLinks(){
             var links = $('#native table').find("a").toArray();
@@ -222,7 +235,15 @@ export default {
             this.adjustSize();
         }.bind(this));
         $('#sidebarCollapse').on('click', function () {
+            console.log($('#sidebar').hasClass('ative'));
             $('#sidebar').toggleClass('active');
+
+
+            if($('#sidebar').hasClass('ative')){
+                console.log("has")
+            }else{
+                console.log("not has")
+            }
         });
     }
 }
