@@ -11,7 +11,6 @@
                     </div>
                 </nav>
                 <ul class="list-unstyled p-2 overflow-auto m-0" id="doc-list">
-                    {{ working_group }}
                     <li class="mb-1">
                         <button :class="'btn btn-toggle align-items-center rounded'+((working_group=='classes') ?'':' collapsed')" data-menu="classes" data-bs-toggle="collapse" data-bs-target="#classes-collapse" :aria-expanded="((working_group=='classes') ?'true':'false')">
                             Classes
