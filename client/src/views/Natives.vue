@@ -11,20 +11,29 @@
                     </div>
                 </nav>
                 <ul class="list-unstyled p-2 overflow-auto m-0" id="doc-list">
+                    {{ working_group }}
                     <li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#classes-collapse" aria-expanded="false">
+                        <button :class="'btn btn-toggle align-items-center rounded'+((working_group=='classes') ?'':' collapsed')" data-menu="classes" data-bs-toggle="collapse" data-bs-target="#classes-collapse" :aria-expanded="((working_group=='classes') ?'true':'false')">
                             Classes
                         </button>
-                        <div class="collapse" id="classes-collapse">
+                        <div :class="'collapse'+((working_group=='classes') ?' show':'')" id="classes-collapse">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                 <li class="ms-3" v-for="(key, val) in classFunctions" v-bind:key="val">
-                                    <button :class="'btn btn-toggle align-items-center rounded'+ ((working_class == val) ? '' : ' collapsed')" @click="getMD('/classes/'+val+'/', true)" data-bs-toggle="collapse" :data-bs-target="'#'+val.toLowerCase()+'-collapse'" aria-expanded="false">
+                                    <button class="btn btn-toggle align-items-center rounded native-link" :data-class="val" :data-md="'/classes/'+val+'/README.md'" data-bs-toggle="collapse" :data-bs-target="'#'+val.toLowerCase()+'-collapse'" aria-expanded="false">
                                         {{ val }}
                                     </button>
-                                    <div :class="'collapse'+ ((working_class == val) ? ' show' : '')" :id="val.toLowerCase() + '-collapse'">
+                                    <div :class="'collapse'+((working_class==val) ?' show':'')" :id="val.toLowerCase() + '-collapse'">
                                         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                            <li v-for="(props, method_name) in key">
-                                                <a href="#" :class="'link-dark rounded'+ ((working_path == '/classes/'+val+'/'+method_name+'.md') ? ' active' : '')" :data-md="'/classes/'+val+'/'+method_name+'.md'" @click="getMD('/classes/'+val+'/'+method_name+'.md', false)">{{ method_name }}</a>
+                                            <li v-for="(props, method_name) in key" v-bind:key="method_name">
+                                                <a 
+                                                :href="'/#/documentation/game/natives?addr='+props.address" 
+                                                @click="handleNativeLink(key.address)" 
+                                                :class="'link-dark rounded native-link class-link'+((working_method ==method_name) ? ' active':'')" 
+                                                :data-class="val" 
+                                                :data-method="method_name" 
+                                                :data-addr="props.address"
+                                                :data-md="'/classes/'+val+'/'+method_name+'.md'"
+                                                data-group="classes" >{{ method_name }}</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -33,13 +42,20 @@
                         </div>
                     </li>
                     <li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#globals-collapse" aria-expanded="false">
+                        <button :class="'btn btn-toggle align-items-center rounded'+((working_group=='globals') ?'':' collapsed')" data-menu="globals" data-bs-toggle="collapse" data-bs-target="#globals-collapse" :aria-expanded="((working_group=='globals') ?'true':'false')">
                             Globals
                         </button>
-                        <div class="collapse" id="globals-collapse" style="">
+                        <div :class="'collapse'+((working_group=='globals') ?' show':'')" id="globals-collapse" style="">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                 <li class="ms-3" v-for="(key, val) in globalFunctions" v-bind:key="val">
-                                    <a href="#" :class="'link-dark rounded'+ ((working_path == '/globals/'+val+'.md') ? ' active' : '')" @click="getMD('/globals/'+val+'.md', false)">{{ val }}</a>
+                                    <a 
+                                        :href="'/#/documentation/game/natives?addr='+key.address" 
+                                        @click="handleNativeLink(key.address)" 
+                                        :class="'link-dark rounded native-link global-link'+((working_method ==val) ? ' active':'')" 
+                                        :data-method="val"
+                                        :data-addr="key.address"
+                                        :data-md="'/globals/'+val+'.md'"
+                                        data-group="globals">{{ val }}</a>
                                 </li>
                             </ul>
                         </div>
@@ -78,19 +94,56 @@ export default {
     },
     data(){
         return {
-            classFunctions: null,
-            globalFunctions: null,
+            classFunctions: {},
+            classFunctionsLen: null,
+            globalFunctions: {},
+            globalFunctionsLen: null,
             returnNames: null,
-            natives: [],
             github_host: 'https://raw.githubusercontent.com/',
             repository: 'Gangsta-Team/natives',
             path: '/main/docs/',
             root_element: null,
             working_path: null,
-            working_class: null
+            working_group: null,
+            working_class: null,
+            loaded: false,
         };
     },
     methods:{
+        handleNativeLink(addr){
+            var element = $('*[data-addr="'+addr+'"]');
+            
+            this.working_class = element.attr("data-class");
+            this.working_method = element.attr("data-method");
+            this.working_group = element.attr("data-group");
+            var md = element.attr("data-md");
+
+            this.$store.commit("setLoading", true);
+
+            $.ajax({
+                url: "https://raw.githubusercontent.com/Gangsta-Team/natives/main/docs"+md,
+                data: null,
+                success: function(res){
+                    $('#native').html(window.marked.parse(res));
+                    window.hl.highlightAll();
+                    $('#native table').addClass("table table-striped table-hover w-auto table-bordered");
+                    this.formatTableLinks();
+                    this.$store.commit("setLoading", false);
+                }.bind(this),
+                dataType: "text"
+            });
+        },
+        findElemenyByAddr(addr){
+            this.handleNativeLink(addr);
+        },
+        handleQuery(){
+            console.log("handleQuery")
+            console.log(this.$route.query.addr)
+            if(typeof this.$route.query.addr !== 'undefined'){
+                console.log("addr"+this.$route.query.addr)
+                this.findElemenyByAddr(this.$route.query.addr);
+            }            
+        },
         adjustSize(){
             var app_h = $("#app").outerHeight();
             var nav_h = $('#doc-nav').outerHeight();
@@ -105,44 +158,50 @@ export default {
                 links[i].md = fn_name;
                 links[i].onclick = function(evt){
                     evt.preventDefault();
-                    //this.getMD(, false)
                     $("a[data-md='"+evt.target.md+"']")[0].click()
                 }.bind(this)
             }
         },
-        getMD(md_path, is_class){
-            this.$store.commit("setLoading", true);
-            this.working_path = md_path;
-            this.working_class = md_path.split("/")[2];
-            //"https://raw.githubusercontent.com/Gangsta-Team/natives/main/ExampleFunction.md"
-
-            if(is_class)
-                md_path += "README.md"; 
-
-            $.ajax({
-                url: this.github_host+this.repository+this.path+md_path,
-                data: null,
-                success: function(res){
-                    $('#native').html(window.marked.parse(res));
-                    window.hl.highlightAll();
-
-                    $('#native table').addClass("table table-striped table-hover w-auto table-bordered");
-                    if(is_class){
-                        this.formatTableLinks();
-                    }
-                    this.$store.commit("setLoading", false);
-                }.bind(this),
-                dataType: "text"
-            });
-        }
+    },
+    updated(){
+        this.$nextTick(()=>{
+            if($('.class-link').length == this.classFunctionsLen && $('.global-link').length == this.globalFunctionsLen && !this.loaded){
+                this.handleQuery();
+                this.loaded = true;
+            }
+        })
     },
     mounted(){
         this.$store.commit("setLoading", true);
         this.root_element = $('#native');
-        $.getJSON( "https://raw.githubusercontent.com/Gangsta-Team/natives/main/natives.json", function( data ) {
-            this.classFunctions = data.classFunctions;
-            this.globalFunctions = data.globalFunctions;
-            this.returnNames = data.returnNames;
+        $.getJSON( this.github_host+this.repository+"/main/natives.json", function(data ) {
+            //this.classFunctions = data.classFunctions;
+            // Classes
+            this.classFunctions = {};
+            for(const class_name in data.classFunctions){
+                this.classFunctions[class_name] = {};
+                for(const method_name in data.classFunctions[class_name]){
+                    this.classFunctions[class_name][method_name] = {};
+                    var itm_data = {};
+                    for(const itm in data.classFunctions[class_name][method_name]){
+                        itm_data[itm] = data.classFunctions[class_name][method_name][itm];
+                    }
+                    this.classFunctions[class_name][method_name] = itm_data;
+                    this.classFunctionsLen +=1;
+                }
+            }
+            //this.globalFunctions = data.globalFunctions;
+            this.globalFunctions = {};
+            for(const method_name in data.globalFunctions){
+                this.globalFunctions[method_name] = {};
+                var itm_data = {};
+                for(const itm in data.globalFunctions[method_name]){
+                    itm_data[itm] = data.globalFunctions[method_name][itm];
+                }
+                this.globalFunctions[method_name] = itm_data;
+                this.globalFunctionsLen +=1;
+            }
+            //this.returnNames = data.returnNames;
             this.$store.commit("setLoading", false);
         }.bind(this));
         this.adjustSize();
